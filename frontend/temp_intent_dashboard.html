@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prudential Community Report</title>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+  <link rel="stylesheet" href="/static/temp_intent_dashboard.css?v=grok-dashboard-1">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">Facebook Community Listening</div>
+      <h1>Prudential Community Report</h1>
+    </div>
+    <div class="actions">
+      <label>Group<select id="groupFilter" onchange="loadReport()"><option value="all">All groups</option></select></label>
+      <label>Sentiment<select id="sentimentFilter" onchange="loadReport()"><option value="all">All sentiment</option><option value="tich_cuc">Positive</option><option value="trung_lap">Neutral</option><option value="tieu_cuc">Negative</option></select></label>
+      <label>Start<input type="date" id="startDate" onchange="loadReport()"></label>
+      <label>End<input type="date" id="endDate" onchange="loadReport()"></label>
+      <button type="button" onclick="loadReport()">Refresh</button>
+      <a href="/community-report-table">Table report</a><a href="/">Main dashboard</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="metrics">
+      <div class="metric"><span>Posts</span><strong id="m-posts">-</strong></div>
+      <div class="metric"><span>Comments</span><strong id="m-comments">-</strong></div>
+      <div class="metric"><span>Labeled</span><strong id="m-labeled">-</strong></div>
+      <div class="metric"><span>Prudential scope</span><strong id="m-scoped">-</strong></div>
+      <div class="metric"><span>Comment / post</span><strong id="m-cpp">-</strong></div>
+      <div class="metric"><span>Post reactions</span><strong id="m-post-reactions">-</strong></div>
+      <div class="metric"><span>Comment reactions</span><strong id="m-comment-reactions">-</strong></div>
+      <div class="metric"><span>Negative ratio</span><strong id="m-neg-ratio">-</strong></div>
+      <div class="metric"><span>Crisis</span><strong id="m-crisis">-</strong></div>
+    </section>
+
+    <section class="notice" id="scopeNotice"></section>
+
+    <section class="band hero-grid">
+      <div class="chart-block">
+        <div class="chart-head"><h2>Sentiment Mix</h2><span>comment level</span></div>
+        <div id="c-sentiment" class="chart h320"></div>
+      </div>
+      <div class="chart-block wide2">
+        <div class="chart-head"><h2>Sentiment Timeline</h2><span>daily trend</span></div>
+        <div id="c-timeline" class="chart h320"></div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="chart-block">
+        <div class="chart-head"><h2>Comments By Group</h2><span>scoped comments</span></div>
+        <div id="c-group-comments" class="chart h360"></div>
+      </div>
+      <div class="chart-block">
+        <div class="chart-head"><h2>Post Reactions By Group</h2><span>post level</span></div>
+        <div id="c-group-reactions" class="chart h360"></div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="chart-block">
+        <div class="chart-head"><h2>Group Sentiment Breakdown</h2><span>positive / neutral / negative</span></div>
+        <div id="c-group-sentiment" class="chart h420"></div>
+      </div>
+      <div class="chart-block">
+        <div class="chart-head"><h2>Post Workload</h2><span>posts vs comments</span></div>
+        <div id="c-post-workload" class="chart h420"></div>
+      </div>
+    </section>
+
+    <section class="table-section">
+      <div class="chart-head"><h2>Priority Posts</h2><span>risk sorted</span></div>
+      <div class="post-table-wrap">
+        <table>
+          <thead><tr><th>Group</th><th>Post</th><th>Comments</th><th>Reaction</th><th>Sentiment</th><th>Risk</th></tr></thead>
+          <tbody id="postRows"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/temp_intent_dashboard.js?v=grok-dashboard-1"></script>
+</body>
+</html>
+

@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: insurance-listening-dashboard
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: INSURANCE_DATA_DIR
+        value: /app/data_snapshot

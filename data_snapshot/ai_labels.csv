@@ -1,0 +1,755 @@
+CommentID,intent,sentiment,sentiment_score,crisis_level,crisis_reason,pain_points,content_suggestion,summary,is_advisor,is_seeding,labeled_at
+1616320479952252,spam,trung_lap,0.0,none,,[],,Người dùng tự giới thiệu là tư vấn viên bảo hiểm AIA tại TP.HCM.,True,False,2026-09-03T11:20:32.662570
+1616321166618850,spam,trung_lap,0.0,none,,[],,"Người dùng tự giới thiệu là Tuyết Sương, tư vấn viên bảo hiểm Cathay Life tại Bình Dương, cung cấp cả bảo hiểm nhân thọ và phi nhân thọ, kèm số điện thoại liên hệ.",True,False,2026-09-03T11:20:32.662570
+1616322349952065,spam,trung_lap,0.0,none,,[],,Người dùng tự giới thiệu là tư vấn viên bảo hiểm Cathay tại Thái Bình và bày tỏ sự vui mừng được kết nối.,True,False,2026-09-03T11:20:32.662570
+1616325129951787,spam,trung_lap,0.0,none,,[],,"Người dùng tự giới thiệu là tư vấn viên Manulife và cộng tác viên với các hãng bảo hiểm phi nhân thọ, cho biết có thể cung cấp nhiều sản phẩm.",True,False,2026-09-03T11:20:32.662570
+1616325826618384,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu nhắn tin riêng qua Zalo theo số điện thoại được cung cấp.,False,False,2026-09-03T11:20:32.662570
+1616326373284996,spam,trung_lap,0.0,none,,[],,Lời kêu gọi nhắn tin riêng.,True,False,2026-09-03T11:20:42.574574
+1616330839951216,spam,trung_lap,0.0,none,,[],,Lời kêu gọi nhắn tin riêng.,True,False,2026-09-03T11:20:42.574574
+1616331013284532,spam,trung_lap,0.0,none,,[],,Cung cấp số điện thoại liên hệ.,True,False,2026-09-03T11:20:42.574574
+1616331183284515,spam,trung_lap,0.0,none,,[],,Cung cấp số điện thoại để giao tiếp.,True,False,2026-09-03T11:20:42.574574
+1616333636617603,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên của Manulife giới thiệu bản thân và số điện thoại, bày tỏ mong muốn được đồng hành.",True,False,2026-09-03T11:20:42.574574
+1616335079950792,spam,trung_lap,0.0,none,,[],,Comment chỉ chứa một từ duy nhất.,False,False,2026-09-03T11:20:57.638670
+1616337346617232,spam,trung_lap,0.0,none,,[],,"Một người tự giới thiệu là Lan Hương, có 5 năm kinh nghiệm tại AIA và sẵn sàng giải đáp thắc mắc về bảo hiểm.",True,False,2026-09-03T11:20:57.638670
+1616338423283791,spam,trung_lap,0.0,none,,[],,Người dùng mời một người tên Phi nhắn tin riêng.,True,False,2026-09-03T11:20:57.638670
+1616343596616607,spam,trung_lap,0.0,none,,[],,Một người tự giới thiệu là Kiên từ công ty BHNT Hanwha Life Việt Nam và mong muốn được đồng hành.,True,False,2026-09-03T11:20:57.638670
+1616346986616268,spam,trung_lap,0.0,none,,[],,Một người tự giới thiệu là Tiến Hợp từ công ty BH Dai-ichi Life Việt Nam khu vực Vĩnh Phúc.,True,False,2026-09-03T11:20:57.638670
+1616350379949262,spam,trung_lap,0.0,none,,[],,Một tư vấn viên Bảo Việt Nhân Thọ tự giới thiệu bản thân và địa điểm ở TP.HCM.,True,False,2026-09-03T11:21:11.453701
+1616350803282553,y_kien_trung_lap,trung_lap,0.0,none,,[],,Comment chỉ chứa một tên riêng.,False,False,2026-09-03T11:21:11.453701
+1616351059949194,spam,trung_lap,0.0,none,,[],,Một người dùng yêu cầu Nguyễn Bảo Ngọc gửi tin nhắn riêng.,True,False,2026-09-03T11:21:11.453701
+1616351339949166,spam,trung_lap,0.0,none,,[],,Một người dùng yêu cầu Tiến Hợp gửi tin nhắn riêng.,True,False,2026-09-03T11:21:11.453701
+1616356363281997,spam,trung_lap,0.0,none,,[],,Một tư vấn viên Bảo Việt Nhân Thọ tên Hồng Ly tự giới thiệu bản thân và địa điểm ở Tây Ninh.,True,False,2026-09-03T11:21:11.453701
+1616357566615210,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu nhắn tin riêng.,True,True,2026-09-03T11:21:24.720272
+1616363086614658,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng đưa ra một lời đáp ngắn gọn.,False,False,2026-09-03T11:21:24.720272
+1616363696614597,spam,trung_lap,0.0,none,,[],,Người dùng tự giới thiệu là tư vấn viên Bảo Việt Nhân Thọ chi nhánh Khánh Hòa.,True,True,2026-09-03T11:21:24.720272
+1616369013280732,spam,trung_lap,0.0,none,,[],,Người dùng tự giới thiệu là tư vấn viên Bảo Việt Nhân Thọ Sài Gòn.,True,True,2026-09-03T11:21:24.720272
+1616374943280139,spam,trung_lap,0.0,none,,[],,"Người dùng tự giới thiệu là Huy, tư vấn viên toàn thời gian của AIA tại Hải Phòng.",True,True,2026-09-03T11:21:24.720272
+1616376956613271,spam,trung_lap,0.0,none,,[],,Yêu cầu nhắn tin riêng.,True,False,2026-09-03T11:21:36.893021
+1616377039946596,spam,trung_lap,0.0,none,,[],,Yêu cầu nhắn tin riêng.,True,False,2026-09-03T11:21:36.893021
+1616377119946588,spam,trung_lap,0.0,none,,[],,Yêu cầu nhắn tin riêng.,True,False,2026-09-03T11:21:36.893021
+1616377959946504,spam,tich_cuc,0.5,none,,[],,"Quảng cáo bảo hiểm nhân thọ và phi nhân thọ của Fubon Life, mời tư vấn miễn phí và để lại thông tin liên hệ.",True,False,2026-09-03T11:21:36.893021
+1616382533279380,spam,trung_lap,0.0,none,,[],,Một tư vấn viên của Bảo Việt Nhân thọ tại Thái Bình tự giới thiệu.,True,False,2026-09-03T11:21:36.893021
+1616382946612672,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên Prudential giới thiệu bản thân, khu vực hoạt động và số điện thoại, mời kết nối với đồng nghiệp.",True,False,2026-09-03T11:21:49.609239
+1616395236611443,spam,trung_lap,0.0,none,,[],,Một người tự nhận là tư vấn viên bảo hiểm và cho biết khu vực hoạt động tại Phú Thọ.,True,False,2026-09-03T11:21:49.609239
+1616397923277841,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng bày tỏ sự nghi ngờ hoặc ngạc nhiên với nội dung trước đó.,False,False,2026-09-03T11:21:49.609239
+1616399913277642,spam,trung_lap,0.0,none,,[],,Một người giới thiệu đang làm việc cho Shinhan Life và có hệ thống cộng tác viên tại TP.HCM.,True,False,2026-09-03T11:21:49.609239
+1616400623277571,spam,trung_lap,0.0,none,,[],,Một người giới thiệu bản thân liên quan đến Bảo Việt Nhân Thọ tại Đăk Lăk.,True,False,2026-09-03T11:21:49.609239
+1616406363276997,spam,trung_lap,0.0,none,,[],,Một người tự giới thiệu là tư vấn viên AIA tại Thái Bình.,True,False,2026-09-03T11:22:01.902297
+1616408209943479,y_kien_trung_lap,tich_cuc,0.5,none,,[],,Một bình luận thể hiện sự đồng tình hoặc ủng hộ bằng biểu tượng cảm xúc.,False,False,2026-09-03T11:22:01.902297
+1616410726609894,spam,trung_lap,0.0,none,,[],,Một người tự giới thiệu là tư vấn viên bảo hiểm toàn thời gian của Generali.,True,False,2026-09-03T11:22:01.902297
+1616422706608696,spam,trung_lap,0.0,none,,[],,Một lời kêu gọi nhắn tin riêng.,True,False,2026-09-03T11:22:01.902297
+1616422773275356,spam,trung_lap,0.0,none,,[],,"Một lời kêu gọi nhắn tin riêng, có nhắc đến tên Ngọc Loan.",True,False,2026-09-03T11:22:01.902297
+1616422823275351,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu nhắn tin riêng.,True,True,2026-09-03T11:22:13.278619
+1616422879942012,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu nhắn tin riêng.,True,True,2026-09-03T11:22:13.278619
+1616423213275312,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu nhắn tin riêng.,True,True,2026-09-03T11:22:13.278619
+1616451236605843,spam,trung_lap,0.0,none,,[],,Người dùng tự giới thiệu là đại lý AIA tại Hưng Yên.,True,True,2026-09-03T11:22:13.278619
+1616468566604110,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu nhắn tin riêng.,True,True,2026-09-03T11:22:13.278619
+1616530013264632,y_kien_trung_lap,trung_lap,0.1,none,,[],gioi thieu ve cong ty,Người dùng yêu cầu thông tin giới thiệu về người/bên đăng bài để tiện liên hệ.,False,False,2026-09-03T11:22:36.078172
+1616579019926398,y_kien_trung_lap,trung_lap,0.0,none,,[],,"Người dùng phản hồi ngắn gọn ""dạ auki ạ"".",False,False,2026-09-03T11:22:36.078172
+1616598303257803,spam,trung_lap,0.0,none,,[],,"Người dùng bình luận một chữ ""K"".",False,False,2026-09-03T11:22:36.078172
+1617135229870777,spam,tich_cuc,0.5,none,,[],,"Bài đăng quảng cáo cơ hội hợp tác kinh doanh chuỗi SPA, mời gọi các đại lý bảo hiểm giới thiệu khách hàng để chia sẻ lợi nhuận.",True,True,2026-09-03T11:22:36.078172
+1617179359866364,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu nhắn tin riêng.,True,True,2026-09-03T11:22:36.078172
+1617270063190627,y_kien_trung_lap,tich_cuc,0.7,none,,[],,"Người dùng tự giới thiệu là thành viên từ Bảo Việt Tây Nguyên Bình Phước và bày tỏ sự vui mừng khi được kết nối, học hỏi.",True,False,2026-09-03T11:22:49.138425
+1617288576522109,y_kien_trung_lap,trung_lap,0.0,none,,[],,"Người dùng yêu cầu cung cấp các thông tin chi tiết về tư vấn viên bảo hiểm như họ tên, công ty, khu vực, dòng bảo hiểm và kinh nghiệm.",False,False,2026-09-03T11:22:49.138425
+1617288916522075,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu một cá nhân cụ thể nhắn tin riêng cho mình.,True,False,2026-09-03T11:22:49.138425
+1617321589852141,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng phản hồi bằng một lời xác nhận lịch sự.,False,False,2026-09-03T11:22:49.138425
+1616457496605217,spam,tich_cuc,0.4,none,,[],,Người dùng đăng một câu quảng cáo về ưu đãi đặc biệt.,True,True,2026-09-03T11:22:49.138425
+1616457776605189,spam,tich_cuc,0.3,none,,[],cac loai the bao hiem generali,Comment giới thiệu Generali hiện có 5 hạng thẻ bảo hiểm để khách hàng lựa chọn.,True,True,2026-09-03T11:24:08.003670
+1616458059938494,spam,tich_cuc,0.8,none,,[],,"Một tư vấn viên liệt kê chi tiết các ưu điểm của thẻ bảo hiểm Generali như không đồng chi, bé tham gia độc lập, hạn mức cao, bảo lãnh rộng, chi trả ung thư mọi phương pháp và cung cấp thông tin liên hệ.",True,True,2026-09-03T11:24:08.003670
+1616518883265745,spam,tich_cuc,0.5,none,,[],,Người dùng chia sẻ đã mua bảo hiểm và khuyên nên chọn tư vấn viên độc lập để được tư vấn khách quan theo nhu cầu.,True,True,2026-09-03T11:24:08.003670
+1616521656598801,khen,tich_cuc,0.7,none,,[],uu diem bao hiem fwd,Người dùng khen ngợi FWD tại TPHCM qua kênh Banca vì sự tiện lợi và chi trả nhanh chóng.,False,False,2026-09-03T11:24:08.003670
+1616526489931651,spam,trung_lap,0.0,none,,[],,Người dùng mời inbox để được tư vấn.,True,True,2026-09-03T11:24:08.003670
+1616528533264780,spam,trung_lap,0.0,none,,[],,"Một đại lý bảo hiểm AIA giới thiệu sản phẩm bảo hiểm nhân thọ và sức khỏe, mời liên hệ để được tư vấn.",True,False,2026-09-03T11:24:18.052461
+1616530953264538,spam,trung_lap,0.0,none,,[],,Một người mời liên hệ qua Techcombank để được tư vấn.,True,False,2026-09-03T11:24:18.052461
+1616531903264443,spam,tich_cuc,0.5,none,,[],,"Một tư vấn viên AIA quảng bá các quyền lợi vượt trội của thẻ bảo hiểm sức khỏe AIA, đặc biệt là tái tục trọn đời và quyền lợi nằm viện công, mời liên hệ để được tư vấn chi tiết.",True,False,2026-09-03T11:24:18.052461
+1616538206597146,spam,tich_cuc,0.3,none,,[],,Một tư vấn viên Manulife mời khách hàng liên hệ để nhận tư vấn về giải pháp bảo vệ sức khỏe và tài chính toàn diện.,True,False,2026-09-03T11:24:18.052461
+1616544359929864,spam,tich_cuc,0.3,none,,[],,Một tư vấn viên Bảo Việt Nhân Thọ giới thiệu bản thân và mời tư vấn về giải pháp bảo vệ sức khỏe và tài chính.,True,False,2026-09-03T11:24:18.052461
+1616545486596418,spam,trung_lap,0.0,none,,[],,Người dùng mời liên hệ qua Zalo và giới thiệu là nhân viên Sacombank chi nhánh Hàng Xanh.,True,False,2026-09-03T11:24:29.764021
+1616546323263001,spam,trung_lap,0.0,none,,[],,Người dùng mời kết bạn Zalo hoặc gọi điện thoại để được tư vấn.,True,False,2026-09-03T11:24:29.764021
+1616546713262962,spam,tich_cuc,0.4,none,,[],,Bảo Việt đưa ra một thông điệp marketing chung bày tỏ sự hân hạnh được đồng hành cùng khách hàng.,True,True,2026-09-03T11:24:29.764021
+1616561383261495,spam,trung_lap,0.0,none,,[],,Người dùng mời kết nối Zalo để được hỗ trợ.,True,False,2026-09-03T11:24:29.764021
+1616567103260923,spam,trung_lap,0.0,none,,[],,Người dùng mời kết bạn Zalo hoặc gọi điện thoại để được tư vấn.,True,False,2026-09-03T11:24:29.764021
+1616572353260398,spam,trung_lap,0.0,none,,[],,Một tư vấn viên Prudential mời kết nối Zalo để hỗ trợ.,True,False,2026-09-03T11:24:44.737553
+1616573306593636,spam,trung_lap,0.0,none,,[],,Một tư vấn viên Bảo Việt giới thiệu các quyền lợi của hợp đồng bảo hiểm và mời liên hệ để nhận bản minh họa.,True,False,2026-09-03T11:24:44.737553
+1616573489926951,spam,trung_lap,0.0,none,,[],,Một người dùng yêu cầu inbox.,True,False,2026-09-03T11:24:44.737553
+1616575489926751,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu sản phẩm nhân thọ và thẻ sức khỏe của AIA, kèm quyền lợi thai sản, và mời liên hệ để nhận bảng so sánh các công ty bảo hiểm.",True,False,2026-09-03T11:24:44.737553
+1616575629926737,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu các ưu điểm của bảo hiểm nhân thọ và sức khỏe AIA, bao gồm không giới hạn chi trả, hỗ trợ viện phí, và mời liên hệ để được tư vấn chi tiết.",True,False,2026-09-03T11:24:44.737553
+1616589739925326,muon_tu_van,trung_lap,0.0,none,,[],,Người dùng yêu cầu được phản hồi tin nhắn Zalo.,False,False,2026-09-03T11:25:11.397402
+1616632423254391,spam,trung_lap,0.0,none,,[],,Người dùng mời liên hệ Zalo để được tư vấn bảo hiểm.,True,False,2026-09-03T11:25:11.397402
+1616646933252940,spam,trung_lap,0.0,none,,[],,Người dùng mời liên hệ qua Facebook để tham khảo và tư vấn bảo hiểm.,True,False,2026-09-03T11:25:11.397402
+1616661646584802,spam,trung_lap,0.0,none,,[],,"Người dùng mời liên hệ để được tư vấn, tự giới thiệu là Thảo Bảo Việt.",True,False,2026-09-03T11:25:11.397402
+1616697113247922,khen,tich_cuc,0.4,none,,[],,,False,False,2026-09-03T11:25:11.397402
+1616707076580259,spam,trung_lap,0.0,none,,[],,Một tư vấn viên giới thiệu các quyền lợi nổi bật của bảo hiểm AIA và mời liên hệ để được tư vấn chi tiết và nhận bảng so sánh.,True,False,2026-09-03T11:25:27.259948
+1616753796575587,spam,trung_lap,0.0,none,,[],,Một tư vấn viên của Manulife tự giới thiệu và mời người dùng liên hệ để được tư vấn.,True,False,2026-09-03T11:25:27.259948
+1617062816544685,spam,trung_lap,0.0,none,,[],,Một người tự nhận là tư vấn viên của Dai-ichi mời người dùng nhắn tin để được tư vấn cụ thể.,True,False,2026-09-03T11:25:27.259948
+1617155529868747,spam,trung_lap,0.0,none,,[],,Một người mời người dùng nhắn tin để được tư vấn rõ ràng và chọn sản phẩm phù hợp nhu cầu.,True,False,2026-09-03T11:25:27.259948
+1618003566450610,spam,trung_lap,0.0,none,,[],,Một người đã nhắn tin Zalo và đề nghị một buổi tư vấn trực tiếp nếu người dùng ở TP.HCM.,True,False,2026-09-03T11:25:27.259948
+1323636269639618,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng đưa ra một biệt danh hoặc cách gọi một người.,False,False,2026-09-03T11:25:41.413305
+1323644299638815,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng bình luận về một cái tên với thái độ vui vẻ.,False,False,2026-09-03T11:25:41.413305
+1323742306295681,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng đặt câu hỏi về nguồn gốc của một người tên Danh.,False,False,2026-09-03T11:25:41.413305
+1324828372853741,y_kien_trung_lap,tich_cuc,0.5,none,,[],,Người dùng bày tỏ lòng biết ơn.,False,False,2026-09-03T11:25:41.413305
+28558717563740646,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên bảo hiểm giới thiệu sản phẩm nhân thọ và thẻ sức khỏe của AIA, kèm quyền lợi thai sản, đồng thời cung cấp bảng so sánh các công ty bảo hiểm và kêu gọi liên hệ.",True,False,2026-09-03T11:25:41.413305
+28558727000406369,spam,trung_lap,0.0,none,,[],,Một tư vấn viên giới thiệu các quyền lợi nổi bật của bảo hiểm AIA và mời liên hệ để được tư vấn chi tiết.,True,False,2026-09-03T11:25:54.031479
+28558850650394004,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu người khác kiểm tra Zalo.,True,False,2026-09-03T11:25:54.031479
+28558903977055338,spam,trung_lap,0.0,none,,[],,Người dùng giới thiệu sản phẩm Cathay và mời liên hệ riêng.,True,False,2026-09-03T11:25:54.031479
+28558911553721247,spam,trung_lap,0.0,none,,[],,Người dùng giới thiệu sản phẩm AIA và mời liên hệ để được hỗ trợ.,True,False,2026-09-03T11:25:54.031479
+28558912590387810,spam,trung_lap,0.0,none,,[],,Người dùng giới thiệu sản phẩm của Techcombank và mời liên hệ qua inbox hoặc số điện thoại.,True,False,2026-09-03T11:25:54.031479
+28558925367053199,spam,trung_lap,0.0,none,,[],,Một người dùng mời tham khảo gói tích lũy kèm thẻ sức khỏe cao cấp của Bảo Việt và yêu cầu nhắn tin.,True,False,2026-09-03T11:26:06.602324
+28558934630385606,spam,trung_lap,0.0,none,,[],,Một Trưởng Phòng Kinh Doanh của Manulife giới thiệu bản thân và mời liên hệ qua Zalo để biết thêm thông tin.,True,False,2026-09-03T11:26:06.602324
+28558947127051023,spam,trung_lap,0.0,none,,[],,Một người dùng từ Bảo Việt Bắc Giang mời nhắn tin riêng để được tư vấn cụ thể.,True,False,2026-09-03T11:26:06.602324
+28558957353716667,spam,trung_lap,0.0,none,,[],,Một người dùng mời nhắn tin riêng cho Trung.,True,False,2026-09-03T11:26:06.602324
+28558961470382922,spam,trung_lap,0.0,none,,[],,Một người dùng hỏi về địa điểm và mời nhắn tin nếu thật sự cần tư vấn.,True,False,2026-09-03T11:26:06.602324
+28558965543715848,spam,trung_lap,0.0,none,,[],,"Một chuyên viên hoạch định tài chính của AIA mời người dùng nhắn tin để được tư vấn, giới thiệu kinh nghiệm và cam kết tư vấn tận tâm.",True,False,2026-09-03T11:26:21.229545
+28558996820379387,muon_tu_van,trung_lap,0.1,none,,[],tư vấn bảo hiểm manulife,Người dùng yêu cầu Manulife inbox để được tư vấn.,False,False,2026-09-03T11:26:21.229545
+28559132510365818,dich_vu_tu_van,tieu_cuc,-0.5,low,bị spam điện thoại/tin nhắn,"[""bị spam""]",cách tránh bị spam bảo hiểm,"Người dùng bày tỏ sự khó chịu vì bị spam, cho rằng mình đã ""đắc tội"" để bị nhận tin nhắn/cuộc gọi rác.",False,False,2026-09-03T11:26:21.229545
+28559178593694543,spam,trung_lap,0.0,none,,[],,Người dùng đề nghị cung cấp bảng so sánh các hãng bảo hiểm.,True,False,2026-09-03T11:26:21.229545
+28559186060360463,spam,trung_lap,0.0,none,,[],,Một tư vấn viên của AIA Exchange giới thiệu bản thân và mời người dùng nhắn tin để được tư vấn về phương án rõ ràng và được theo sát.,True,False,2026-09-03T11:26:21.229545
+28559226003689802,spam,trung_lap,0.0,none,,[],,Một người dùng yêu cầu inbox để được tư vấn.,True,False,2026-09-03T11:26:33.568521
+28559291290349940,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu sản phẩm bảo hiểm nhân thọ và thẻ sức khỏe của AIA, kèm quyền lợi thai sản, và mời inbox để nhận bảng so sánh các công ty bảo hiểm.",True,False,2026-09-03T11:26:33.568521
+28559380990340970,spam,trung_lap,0.0,none,,[],,Một người dùng để lại số Zalo để liên hệ.,True,False,2026-09-03T11:26:33.568521
+28559587550320314,muon_tu_van,tich_cuc,0.4,none,,[],"huong dan lien he tu van, quy trinh tu van bao hiem",Một người dùng yêu cầu được gửi thông tin qua Zalo.,False,False,2026-09-03T11:26:33.568521
+28559589583653444,muon_tu_van,tich_cuc,0.4,none,,[],"huong dan lien he tu van, quy trinh tu van bao hiem",Một người dùng yêu cầu được hỗ trợ qua Zalo.,False,False,2026-09-03T11:26:33.568521
+28559687786976957,muon_tu_van,trung_lap,0.1,none,,[],,Người dùng muốn được tư vấn riêng qua tin nhắn.,False,False,2026-09-03T11:26:46.888541
+28559763873636015,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên AIA giới thiệu chi tiết về sản phẩm thẻ sức khỏe trọn đời, chi trả viện phí và mời liên hệ để tư vấn.",True,True,2026-09-03T11:26:46.888541
+28559865300292539,spam,trung_lap,0.0,none,,[],,Một tư vấn viên Prudential mời liên hệ để tìm hiểu các gói bảo hiểm phù hợp.,True,True,2026-09-03T11:26:46.888541
+28560198336925902,muon_tu_van,trung_lap,0.1,none,,[],,Người dùng yêu cầu được gửi thông tin.,False,False,2026-09-03T11:26:46.888541
+28560289783583424,spam,trung_lap,0.0,none,,[],,Một tư vấn viên mời tham khảo bảo hiểm gen và liên hệ để được hỗ trợ.,True,True,2026-09-03T11:26:46.888541
+28560771393535263,spam,trung_lap,0.0,none,,[],,Lời kêu gọi inbox chung chung để được tư vấn.,True,True,2026-09-03T11:26:59.169625
+28560808063531596,spam,tich_cuc,0.5,none,,[],,Một tư vấn viên Bảo Việt Nhân Thọ giới thiệu sản phẩm mới An Thịnh Phúc Niên và mời liên hệ để được tư vấn.,True,True,2026-09-03T11:26:59.169625
+28560968516848884,spam,trung_lap,0.0,none,,[],,Comment chỉ chứa một tên riêng.,False,False,2026-09-03T11:26:59.169625
+28561074726838263,spam,trung_lap,0.0,none,,[],,Lời mời inbox để được tư vấn.,True,True,2026-09-03T11:26:59.169625
+28561302600148809,spam,tich_cuc,0.6,none,,[],,Một tư vấn viên giới thiệu chi tiết về Thẻ Sức khỏe Trọn đời của AIA với nhiều quyền lợi nổi bật và mời liên hệ để được tư vấn.,True,True,2026-09-03T11:26:59.169625
+28561561310122938,spam,trung_lap,0.0,none,,[],,Lời kêu gọi inbox chung chung.,True,True,2026-09-03T11:27:18.226727
+28561727226773013,spam,trung_lap,0.1,none,,[],,Giới thiệu chương trình ưu đãi của Generali.,True,True,2026-09-03T11:27:18.226727
+28562103496735386,spam,trung_lap,0.2,none,,[],,"Một phó phòng kinh doanh của AIA tự giới thiệu kinh nghiệm, thành tích chi trả và mời inbox để tư vấn.",True,True,2026-09-03T11:27:18.226727
+28562589053353497,spam,trung_lap,0.2,none,,[],,"Một tư vấn viên Manulife giới thiệu khả năng so sánh các hãng, đưa ra gói mẫu của Manulife và mời tư vấn riêng.",True,True,2026-09-03T11:27:18.226727
+28562617130017356,spam,trung_lap,0.0,none,,[],,Lời kêu gọi kết bạn Zalo.,True,True,2026-09-03T11:27:18.226727
+28562671306678605,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu người khác kết bạn Zalo.,True,True,2026-09-03T11:27:30.934035
+28562854353326967,spam,trung_lap,0.0,none,,[],,Người dùng để lại số điện thoại và yêu cầu kết bạn hoặc liên hệ.,True,True,2026-09-03T11:27:30.934035
+28562976553314747,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng đưa ra một phản hồi đồng ý ngắn gọn.,False,False,2026-09-03T11:27:30.934035
+28565724179706651,spam,tich_cuc,0.3,none,,[],,Người dùng giới thiệu sản phẩm bảo hiểm AIA với nhiều quyền lợi nổi bật và mời liên hệ để được tư vấn chi tiết.,True,True,2026-09-03T11:27:30.934035
+28566690606276675,spam,trung_lap,0.0,none,,[],,Người dùng mời liên hệ nếu quan tâm đến bảo hiểm Dai-ichi Life.,True,True,2026-09-03T11:27:30.934035
+28567047882907614,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên mời chào tham khảo sản phẩm bảo hiểm toàn diện của AIA bao gồm bệnh thông thường, ung thư, bệnh hiểm nghèo và tai nạn, kèm theo số điện thoại liên hệ.",True,True,2026-09-03T11:27:44.292041
+28574593048819764,y_kien_trung_lap,trung_lap,0.1,none,,[],chia se kinh nghiem su dung bao hiem,Người dùng hỏi xem có ai đã sử dụng sản phẩm/dịch vụ được nhắc đến trong bài viết chưa.,False,False,2026-09-03T11:27:44.292041
+28560093976936338,spam,trung_lap,0.0,none,,[],,Một tư vấn viên mời người dùng tham khảo sản phẩm của Cathay và liên hệ qua tin nhắn riêng.,True,True,2026-09-03T11:27:44.292041
+28560297993582603,spam,trung_lap,0.0,none,,[],,"Một chuyên viên AIA giới thiệu chi tiết về sản phẩm bảo hiểm sức khỏe trọn đời của AIA với nhiều quyền lợi nổi bật như không giới hạn phụ điều trị, hạn mức nội trú cao, quyền lợi thai sản và dịch vụ Song Hành Y Tế, kèm thông tin liên hệ.",True,True,2026-09-03T11:27:44.292041
+28560310943581308,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu sản phẩm bảo hiểm nhân thọ và thẻ sức khỏe trọn đời của AIA với quyền lợi chi trả cao, kèm theo ưu đãi thai sản và đề nghị cung cấp bảng so sánh chi tiết các công ty bảo hiểm.",True,True,2026-09-03T11:27:44.292041
+28560312920247777,spam,trung_lap,0.1,none,,[],,Một tư vấn viên giới thiệu sản phẩm bảo hiểm AIA với nhiều quyền lợi nổi bật và mời liên hệ để được tư vấn chi tiết.,True,False,2026-09-03T11:27:56.836515
+28560372540241815,spam,trung_lap,0.0,none,,[],,Một người dùng để lại số điện thoại và lời mời liên hệ để được tư vấn.,True,False,2026-09-03T11:27:56.836515
+28560631810215888,spam,trung_lap,0.0,none,,[],,Một người dùng yêu cầu inbox.,True,False,2026-09-03T11:27:56.836515
+28560716543540748,spam,trung_lap,0.1,none,,[],,Một tư vấn viên của AIA giới thiệu bản thân và mời inbox để tư vấn về gói bảo hiểm phù hợp với nhu cầu.,True,False,2026-09-03T11:27:56.836515
+28560804736865262,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên của Bảo Việt Nhân Thọ giới thiệu sản phẩm mới ""An Thịnh Phúc Niên"" và mời liên hệ để được tư vấn.",True,False,2026-09-03T11:27:56.836515
+28561075186838217,y_kien_trung_lap,trung_lap,0.1,none,,[],huong dan chon bao hiem suc khoe,"Một tư vấn viên chia sẻ các yếu tố cần xem xét khi chọn bảo hiểm sức khỏe như độ tuổi, tình trạng sức khỏe, nhu cầu y tế, quyền lợi mong muốn và tài chính dự kiến, đồng thời mời liên hệ để được tư vấn cụ thể.",True,False,2026-09-03T11:28:10.131501
+28561155736830162,spam,trung_lap,0.0,none,,[],,Comment mời người dùng nhắn tin riêng nếu thực sự quan tâm.,True,False,2026-09-03T11:28:10.131501
+28561275096818226,spam,trung_lap,0.0,none,,[],,Comment mời người dùng nhắn tin riêng.,True,False,2026-09-03T11:28:10.131501
+28562607883351614,spam,trung_lap,0.0,none,,[],,Comment giới thiệu bảo hiểm Cathaylife và cung cấp số điện thoại để liên hệ tư vấn.,True,False,2026-09-03T11:28:10.131501
+28563620679917001,spam,trung_lap,0.1,none,,[],,"Phương Thảo, tư vấn viên bảo hiểm Generali, giới thiệu sản phẩm của Gen có khả năng tích lũy và bảo vệ tốt.",True,False,2026-09-03T11:28:10.131501
+28566695286276207,spam,trung_lap,0.0,none,,[],,Comment mời inbox để được tư vấn bảo hiểm Dai-ichi.,True,True,2026-09-03T11:28:20.461032
+28567101276235608,spam,trung_lap,0.0,none,,[],,"Comment mời liên hệ để tham khảo bảo hiểm AIA bảo vệ toàn diện từ bệnh thông thường đến ung thư, bệnh hiểm nghèo và tai nạn.",True,True,2026-09-03T11:28:20.461032
+28575996962012706,spam,tich_cuc,0.4,none,,[],,"Một phó phòng kinh doanh của AIA giới thiệu kinh nghiệm và thành tích cá nhân, mời người dùng inbox để được giải đáp thắc mắc.",True,True,2026-09-03T11:28:20.461032
+28577036195242116,spam,tich_cuc,0.4,none,,[],,"Một chuyên viên hoạch định tài chính cao cấp của AIA giới thiệu kinh nghiệm và cam kết tư vấn tận tình, mời người dùng inbox.",True,True,2026-09-03T11:28:20.461032
+28587042247574844,spam,trung_lap,0.0,none,,[],,"Comment từ một người hỗ trợ Bảo Việt, cung cấp số điện thoại liên hệ.",True,True,2026-09-03T11:28:20.461032
+28587143394231396,spam,trung_lap,0.0,none,,[],,Lời mời nhắn tin riêng để được hỗ trợ.,True,False,2026-09-03T11:28:34.263667
+28571448415800894,spam,trung_lap,0.0,none,,[],,Lời mời nhắn tin riêng.,True,False,2026-09-03T11:28:34.263667
+28571577109121358,y_kien_trung_lap,trung_lap,0.1,none,,[],,Phản hồi đồng ý hoặc xác nhận.,False,False,2026-09-03T11:28:34.263667
+28573696998909369,spam,trung_lap,0.0,none,,[],,Lời mời liên hệ tư vấn bảo hiểm Manulife kèm thông tin liên lạc.,True,False,2026-09-03T11:28:34.263667
+28573704922241910,muon_tu_van,trung_lap,0.1,none,,[],,Người dùng xác nhận đã nhắn tin riêng.,False,False,2026-09-03T11:28:34.263667
+28573705152241887,spam,trung_lap,0.1,none,,[],,Một tư vấn viên bảo hiểm Daiichi giới thiệu bản thân và mời khách hàng liên hệ để được tư vấn về các sản phẩm bảo hiểm nhân thọ và phi nhân thọ.,True,False,2026-09-03T11:28:48.430097
+28573715195574216,muon_tu_van,trung_lap,0.1,none,,[],Giải thích về sản phẩm bảo hiểm liên kết đầu tư (ILP) của Daiichi,Người dùng hỏi về sản phẩm bảo hiểm liên kết đầu tư (ILP) của Daiichi và yêu cầu tư vấn viên kiểm tra tin nhắn.,False,False,2026-09-03T11:28:48.430097
+28573717572240645,spam,trung_lap,0.1,none,,[],,Một tư vấn viên yêu cầu người dùng nhắn tin riêng vì người dùng đang đăng ẩn danh.,True,False,2026-09-03T11:28:48.430097
+28573727955572940,spam,trung_lap,0.1,none,,[],,Một người dùng giới thiệu hai sản phẩm bảo hiểm của Manulife và mời nhắn tin riêng để biết thêm chi tiết.,True,False,2026-09-03T11:28:48.430097
+28573755662236836,spam,trung_lap,0.1,none,,[],,Một người dùng tự giới thiệu là từ Generali và mời nhắn tin riêng.,True,False,2026-09-03T11:28:48.430097
+28573758045569931,spam,trung_lap,0.0,none,,[],,Người dùng mời người khác nhắn tin cho mình.,True,False,2026-09-03T11:29:01.810484
+28573764182235984,spam,trung_lap,0.0,none,,[],,Người dùng gợi ý tham khảo sản phẩm của Generali.,True,False,2026-09-03T11:29:01.810484
+28573801785565557,spam,trung_lap,0.0,none,,[],,Người dùng thông báo AIA ra mắt sản phẩm ILP và mời inbox để được hỗ trợ.,True,False,2026-09-03T11:29:01.810484
+28573881042224298,spam,trung_lap,0.0,none,,[],,Người dùng tự giới thiệu là tư vấn viên Manulife và mời inbox để tham khảo sản phẩm Phú quý flex và Xanh tương lai.,True,False,2026-09-03T11:29:01.810484
+28573885165557219,san_pham_giai_phap,tieu_cuc,-0.4,low,ngụ ý sản phẩm ILP phức tạp hoặc không có lợi cho khách hàng,"[""sản phẩm phức tạp"", ""sản phẩm không có lợi""]",Giải thích về sản phẩm bảo hiểm liên kết đầu tư (ILP) một cách dễ hiểu,Người dùng bày tỏ sự đáng thương cho khách hàng khi họ hiểu về sản phẩm bảo hiểm liên kết đầu tư (ILP).,False,False,2026-09-03T11:29:01.810484
+28573892225556513,spam,trung_lap,0.0,none,,[],,Một người dùng yêu cầu người khác kiểm tra tin nhắn riêng.,True,False,2026-09-03T11:29:12.902043
+28573902425555493,spam,trung_lap,0.0,none,,[],,Một tư vấn viên Bảo Việt giới thiệu bản thân và mời liên hệ để được tư vấn.,True,False,2026-09-03T11:29:12.902043
+28573910598888009,spam,trung_lap,0.1,none,,[],,Một tư vấn viên AIA thông báo về dòng sản phẩm ILP mới sắp ra mắt và mời liên hệ để tìm hiểu.,True,False,2026-09-03T11:29:12.902043
+28573947642217638,spam,trung_lap,0.0,none,,[],,Một người dùng mời inbox để được hỗ trợ về sản phẩm bảo hiểm liên kết đầu tư (ILP) của Manulife.,True,False,2026-09-03T11:29:12.902043
+28573957332216669,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên của Daiichi giới thiệu bản thân, khả năng hỗ trợ đa dạng sản phẩm bảo hiểm nhân thọ và phi nhân thọ từ nhiều công ty, và mời liên hệ để được tư vấn.",True,False,2026-09-03T11:29:12.902043
+28573957805549955,spam,trung_lap,0.0,none,,[],,Người dùng mời inbox để được tư vấn về sản phẩm bảo hiểm liên kết đầu tư (ILP) của Prudential.,True,False,2026-09-03T11:29:24.153424
+28573992772213125,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu người khác kiểm tra tin nhắn riêng.,True,False,2026-09-03T11:29:24.153424
+28573995642212838,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu người khác kiểm tra tin nhắn riêng.,True,False,2026-09-03T11:29:24.153424
+28574009135544822,y_kien_trung_lap,trung_lap,0.1,none,,[],,Người dùng đưa ra phản hồi đồng ý hoặc xác nhận một cách thân thiện.,False,False,2026-09-03T11:29:24.153424
+28574009792211423,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng đưa ra phản hồi đồng ý hoặc xác nhận một cách thân thiện.,False,False,2026-09-03T11:29:24.153424
+28574026375543098,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng báo không thể nhắn tin và chưa nhận được tin nhắn từ người khác.,False,False,2026-09-03T11:29:39.408242
+28574044002208002,spam,trung_lap,0.1,none,,[],,Người dùng giới thiệu sản phẩm ILP Gen Man và mời nhắn tin nếu có nhu cầu.,True,False,2026-09-03T11:29:39.408242
+28574065605539175,khen,tich_cuc,0.8,none,,[],,Người dùng bày tỏ lời cảm ơn.,False,False,2026-09-03T11:29:39.408242
+28574208565524879,spam,trung_lap,0.1,none,,[],,Người dùng mời nhắn tin riêng nếu quan tâm đến sản phẩm bảo hiểm ILP Gen.,True,False,2026-09-03T11:29:39.408242
+28574234855522250,spam,trung_lap,0.1,none,,[],,Người dùng tự giới thiệu và mời nhắn tin riêng vì đây là sở trường của họ.,True,False,2026-09-03T11:29:39.408242
+28574427878836281,spam,trung_lap,0.0,none,,[],,Commenter gợi ý Manulife cho sản phẩm bảo hiểm liên kết đầu tư (ILP).,True,True,2026-09-03T11:29:50.745210
+28574480082164394,spam,trung_lap,0.0,none,,[],,Commenter mời liên hệ để được hỗ trợ tham khảo về Chubb Life.,True,True,2026-09-03T11:29:50.745210
+28574496785496057,spam,trung_lap,0.0,none,,[],,Commenter tự giới thiệu là tư vấn viên AIA và cung cấp số điện thoại để hỗ trợ.,True,True,2026-09-03T11:29:50.745210
+28574691188809950,spam,trung_lap,0.0,none,,[],,"Commenter liệt kê các sản phẩm ""Xanh Phú Quý"" và ""Xanh Tương Lai"" của Manulife.",True,True,2026-09-03T11:29:50.745210
+28575541202058282,spam,trung_lap,0.0,none,,[],,"Commenter gợi ý tìm hiểu các sản phẩm ""Xanh Phú Quý"" và ""Xanh Phú Quý Flex"" của Manulife.",True,True,2026-09-03T11:29:50.745210
+28575884435357292,spam,trung_lap,0.0,none,,[],,Một tài khoản mời người dùng nhắn tin để được hỗ trợ về sản phẩm bảo hiểm liên kết đầu tư (ILP) của Generali.,True,False,2026-09-03T11:30:02.716535
+28577479068531162,spam,trung_lap,0.0,none,,[],,Một tài khoản mời người dùng nhắn tin để được cung cấp thông tin chi tiết về các quỹ.,True,False,2026-09-03T11:30:02.716535
+28578280581784344,spam,trung_lap,0.0,none,,[],,Một tài khoản mời người dùng nhắn tin hoặc liên hệ số điện thoại để được tư vấn về Cathay Life.,True,False,2026-09-03T11:30:02.716535
+28580341424911593,spam,trung_lap,0.0,none,,[],,"Một tài khoản mời người dùng liên hệ để tham khảo sản phẩm bảo hiểm toàn diện của AIA, bao gồm bảo vệ bệnh thông thường, ung thư, bệnh hiểm nghèo và tai nạn.",True,False,2026-09-03T11:30:02.716535
+28584213834524352,spam,trung_lap,0.0,none,,[],,Một tài khoản mời người dùng nhắn tin để được hỗ trợ so sánh các giải pháp bảo hiểm tối ưu từ nhiều công ty.,True,False,2026-09-03T11:30:02.716535
+28585737857705283,spam,trung_lap,0.0,none,,[],,Người dùng bày tỏ sự quan tâm đến Dai-ichi và yêu cầu liên hệ qua tin nhắn.,True,False,2026-09-03T11:30:17.233704
+28585835881028814,spam,trung_lap,0.0,none,,[],,Người dùng tự giới thiệu là tư vấn viên Hanwha Life và mời liên hệ để được tư vấn về sản phẩm ILP.,True,False,2026-09-03T11:30:17.233704
+28579935608285508,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu kiểm tra tin nhắn và cung cấp số điện thoại.,True,False,2026-09-03T11:30:17.233704
+28579939698285099,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu liên hệ qua tin nhắn.,True,False,2026-09-03T11:30:17.233704
+28579945981617804,spam,trung_lap,0.0,none,,[],,"Người dùng tự giới thiệu là Thanh, chuyên viên tư vấn của Manulife tại Hải Phòng, và cung cấp số điện thoại để hỗ trợ.",True,False,2026-09-03T11:30:17.233704
+28580004771611925,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu inbox.,True,True,2026-09-03T11:30:31.955057
+28580025924943143,spam,tich_cuc,0.5,none,,[],,"Một phó phòng kinh doanh của AIA tự giới thiệu kinh nghiệm, thành tích và mời người dùng inbox để được tư vấn.",True,True,2026-09-03T11:30:31.955057
+28580080534937682,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng thông báo đã inbox và yêu cầu kiểm tra Zalo.,False,False,2026-09-03T11:30:31.955057
+28580110771601325,spam,tich_cuc,0.4,none,,[],,Một tư vấn viên của Bảo Việt mời người dùng inbox để được tư vấn và cung cấp số điện thoại.,True,True,2026-09-03T11:30:31.955057
+28580151728263896,spam,tich_cuc,0.4,none,,[],,Một tư vấn viên mời người dùng liên hệ để thiết kế gói bảo hiểm phù hợp nếu chưa hài lòng với các tư vấn trước đó.,True,True,2026-09-03T11:30:31.955057
+28580178388261230,spam,trung_lap,0.0,none,,[],,Lời mời nhắn tin riêng một cách chung chung.,True,True,2026-09-03T11:30:42.853344
+28580205804925155,spam,trung_lap,0.0,none,,[],,"Lời mời tham khảo sản phẩm bảo hiểm AIA toàn diện bảo vệ các bệnh thông thường, ung thư, bệnh hiểm nghèo và tai nạn, kèm số điện thoại liên hệ.",True,True,2026-09-03T11:30:42.853344
+28580323544913381,spam,trung_lap,0.0,none,,[],,"Người dùng tự nhận là tư vấn viên và mời nhắn tin riêng để được tư vấn, kèm số điện thoại.",True,True,2026-09-03T11:30:42.853344
+28580329308246138,spam,trung_lap,0.0,none,,[],,Lời mời nhắn tin riêng một cách ngắn gọn.,True,True,2026-09-03T11:30:42.853344
+28580395128239556,spam,trung_lap,0.0,none,,[],,"Người dùng hỏi về việc chưa mua được bảo hiểm từ tháng 7 và mời nhắn tin riêng để được tư vấn, kèm số điện thoại.",True,True,2026-09-03T11:30:42.853344
+28580429814902754,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu sản phẩm bảo hiểm nhân thọ và thẻ sức khỏe của AIA, kèm quyền lợi thai sản và đề nghị gửi bảng so sánh chi tiết qua inbox/Zalo.",True,True,2026-09-03T11:30:57.455655
+28580431238235945,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu các ưu điểm của bảo hiểm nhân thọ và sức khỏe AIA như không giới hạn thanh toán, chi trả viện công, không giới hạn điều trị ung thư, trợ cấp nằm viện và độ tuổi tái tục cao, đồng thời mời inbox để tư vấn chi tiết.",True,True,2026-09-03T11:30:57.455655
+28584881461124256,spam,trung_lap,0.0,none,,[],,Một tư vấn viên bảo hiểm Generali tự giới thiệu và hỏi về ưu tiên tài chính gia đình của người nhận để bắt đầu cuộc trò chuyện.,True,True,2026-09-03T11:30:57.455655
+28585151171097285,spam,trung_lap,0.0,none,,[],,Một người mời liên hệ qua Zalo để được tư vấn về Bảo Việt.,True,True,2026-09-03T11:30:57.455655
+28585346711077731,spam,trung_lap,0.0,none,,[],,Một người tên Phùng Ngọc Liên Kết mời kết bạn Zalo để được tư vấn.,True,True,2026-09-03T11:30:57.455655
+28585347331077669,muon_tu_van,tich_cuc,0.5,none,,[],huong dan chon goi bao hiem,Người dùng muốn được tư vấn bảo hiểm qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:06.386244
+28585347957744273,muon_tu_van,tich_cuc,0.5,none,,[],huong dan chon goi bao hiem,Người dùng muốn được tư vấn bảo hiểm qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:06.386244
+28585348767744192,muon_tu_van,tich_cuc,0.5,none,,[],huong dan chon goi bao hiem,Người dùng muốn được tư vấn bảo hiểm qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:06.386244
+28585349141077488,muon_tu_van,tich_cuc,0.5,none,,[],huong dan chon goi bao hiem,Người dùng muốn được tư vấn bảo hiểm qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:06.386244
+28585350014410734,muon_tu_van,tich_cuc,0.5,none,,[],huong dan chon goi bao hiem,Người dùng muốn được tư vấn bảo hiểm qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:06.386244
+28585351211077281,muon_tu_van,trung_lap,0.1,none,,[],huong dan lien he tu van bao hiem,Người dùng muốn được tư vấn qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:20.767894
+28585351057743963,spam,trung_lap,0.0,none,,[],,Comment trống không có nội dung.,False,False,2026-09-03T11:31:20.767894
+28585351711077231,muon_tu_van,trung_lap,0.1,none,,[],huong dan lien he tu van bao hiem,Người dùng muốn được tư vấn qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:20.767894
+28585352601077142,muon_tu_van,trung_lap,0.1,none,,[],huong dan lien he tu van bao hiem,Người dùng muốn được tư vấn qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:20.767894
+28585353824410353,muon_tu_van,trung_lap,0.1,none,,[],huong dan lien he tu van bao hiem,Người dùng muốn được tư vấn qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:20.767894
+28585354461076956,muon_tu_van,tich_cuc,0.7,none,,[],huong dan lien he tu van bao hiem,Người dùng muốn được tư vấn bảo hiểm qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:31.203089
+28585354894410246,muon_tu_van,tich_cuc,0.7,none,,[],huong dan lien he tu van bao hiem,Người dùng muốn được tư vấn bảo hiểm qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:31.203089
+28585355807743488,muon_tu_van,tich_cuc,0.7,none,,[],huong dan lien he tu van bao hiem,Người dùng muốn được tư vấn bảo hiểm qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:31.203089
+28585356164410119,muon_tu_van,tich_cuc,0.7,none,,[],huong dan lien he tu van bao hiem,Người dùng muốn được tư vấn bảo hiểm qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:31.203089
+28585357084410027,muon_tu_van,tich_cuc,0.7,none,,[],huong dan lien he tu van bao hiem,Người dùng muốn được tư vấn bảo hiểm qua Zalo và để lại số điện thoại.,False,False,2026-09-03T11:31:31.203089
+28585357991076603,muon_tu_van,tich_cuc,0.7,none,,[],huong dan lien he tu van bao hiem,Người dùng muốn được tư vấn qua Zalo và để lại số điện thoại liên hệ.,False,False,2026-09-03T11:31:50.266995
+28585421494403586,spam,trung_lap,0.0,none,,[],,Một tư vấn viên quảng cáo gói bảo hiểm sức khỏe nội trú của MSIG với các quyền lợi nổi bật và kêu gọi liên hệ để tư vấn.,True,False,2026-09-03T11:31:50.266995
+28585426464403089,y_kien_trung_lap,trung_lap,0.1,none,,[],,Người dùng yêu cầu người khác kiểm tra Zalo.,False,False,2026-09-03T11:31:50.266995
+28585585341053868,y_kien_trung_lap,trung_lap,0.1,none,,[],,Người dùng thông báo đã kết bạn và yêu cầu kiểm tra tin nhắn riêng.,False,False,2026-09-03T11:31:50.266995
+28585596201052782,y_kien_trung_lap,trung_lap,0.1,none,,[],,Người dùng xác nhận đã nhận được thông tin.,False,False,2026-09-03T11:31:50.266995
+28585743727704696,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu kết bạn Zalo.,True,False,2026-09-03T11:32:02.309051
+28585755697703499,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu kết bạn.,True,False,2026-09-03T11:32:02.309051
+28585797347699334,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng hỏi xác nhận tài khoản Zalo.,False,False,2026-09-03T11:32:02.309051
+28585803984365337,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng nhắc nhở người khác trả lời tin nhắn.,True,False,2026-09-03T11:32:02.309051
+28585828624362873,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu nhắn tin riêng.,True,False,2026-09-03T11:32:02.309051
+28585852974360438,y_kien_trung_lap,tieu_cuc,-0.5,low,cảnh báo tài khoản lừa đảo/spam,[],cách nhận biết tài khoản lừa đảo trên mạng xã hội,"Người dùng cảnh báo về một số điện thoại có dấu hiệu đáng ngờ, kêu gọi kết bạn để tăng tương tác và xóa cảnh báo Zalo.",False,False,2026-09-03T11:32:16.391124
+28586567330955669,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng thông báo đã kết bạn và yêu cầu người nhận chấp nhận lời mời.,False,False,2026-09-03T11:32:16.391124
+28587029744242761,spam,trung_lap,0.1,none,,[],,Một tư vấn viên của Bảo Việt để lại số điện thoại để hỗ trợ tư vấn.,True,False,2026-09-03T11:32:16.391124
+28587148014230934,spam,trung_lap,0.1,none,,[],,Một người dùng mời người khác nhắn tin riêng để được hỗ trợ và cung cấp số điện thoại.,True,False,2026-09-03T11:32:16.391124
+1745676156639708,y_kien_trung_lap,tich_cuc,0.5,none,,[],hướng dẫn kiểm tra quyền lợi hợp đồng bảo hiểm,"Người dùng hướng dẫn kiểm tra quyền lợi hợp đồng bảo hiểm bằng cách chụp trang tóm tắt và cung cấp thông tin về phiên bản thẻ, tuổi tái tục nếu hợp đồng mua năm 2024.",True,False,2026-09-03T11:32:16.391124
+1745688996638424,chinh_sach_quy_trinh_boi_thuong,tieu_cuc,-0.4,low,khong nhan duoc giay to bo sung,"[""thieu giay to bo sung"", ""quy trinh cap nhat thieu""]",quy trinh cap nhat thong tin bao hiem,Người dùng phản ánh việc không nhận được giấy tờ bổ sung sau khi mua thêm sản phẩm bảo hiểm.,False,False,2026-09-03T11:32:31.876340
+1745689983304992,y_kien_trung_lap,trung_lap,0.1,none,,[],cach xac dinh hang the bao hiem,Người dùng hỏi về mức phí và độ tuổi của người được bảo hiểm để xác định hạng thẻ.,False,False,2026-09-03T11:32:31.876340
+1745691573304833,y_kien_trung_lap,trung_lap,0.0,none,,[],,Một câu trả lời ngắn gọn không rõ ngữ cảnh.,False,False,2026-09-03T11:32:31.876340
+1745696243304366,phan_van,trung_lap,0.2,none,,[],cach tinh phi bao hiem hang nam,Người dùng hỏi xác nhận liệu chi phí đóng bảo hiểm có tăng lên theo bản hợp đồng hiện tại hay không.,False,False,2026-09-03T11:32:31.876340
+1745696973304293,y_kien_trung_lap,trung_lap,0.1,none,,[],cac loai the bao hiem tiet kiem,Người dùng chia sẻ thông tin về việc mua thẻ bảo hiểm tiết kiệm ở tuổi 35 với mức phí khoảng 1.4 triệu đồng.,False,False,2026-09-03T11:32:31.876340
+1745697079970949,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên hướng dẫn cách tải hợp đồng điện tử, xem quyền lợi và phí, đồng thời đề nghị so sánh sản phẩm và liên hệ qua Zalo để được hỗ trợ.",True,False,2026-09-03T11:32:46.197649
+1745699059970751,y_kien_trung_lap,trung_lap,0.0,none,,[],,Comment đồng ý với một ý kiến trước đó.,False,False,2026-09-03T11:32:46.197649
+1745701299970527,dich_vu_tu_van,tieu_cuc,-0.4,low,thieu thong tin tren app,"[""thieu thong tin hop dong"", ""app khong hien thi chi tiet""]",huong dan su dung app bao hiem,"Khách hàng phản ánh hợp đồng điện tử trên ứng dụng không hiển thị thông tin chi tiết, chỉ có hợp đồng đang có hiệu lực và số thẻ.",False,False,2026-09-03T11:32:46.197649
+1745702986637025,y_kien_trung_lap,trung_lap,0.2,none,,[],su khac biet giua hop dong dien tu va thong tin tren app,"Comment giải thích rằng các gói bổ sung thường chỉ hiển thị trên ứng dụng chứ không có trong hợp đồng điện tử, và thông tin về thẻ mua từ năm 2024 có bảo vệ đến 85 tuổi với biểu phí không đổi.",False,False,2026-09-03T11:32:46.197649
+1745703773303613,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên của Generali tự giới thiệu kinh nghiệm 9 năm, khả năng tư vấn và hỗ trợ sau bán hàng, đồng thời mời khách hàng liên hệ qua Zalo.",True,False,2026-09-03T11:32:46.197649
+1745707149969942,khen,tich_cuc,0.7,none,,[],,"Comment giải thích quyền lợi thẻ bảo hiểm sức khỏe Generali phiên bản 3, nhấn mạnh phí rẻ và hạn mức điều trị tốt, đồng thời gợi ý nâng cấp thẻ để gia tăng quyền lợi.",True,True,2026-09-03T11:33:02.406722
+1745710509969606,y_kien_trung_lap,trung_lap,0.1,none,,[],,Người dùng gửi lời cảm ơn.,False,False,2026-09-03T11:33:02.406722
+1745736836633640,spam,trung_lap,0.1,none,,[],,Người dùng mời liên hệ để được hỗ trợ thủ tục nâng cấp thẻ hoặc so sánh với các bên khác.,True,True,2026-09-03T11:33:02.406722
+1745740706633253,y_kien_trung_lap,trung_lap,0.2,none,,[],huong dan tai hop dong dien tu,Người dùng thông báo khách hàng của họ vẫn tải được hợp đồng điện tử của Generali và gợi ý người hỏi có thể xem hợp đồng giấy hoặc liên hệ hotline để được hướng dẫn.,True,False,2026-09-03T11:33:02.406722
+1745784659962191,spam,trung_lap,0.1,none,,[],,Người dùng hướng dẫn xem hợp đồng trên ứng dụng và thông báo thẻ bảo hiểm năm 2024 bảo vệ đến 85 tuổi.,True,True,2026-09-03T11:33:02.406722
+1745913683282622,dich_vu_tu_van,tieu_cuc,-0.5,low,loi ung dung khong xem duoc hop dong,"[""ung dung loi"", ""khong xem duoc hop dong dien tu""]",huong dan su dung ung dung bao hiem,"Người dùng phản ánh ứng dụng bảo hiểm bị lỗi, không hiển thị được hợp đồng điện tử.",False,False,2026-09-03T11:33:18.356805
+1745921393281851,y_kien_trung_lap,trung_lap,0.1,none,,[],,Người dùng kêu gọi Generali hỗ trợ người khác.,False,False,2026-09-03T11:33:18.356805
+1746063479934309,spam,trung_lap,0.0,none,,[],,Người dùng trả lời ngắn gọn với một hashtag.,True,True,2026-09-03T11:33:18.356805
+1746063573267633,spam,trung_lap,0.0,none,,[],,"Người dùng mời inbox để hỗ trợ, kèm hashtag.",True,True,2026-09-03T11:33:18.356805
+1746066456600678,y_kien_trung_lap,trung_lap,0.2,none,,[],thong tin the cham soc suc khoe generali,Người dùng cung cấp thông tin về thẻ chăm sóc sức khỏe cá nhân của Generali và hướng dẫn liên hệ hỗ trợ.,True,False,2026-09-03T11:33:18.356805
+1746092133264777,spam,trung_lap,0.0,none,,[],,Một người dùng mời inbox để được hỗ trợ.,True,True,2026-09-03T11:33:32.242147
+1746108609929796,spam,trung_lap,0.0,none,,[],,Một người dùng giới thiệu liên hệ với tư vấn viên của Generali để được hỗ trợ.,True,True,2026-09-03T11:33:32.242147
+1746114286595895,y_kien_trung_lap,tich_cuc,0.5,none,,[],,Một người dùng gửi lời cảm ơn.,False,False,2026-09-03T11:33:32.242147
+1746136396593684,y_kien_trung_lap,tich_cuc,0.4,none,,[],,Một người dùng bày tỏ cảm xúc tích cực bằng biểu tượng cảm xúc.,False,False,2026-09-03T11:33:32.242147
+1745672816640042,spam,tich_cuc,0.6,none,,[],Lợi ích của thẻ bảo hiểm sức khỏe không tái thẩm định; Bảo hiểm cho người có tiền sử bệnh; So sánh các gói bảo hiểm sức khỏe trên thị trường,Một tư vấn viên của Sun Life giải thích về khả năng mua bảo hiểm khi có tiền sử bệnh và giới thiệu chi tiết về thẻ Sống Chất 2.0 với các quyền lợi nổi bật.,True,True,2026-09-03T11:33:32.242147
+1745708673303123,y_kien_trung_lap,tich_cuc,0.6,none,,[],mua bao hiem khi co tien su benh,"Bình luận viên tư vấn chi tiết về việc mua bảo hiểm sức khỏe khi có tiền sử ung thư tuyến giáp, nêu rõ các trường hợp thẩm định và quyền lợi của thẻ Dai-ichi, đồng thời mời liên hệ để được hỗ trợ miễn phí.",True,False,2026-09-03T11:34:03.908503
+1745717596635564,y_kien_trung_lap,trung_lap,0.1,none,,[],thoi gian cho sau dieu tri benh de mua bao hiem,Bình luận viên chia sẻ rằng các công ty bảo hiểm thường xem xét hồ sơ điều trị và tái khám sau 2-3 năm ổn định để thẩm định hồ sơ bảo hiểm.,False,False,2026-09-03T11:34:03.908503
+1745737513300239,y_kien_trung_lap,tich_cuc,0.4,none,,[],mua bao hiem khi co tien su benh,"Bình luận viên xác nhận người đã điều trị ung thư tuyến giáp ổn định vẫn có thể mua bảo hiểm nhân thọ và bảo hiểm sức khỏe, đồng thời mời liên hệ để được tư vấn thêm.",True,False,2026-09-03T11:34:03.908503
+1745776999962957,y_kien_trung_lap,trung_lap,0.2,none,,[],quy trinh tham dinh bao hiem voi benh su,"Bình luận viên hỏi về tình trạng sức khỏe và hồ sơ y tế, giải thích rằng các công ty bảo hiểm có thể tạm hoãn hồ sơ 3-5 năm sau điều trị ung thư tuyến giáp và đề nghị hỗ trợ đánh giá khả năng tham gia.",True,False,2026-09-03T11:34:03.908503
+1745783153295675,spam,tich_cuc,0.3,none,,[],,,False,False,2026-09-03T11:34:03.908503
+1746096019931055,spam,trung_lap,0.0,none,,[],,Một người dùng mời inbox để được hỗ trợ tư vấn tham gia bảo hiểm.,True,True,2026-09-03T11:34:13.724003
+1746109299929727,spam,trung_lap,0.1,none,,[],,Một người dùng cho biết cần thêm thông tin về bệnh để xem xét khả năng tham gia thẻ sức khỏe và mời inbox để được hỗ trợ.,True,True,2026-09-03T11:34:13.724003
+1745670526640271,spam,trung_lap,0.0,none,,[],,Một người dùng mời inbox.,True,True,2026-09-03T11:34:13.724003
+1745670673306923,spam,trung_lap,0.2,none,,[],,"Một người dùng tự giới thiệu là Kiên, có 9 năm kinh nghiệm và văn phòng tại Lotte Liễu Giai, mời kết nối.",True,True,2026-09-03T11:34:13.724003
+1745670893306901,spam,trung_lap,0.1,none,,[],,Một người dùng mời tư vấn và so sánh sản phẩm bảo hiểm từ các bên.,True,True,2026-09-03T11:34:13.724003
+1745684969972160,spam,trung_lap,0.0,none,,[],,"Một người mời nhắn tin để được tư vấn, đề cập vị trí gần văn phòng AIA.",True,False,2026-09-03T11:34:26.780924
+1745695306637793,spam,trung_lap,0.0,none,,[],,Một tư vấn viên AIA giới thiệu bản thân và mời inbox để được tư vấn.,True,False,2026-09-03T11:34:26.780924
+1745706909969966,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên AIA giới thiệu kinh nghiệm 5 năm, khả năng tư vấn và hỗ trợ khách hàng, đồng thời mời xem trang cá nhân hoặc hashtag để tìm hiểu thêm.",True,False,2026-09-03T11:34:26.780924
+1745750539965603,spam,trung_lap,0.0,none,,[],,"Một người đưa ra lời mời tư vấn chung chung, kèm theo hashtag.",True,False,2026-09-03T11:34:26.780924
+1745761439964513,y_kien_trung_lap,trung_lap,0.1,none,,[],,Một người trả lời về địa điểm hiện tại của mình là Tây Hồ.,False,False,2026-09-03T11:34:26.780924
+1745769533297037,spam,trung_lap,0.1,none,,[],,Một tư vấn viên đưa ra các câu hỏi chi tiết để hiểu nhu cầu khách hàng về bảo hiểm sức khỏe và mời liên hệ để được tư vấn.,True,False,2026-09-03T11:34:40.031704
+1745773583296632,spam,trung_lap,0.0,none,,[],,Một người giới thiệu liên hệ tư vấn viên AIA và đề nghị tư vấn sản phẩm Manulife.,True,False,2026-09-03T11:34:40.031704
+1745774193296571,y_kien_trung_lap,tich_cuc,0.3,none,,[],,Người dùng bày tỏ lời cảm ơn.,False,False,2026-09-03T11:34:40.031704
+1745774366629887,spam,trung_lap,0.0,none,,[],,Một tư vấn viên đề nghị đến tận nơi để tư vấn tại khu vực Tây Hồ.,True,False,2026-09-03T11:34:40.031704
+1745781456629178,y_kien_trung_lap,tich_cuc,0.3,none,,[],,Người dùng bày tỏ lời cảm ơn đến Ly Đặng.,False,False,2026-09-03T11:34:40.031704
+1745786723295318,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu bản thân, kinh nghiệm làm việc và mời tư vấn giải pháp bảo hiểm phù hợp.",True,True,2026-09-03T11:34:56.018703
+1746095809931076,spam,trung_lap,0.1,none,,[],,Người dùng giới thiệu tư vấn viên Trần Thị Hằng Nga Hồng Nhung để hỗ trợ tư vấn tận tâm.,False,True,2026-09-03T11:34:56.018703
+1746109629929694,spam,trung_lap,0.1,none,,[],,Người dùng giới thiệu tư vấn viên Hồng Nhung Trần Thị Hằng Nga của AIA.,False,True,2026-09-03T11:34:56.018703
+1745765396630784,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng bày tỏ sự quan tâm.,False,False,2026-09-03T11:34:56.018703
+1745787176628606,y_kien_trung_lap,trung_lap,0.2,none,,[],Giải thích điều khoản bảo hiểm thai sản khi không có bảng kê chi tiết; Quy trình bồi thường bảo hiểm thai sản tại bệnh viện công; Các trường hợp đặc biệt trong bồi thường bảo hiểm thai sản,"Comment giải thích về điều khoản bảo hiểm thai sản liên quan đến chi phí không bóc tách tại bệnh viện và cách các công ty bảo hiểm như PTI xử lý để bồi thường, đồng thời nhắc lại quyền lợi thai sản tối đa 20 triệu.",False,False,2026-09-03T11:34:56.018703
+1745806883293302,phan_van,trung_lap,0.1,none,,[],giai thich dieu khoan thai san,"Người dùng đang băn khoăn về cách hiểu điều khoản quyền lợi thai sản, đặc biệt là giới hạn chi phí dịch vụ tại bệnh viện công trong gói 20 triệu.",False,False,2026-09-03T11:35:09.068687
+1745812746626049,y_kien_trung_lap,trung_lap,0.2,none,,[],giai thich dieu khoan mo rong,"Người dùng giải thích rằng 13 triệu là một phần chi phí trong gói thai sản, là điều khoản mở rộng làm rõ nguyên tắc bồi thường, và khuyên người hỏi kiểm tra thêm điều khoản phẫu thuật theo yêu cầu của PTI.",False,False,2026-09-03T11:35:09.068687
+1745813433292647,khen,tich_cuc,0.8,none,,[],,Người dùng bày tỏ sự cảm ơn và khen ngợi comment trước đó rất hữu ích.,False,False,2026-09-03T11:35:09.068687
+1746105036596820,spam,trung_lap,0.0,none,,[],,Commenter kêu gọi người dùng inbox một chuyên gia cụ thể để được tư vấn.,True,True,2026-09-03T11:35:09.068687
+1746120356595288,khen,tich_cuc,0.6,none,,[],,Người dùng bày tỏ lời cảm ơn.,False,False,2026-09-03T11:35:09.068687
+1746484919892165,san_pham_giai_phap,tieu_cuc,-0.4,none,,"[""loai tru benh ho hap""]",cac benh thuong bi loai tru trong bao hiem,Người dùng nhận thấy các bệnh về đường hô hấp thường bị loại trừ trong các gói bảo hiểm.,False,False,2026-09-03T11:35:36.111062
+1746488949891762,spam,trung_lap,0.1,none,,[],,Một tư vấn viên đưa ra lời khuyên về việc chọn bảo hiểm cho bé có tiền sử bệnh hô hấp và mời liên hệ để được tư vấn cụ thể.,True,False,2026-09-03T11:35:36.111062
+1746493683224622,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên giới thiệu sản phẩm bảo hiểm của Daiichi, nêu các điều kiện và quyền lợi, kèm theo thông tin liên hệ.",True,False,2026-09-03T11:35:36.111062
+1746497033224287,spam,trung_lap,0.2,none,,[],,"Một tư vấn viên giới thiệu sản phẩm bảo hiểm Sun Life cho trẻ em, nhấn mạnh các quyền lợi và mời liên hệ để được tư vấn chi tiết.",True,False,2026-09-03T11:35:36.111062
+1746501156557208,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên giới thiệu sản phẩm bảo hiểm nhân thọ của AIA cho trẻ em, nhấn mạnh các điều khoản loại trừ và mời liên hệ để được tư vấn chi tiết.",True,False,2026-09-03T11:35:36.111062
+1746505593223431,spam,trung_lap,0.1,none,,[],,,False,False,2026-09-03T11:37:34.328716
+1746511626556161,spam,trung_lap,0.15,none,,[],,,False,False,2026-09-03T11:37:34.328716
+1746514349889222,spam,trung_lap,0.1,,,[],,,False,False,2026-09-03T11:37:34.328716
+1746518496555474,spam,trung_lap,0.15,none,,[],,Một tài khoản hỏi về lịch sử bệnh của trẻ và mời inbox để hỗ trợ tư vấn.,True,True,2026-09-03T11:37:34.328716
+1746529229887734,spam,tich_cuc,0.6,,,[],,,False,False,2026-09-03T11:37:34.328716
+1746537763220214,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu sản phẩm bảo hiểm sức khỏe Sun Life cho trẻ em với các quyền lợi như thanh toán 100% nội trú, phạm vi bảo hiểm mở rộng và chính sách phí ưu đãi, kèm theo thông tin liên hệ.",True,True,2026-09-03T11:39:50.509929
+1746549856552338,spam,trung_lap,0.0,,,[],,,False,False,2026-09-03T11:39:50.509929
+1746554069885250,spam,trung_lap,0.1,,,[],,,False,False,2026-09-03T11:39:50.509929
+1746576476549676,y_kien_trung_lap,trung_lap,0.0,,,[],,,False,False,2026-09-03T11:39:50.509929
+1746591449881512,spam,tich_cuc,0.6,,,[],,,False,False,2026-09-03T11:39:50.509929
+1746654453208545,spam,trung_lap,0.0,none,,[],,,False,False,2026-09-03T11:42:06.396829
+1746718139868843,spam,trung_lap,0.1,,,[],,,False,False,2026-09-03T11:42:06.396829
+1746880046519319,spam,tich_cuc,0.4,,,[],,,False,False,2026-09-03T11:42:06.396829
+1746977929842864,spam,tich_cuc,0.8,,,[],,,False,False,2026-09-03T11:42:06.396829
+1745914929949164,spam,trung_lap,0.0,,,[],,,False,False,2026-09-03T11:42:06.396829
+1745919033282087,spam,trung_lap,0.0,none,,[],,Một tư vấn viên giới thiệu sản phẩm bảo hiểm của GEN chi trả 100% cho trẻ em 0-5 tuổi và để lại số điện thoại liên hệ.,True,True,2026-09-03T11:42:43.087812
+1745932003280790,spam,trung_lap,0.1,none,,[],,Một người dùng gợi ý công ty bảo hiểm VBI.,False,True,2026-09-03T11:42:43.087812
+1745933379947319,spam,trung_lap,0.1,none,,[],,Một người dùng gợi ý công ty bảo hiểm AIA.,False,True,2026-09-03T11:42:43.087812
+1745933673280623,y_kien_trung_lap,tich_cuc,0.5,none,,[],Bảo hiểm cho trẻ thiếu men G6PD: Những điều cần biết; Quy trình thẩm định bảo hiểm cho bệnh di truyền lành tính,"Một tư vấn viên giải thích về việc thiếu men G6PD không ảnh hưởng đến việc mua bảo hiểm sức khỏe nếu bé sinh hoạt bình thường, đồng thời giới thiệu sản phẩm của Dai-ichi Life và mời liên hệ để được tư vấn chi tiết.",True,False,2026-09-03T11:42:43.087812
+1745937373280253,y_kien_trung_lap,tich_cuc,0.6,none,,[],,,False,False,2026-09-03T11:42:43.087812
+1745974803276510,spam,tich_cuc,0.5,none,,[],,"Một tư vấn viên Generali giới thiệu về thẻ sức khỏe cho trẻ em, nhấn mạnh quyền lợi chi trả 100% và không đồng chi trả, đồng thời mời inbox tư vấn.",True,True,2026-09-03T11:43:06.128408
+1745978139942843,spam,tich_cuc,0.6,none,,[],,"Một chuyên viên quản lý khách hàng của Sun Life giới thiệu thẻ sức khỏe cho trẻ em dưới 6 tuổi, nhấn mạnh các ưu điểm như không đồng chi trả, chi trả xét nghiệm âm tính, tái tục ổn định và mời liên hệ tư vấn.",True,True,2026-09-03T11:43:06.128408
+1745978743276116,spam,tich_cuc,0.6,none,,[],,"Một tư vấn viên Dai-ichi giới thiệu sản phẩm bảo hiểm cho bé 1 tuổi thiếu men G6PD, nêu bật các ưu điểm như bảo lãnh viện phí, chi phí hợp lý, bảo vệ bệnh bẩm sinh và mời inbox tư vấn.",True,True,2026-09-03T11:43:06.128408
+1745910886616235,y_kien_trung_lap,trung_lap,-0.1,none,,"[""kho mua the suc khoe cho nguoi lon tuoi""]",bao hiem cho nguoi lon tuoi,Người dùng nhận định rằng có thể mua bảo hiểm nhân thọ cho bố nhưng khó mua thẻ sức khỏe.,False,False,2026-09-03T11:43:06.128408
+1745911839949473,spam,tich_cuc,0.5,none,,[],,Một tư vấn viên giới thiệu thẻ sức khỏe của AIA có thời hạn bảo vệ đến 100 tuổi và mời tư vấn miễn phí.,True,True,2026-09-03T11:43:06.128408
+1745912313282759,muon_tu_van,trung_lap,0.0,none,,[],,,False,False,2026-09-03T11:45:01.520862
+1745912689949388,spam,trung_lap,0.0,none,,[],,Commenter là tư vấn viên mời chào tham gia bảo hiểm nhân thọ và thẻ bảo hiểm của AIA.,True,False,2026-09-03T11:45:01.520862
+1745916749948982,y_kien_trung_lap,trung_lap,0.0,,,[],,,False,False,2026-09-03T11:45:01.520862
+1745918199948837,spam,trung_lap,0.1,,,[],,,False,False,2026-09-03T11:45:01.520862
+1745920169948640,y_kien_trung_lap,trung_lap,,,,[],,,False,False,2026-09-03T11:45:01.520862
+1745924493281541,phan_van,trung_lap,0.1,none,,[],nhung luu y khi mua bao hiem cho nguoi lon tuoi,Người dùng đang phân vân về phương án mua bảo hiểm sức khỏe cho bố và đang tìm hiểu thêm về bảo hiểm nhân thọ cho bản thân và thẻ sức khỏe cho bố mẹ.,False,False,2026-09-03T11:45:28.086206
+1745931289947528,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên khuyên không nên mua bảo hiểm nhân thọ cho người lớn tuổi, gợi ý mua bảo hiểm nhân thọ cho bản thân kèm thẻ sức khỏe cho bố hoặc thẻ sức khỏe rời của Pacific, đồng thời cung cấp thông tin liên hệ để tư vấn chi tiết.",True,False,2026-09-03T11:45:28.086206
+1745956163278374,san_pham_giai_phap,tieu_cuc,-0.4,low,khó mua bảo hiểm do bệnh nền và tiền sử gia đình,"[""kho mua bao hiem"", ""bi tu choi san pham bo tro"", ""benh nen"", ""tien su gia dinh""]",nhung benh nen nao anh huong den viec mua bao hiem,"Người dùng chia sẻ kinh nghiệm khó khăn khi mua thẻ sức khỏe hoặc sản phẩm bổ trợ do chồng có tiền sử bệnh nền và gia đình có tiền sử bệnh lý, dẫn đến việc bị từ chối các sản phẩm bổ trợ.",False,False,2026-09-03T11:45:28.086206
+1745973289943328,phan_van,trung_lap,0.2,none,,[],so sanh cac goi bao hiem suc khoe cho nguoi lon tuoi,"Người dùng cảm ơn và cho biết đang hướng theo phương án mua bảo hiểm nhân thọ cho bản thân và thẻ chăm sóc sức khỏe cho bố, hiện đang tham khảo AIA vì thẻ có thể bảo vệ đến 100 tuổi.",False,False,2026-09-03T11:45:28.086206
+1745987146608609,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên gợi ý mua bảo hiểm nhân thọ cho bản thân và thẻ sức khỏe trọn đời của AIA cho bố, với thông tin chi tiết về tuổi tham gia và thời hạn bảo vệ.",True,False,2026-09-03T11:45:28.086206
+1745987733275217,spam,trung_lap,0.0,none,,[],,Một người tự xưng là chuyên gia tư vấn giải pháp bảo hiểm và mời liên hệ qua Zalo.,True,True,2026-09-03T11:45:46.983746
+1745996183274372,y_kien_trung_lap,trung_lap,0.2,none,,[],giai phap bao hiem cho bo me,"Một chuyên viên tư vấn của Sun Life đưa ra hai phương án bảo hiểm nhân thọ cho bố mẹ và giới thiệu thẻ sức khỏe Sống Chất 2.0 của Sun Life với các ưu điểm nổi bật, sau đó mời liên hệ để tư vấn chi tiết.",True,False,2026-09-03T11:45:46.983746
+1746039253270065,y_kien_trung_lap,tich_cuc,0.3,none,,[],lua chon bao hiem cho bo me lon tuoi,"Một chuyên viên tư vấn tên Ninh đưa ra lời khuyên về việc mua bảo hiểm cho người bố 62 tuổi, tập trung vào thẻ chăm sóc sức khỏe và nhấn mạnh tầm quan trọng của hồ sơ sức khỏe, đồng thời mời liên hệ để tư vấn chi tiết.",True,False,2026-09-03T11:45:46.983746
+1746090853264905,y_kien_trung_lap,trung_lap,0.1,none,,[],,Gợi ý mua bảo hiểm nhân thọ cho bản thân và thẻ sức khỏe cho bố.,False,False,2026-09-03T11:45:46.983746
+1746095143264476,y_kien_trung_lap,trung_lap,0.0,none,,"[""loai tru benh co san""]",cac dieu khoan loai tru trong bao hiem,Nhận định rằng việc mua bảo hiểm ở thời điểm hiện tại có thể bị loại trừ các bệnh có sẵn và gợi ý tham khảo quy định của AIA hoặc Sun Life.,False,False,2026-09-03T11:45:46.983746
+1746100086597315,y_kien_trung_lap,trung_lap,0.1,none,,[],tư vấn bảo hiểm cho người có bệnh nền,"Người dùng chia sẻ về tình trạng sức khỏe của bố và lời khuyên từ tư vấn viên về việc khám sức khỏe trước khi tham gia bảo hiểm, cũng như các điều khoản loại trừ cho bệnh nền.",False,False,2026-09-03T11:46:02.393737
+1746103096597014,y_kien_trung_lap,trung_lap,0.1,none,,[],hướng dẫn kê khai sức khỏe khi mua bảo hiểm,Người dùng khuyên không nên tự ý đi khám trước khi tham gia bảo hiểm mà nên kê khai để bộ phận thẩm định quyết định.,False,False,2026-09-03T11:46:02.393737
+1746104809930176,y_kien_trung_lap,tich_cuc,0.3,none,,[],,Người dùng bày tỏ lời cảm ơn.,False,False,2026-09-03T11:46:02.393737
+1746162836591040,spam,trung_lap,0.0,none,,[],,Người dùng giới thiệu các công ty bảo hiểm AIA và Sun Life cùng tên các tư vấn viên cụ thể để hỗ trợ.,True,True,2026-09-03T11:46:02.393737
+1746163766590947,y_kien_trung_lap,tich_cuc,0.3,none,,[],,Người dùng cảm ơn Nguyễn Thảo Generali.,False,False,2026-09-03T11:46:02.393737
+1746221566585167,y_kien_trung_lap,tich_cuc,0.8,none,,[],,,False,False,2026-09-03T11:47:18.349192
+1746449513229039,y_kien_trung_lap,trung_lap,0.05,none,,[],kinh nghiệm mua thẻ sức khoẻ rời cho người thân,Người dùng đặt câu hỏi về việc mua thẻ sức khoẻ rời cho chồng.,False,False,2026-09-03T11:47:18.349192
+1746450059895651,y_kien_trung_lap,trung_lap,0.15,none,,"[""khó mua bảo hiểm do tiền sử bệnh""]",Giải pháp bảo hiểm sức khỏe cho người có tiền sử bệnh,Comment đưa ra lời khuyên về việc khó mua thẻ sức khỏe gắn với bảo hiểm nhân thọ do tiền sử bệnh và gợi ý phương án mua thẻ sức khỏe rời.,True,False,2026-09-03T11:47:18.349192
+1746478743226116,y_kien_trung_lap,trung_lap,0.1,none,,[],Phân tích các loại thẻ sức khỏe do doanh nghiệp cung cấp và quyền lợi đi kèm,Người dùng chia sẻ về việc chồng mình chỉ mua được thẻ sức khỏe rời từ cơ quan.,False,False,2026-09-03T11:47:18.349192
+1746655936541730,spam,trung_lap,0.0,none,,[],,Một người dùng mời inbox để gửi các phương án bảo hiểm Daiichi cho người quan tâm.,True,True,2026-09-03T11:47:18.349192
+1745943679946289,spam,tich_cuc,0.7,none,,[],,"Một tư vấn viên Dai-ichi khẳng định người có tiền sử đau đầu và MRI bình thường vẫn có thể mua bảo hiểm, đồng thời giới thiệu sản phẩm thẻ sức khỏe và sản phẩm đầu tư của Dai-ichi.",True,True,2026-09-03T11:47:40.454988
+1745944016612922,y_kien_trung_lap,trung_lap,0.1,none,,[],,Người dùng đưa ra ý kiến chung rằng vẫn có thể mua được bảo hiểm dù là của công ty nào.,False,False,2026-09-03T11:47:40.454988
+1745951283278862,muon_tu_van,tich_cuc,0.5,none,,[],tư vấn bảo hiểm cho người có tiền sử bệnh nhẹ,Người dùng chia sẻ về tình trạng sức khỏe đã ổn định sau điều trị và mong muốn mua bảo hiểm nhân thọ cùng thẻ sức khỏe.,False,False,2026-09-03T11:47:40.454988
+1745961406611183,spam,tich_cuc,0.6,none,,[],,Một tư vấn viên AIA mời người dùng gửi hồ sơ sức khỏe để được tư vấn về khả năng tham gia bảo hiểm và các phương án phù hợp.,True,True,2026-09-03T11:47:40.454988
+1745965323277458,spam,tich_cuc,0.6,none,,[],,Một tư vấn viên Generali mời người dùng inbox tư vấn và thông báo chương trình khuyến mãi 20% phí thẻ sức khỏe của Generali.,True,True,2026-09-03T11:47:40.454988
+1745971873276803,y_kien_trung_lap,trung_lap,0.1,none,,[],huong dan cung cap thong tin bao hiem,Một người dùng khuyên người khác cung cấp hồ sơ y tế để được tư vấn rõ hơn và nhắc nhở che thông tin cá nhân.,True,False,2026-09-03T11:47:56.955782
+1745975963276394,spam,tich_cuc,0.5,none,,[],,Một chuyên viên quản lý khách hàng của Sun Life giới thiệu thẻ Sống Chất 2.0 với các ưu điểm nổi bật và mời liên hệ để được tư vấn chi tiết.,True,True,2026-09-03T11:47:56.955782
+1745985416608782,spam,tich_cuc,0.5,none,,[],,Một người dùng chia sẻ về trường hợp khách hàng bị stress công việc và giới thiệu thẻ chăm sóc sức khỏe của Dai-ichi Life có thể bảo vệ toàn diện.,True,True,2026-09-03T11:47:56.955782
+1745991493274841,muon_tu_van,trung_lap,0.2,none,,"[""tu chi tra chi phi y te""]",huong dan chon bao hiem nhan tho va the cham soc suc khoe,"Người dùng chia sẻ trải nghiệm tự chi trả chi phí y tế, bày tỏ mong muốn tìm hiểu về bảo hiểm nhân thọ và thẻ sức khỏe từ cùng một hãng cho tiện lợi.",False,False,2026-09-03T11:47:56.955782
+1745992746608049,phan_van,trung_lap,0.0,none,,[],mua bao hiem sau khi ra vien,Người dùng hỏi liệu việc mua bảo hiểm sau khi mới ra viện có bị áp dụng điều khoản loại trừ hay không.,False,False,2026-09-03T11:47:56.955782
+1745997123274278,y_kien_trung_lap,trung_lap,0.0,none,,[],quy trinh tham dinh ho so suc khoe,"Một người dùng yêu cầu cung cấp thông tin chẩn đoán, đơn thuốc và lịch sử bệnh để đưa ra dự đoán chính xác nhất.",False,False,2026-09-03T11:49:00.013672
+1745998536607470,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên của Generali đưa ra lời khuyên về việc chuẩn bị hồ sơ thẩm định và tự giới thiệu bản thân, mời khách hàng liên hệ để được tư vấn.",True,True,2026-09-03T11:49:00.013672
+1746002499940407,spam,trung_lap,0.1,none,,[],,,False,False,2026-09-03T11:49:00.013672
+1746006596606664,y_kien_trung_lap,trung_lap,0.0,,,[],,,False,False,2026-09-03T11:49:00.013672
+1746008183273172,spam,trung_lap,0.0,none,,[],,Người dùng gặp vấn đề kỹ thuật khi không thể tải ảnh lên bài viết và xin phép đăng ảnh dưới phần bình luận.,False,False,2026-09-03T11:49:00.013672
+1746008613273129,y_kien_trung_lap,trung_lap,0.1,none,,[],,Người dùng chia sẻ việc không cần dùng thuốc đã được bác sĩ kê trong hơn nửa tháng.,False,False,2026-09-03T11:49:20.523754
+1746008676606456,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng thông báo chỉ nằm viện 4 ngày.,False,False,2026-09-03T11:49:20.523754
+1746020906605233,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng yêu cầu Cogaivatva88 đính kèm thêm thông tin.,False,False,2026-09-03T11:49:20.523754
+1746021623271828,san_pham_giai_phap,trung_lap,-0.1,none,,[],Tìm hiểu điều kiện tham gia bảo hiểm sức khỏe,"Người dùng nhận định rằng nếu sức khỏe vượt quá giới hạn chịu đựng thì sẽ bị ảnh hưởng, và công ty bảo hiểm có thể không cấp hợp đồng nếu công việc tiềm ẩn rủi ro sức khỏe dài hạn.",False,False,2026-09-03T11:49:20.523754
+1746023916604932,y_kien_trung_lap,tich_cuc,0.6,none,,[],,"Người dùng giải thích rằng giai đoạn bận rộn vừa qua là do chuyển đổi số, nhưng hiện tại nhân lực đã đủ và công việc ổn định, sắp tới sẽ được làm việc thoải mái hơn.",False,False,2026-09-03T11:49:20.523754
+1746030753270915,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng thông báo Cogaivatva88 đã đính kèm lịch hiện tại.,False,False,2026-09-03T11:49:37.338418
+1746043783269612,spam,trung_lap,0.1,none,,[],,Một tư vấn viên đưa ra lời khuyên về kết quả MRI và mời liên hệ để tư vấn bảo hiểm Dai-ichi.,True,False,2026-09-03T11:49:37.338418
+1746059169934740,muon_tu_van,trung_lap,0.1,none,,[],,Người dùng yêu cầu Hường Phạm xem giúp ảnh kết quả đã tải lên.,False,False,2026-09-03T11:49:37.338418
+1746061146601209,spam,trung_lap,0.2,none,,[],,Một tư vấn viên xác nhận khả năng mua bảo hiểm và giới thiệu sản phẩm thẻ sức khỏe của Sun Life.,True,False,2026-09-03T11:49:37.338418
+1746092839931373,spam,trung_lap,0.1,none,,[],,Một tư vấn viên xác nhận người hỏi có thể tham gia bảo hiểm và mời inbox để được tư vấn.,True,False,2026-09-03T11:49:37.338418
+1746102479930409,san_pham_giai_phap,tieu_cuc,-0.5,low,,"[""bi loai tru bao hiem"", ""khong mua duoc the cham soc suc khoe""]","kinh nghiem mua bao hiem khi co benh nen, cac truong hop bi loai tru khi mua bao hiem, cach xu ly khi bi tu choi bao hiem","Người dùng chia sẻ kinh nghiệm con bị loại trừ thẻ chăm sóc sức khỏe và không mua được bảo hiểm do tiền sử đau đầu, dù kết quả chụp MRI bình thường.",False,False,2026-09-03T11:49:50.728971
+1746108096596514,phan_van,trung_lap,0.1,none,,[],"giai dap thac mac ve dieu khoan loai tru, thoi gian cho khi tham gia bao hiem, tu van mua bao hiem cho nguoi co benh nen","Người dùng đang phân vân và hỏi về khả năng tham gia bảo hiểm, các điều khoản loại trừ và thời gian chờ, sau khi nhận được thông tin từ tư vấn viên.",False,False,2026-09-03T11:49:50.728971
+1746138593260131,y_kien_trung_lap,trung_lap,-0.2,none,,"[""bi loai tru bao hiem"", ""khong biet thoi gian tham dinh lai""]","quy trinh tham dinh lai bao hiem, cach xu ly khi bi loai tru bao hiem, kinh nghiem mua bao hiem cho tre em",Người dùng chia sẻ kinh nghiệm con mình vẫn bị loại trừ bảo hiểm sau 2 năm và không rõ thời gian để được thẩm định lại.,False,False,2026-09-03T11:49:50.728971
+1746147429925914,y_kien_trung_lap,tich_cuc,0.3,none,,[],"quy trinh tham dinh ho so bao hiem, vai tro va trach nhiem cua tu van vien, huong dan lam ho so bao hiem","Comment giải thích quy trình nộp hồ sơ và thẩm định bảo hiểm, nhấn mạnh vai trò của tư vấn viên là hỗ trợ khách hàng chứ không có quyền quyết định việc mua bảo hiểm.",True,False,2026-09-03T11:49:50.728971
+1746149473259043,khen,tich_cuc,0.8,none,,[],,Người dùng bày tỏ sự hài lòng và cảm ơn về câu trả lời đã nhận được.,False,False,2026-09-03T11:49:50.728971
+1746155686591755,khen,tich_cuc,0.8,none,,[],,Người dùng bày tỏ sự vui mừng và cảm ơn về phản hồi nhận được.,False,False,2026-09-03T11:50:17.030233
+1746171163256874,khen,tich_cuc,0.7,none,,[],,Người dùng bày tỏ lời cảm ơn.,False,False,2026-09-03T11:50:17.030233
+1746199113254079,y_kien_trung_lap,trung_lap,0.2,none,,[],"tư vấn bảo hiểm cho người có tiền sử bệnh, hướng dẫn kê khai hồ sơ bảo hiểm, điều khoản loại trừ trong bảo hiểm sức khỏe","Một tư vấn viên cung cấp thông tin chi tiết về khả năng tham gia bảo hiểm nhân thọ và thẻ sức khỏe cho người có tiền sử đau nửa đầu, bao gồm các lưu ý về kê khai trung thực, hồ sơ y tế và điều khoản loại trừ.",True,False,2026-09-03T11:50:17.030233
+1746247446582579,spam,trung_lap,0.1,none,,[],,Một tư vấn viên yêu cầu người dùng gửi giấy tờ để được tư vấn giải quyết cụ thể.,True,True,2026-09-03T11:50:17.030233
+1746480529892604,spam,trung_lap,0.1,none,,[],,,False,False,2026-09-03T11:50:17.030233
+1746482286559095,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên Dai-ichi Life giới thiệu sản phẩm bảo hiểm nhân thọ và thẻ chăm sóc sức khỏe, đồng thời mời khách hàng liên hệ để được tư vấn cụ thể về trường hợp đã từng nằm viện.",True,False,2026-09-03T11:50:35.794068
+1746499059890751,y_kien_trung_lap,tich_cuc,0.5,none,,[],,Người dùng bày tỏ lời cảm ơn.,False,False,2026-09-03T11:50:35.794068
+1745933699947287,y_kien_trung_lap,trung_lap,0.0,none,,[],muc do su dung the bao hiem manulife,Người dùng thắc mắc về mức độ sử dụng thẻ bảo hiểm của Manulife.,False,False,2026-09-03T11:50:35.794068
+1745940906613233,spam,trung_lap,0.2,none,,[],,Một tư vấn viên Manulife thừa nhận thẻ bảo hiểm của Manulife không mạnh bằng một số đối thủ nhưng nhấn mạnh lợi thế của Manulife ở giải pháp bảo hiểm toàn diện.,True,False,2026-09-03T11:50:35.794068
+1745976953276295,spam,trung_lap,0.2,none,,[],,"Một chuyên viên quản lý khách hàng của Sun Life Vietnam chia sẻ các tiêu chí chọn thẻ sức khỏe cho trẻ em, so sánh với Manulife và giới thiệu chi tiết các ưu điểm của Sun Life, đồng thời mời liên hệ để được tư vấn.",True,False,2026-09-03T11:50:35.794068
+1746017609938896,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên AIA giới thiệu chi tiết về quyền lợi thẻ bảo hiểm sức khỏe của AIA, nhấn mạnh các ưu điểm so với các công ty khác và đưa ra mức phí tham khảo.",True,False,2026-09-03T11:50:51.745142
+1746063663267624,spam,trung_lap,0.1,none,,[],,Một tư vấn viên giới thiệu thẻ bảo hiểm sức khỏe của Sun Life với các ưu điểm về bảo lãnh viện phí và chi trả.,True,False,2026-09-03T11:50:51.745142
+1746077139932943,spam,trung_lap,0.0,none,,[],,Một người dùng mời inbox để cung cấp thông tin về bảo hiểm Dai-ichi.,True,False,2026-09-03T11:50:51.745142
+1746085649932092,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên giới thiệu sản phẩm bảo hiểm của Dai-ichi, nhấn mạnh các ưu điểm về chi phí, quyền lợi và bảo lãnh viện phí, đồng thời gợi ý về Manulife.",True,False,2026-09-03T11:50:51.745142
+1746089019931755,spam,trung_lap,0.0,none,,[],,Một người dùng thông báo Manulife không bán thẻ và mời inbox để được tư vấn.,True,False,2026-09-03T11:50:51.745142
+1746116469929010,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu sản phẩm bảo hiểm Dai-ichi Life, nêu rõ điều kiện mua thẻ sức khỏe, phí nhân thọ tối thiểu, lãi suất cam kết và các quyền lợi khác, kèm theo thông tin liên hệ.",True,False,2026-09-03T11:51:06.270000
+1746123576594966,so_sanh_chung,tich_cuc,0.4,none,,[],"loi ich bao hiem cho tre em, so sanh the suc khoe cac hang, uy tin thuong hieu bao hiem","Người dùng so sánh thẻ sức khỏe của Manulife cho trẻ em, cho rằng không có lợi thế trước mắt nhưng vẫn được nhiều khách hàng lựa chọn vì mục tiêu tài chính lâu dài và uy tín thương hiệu, đồng thời chia sẻ kinh nghiệm làm việc và là khách hàng của Manulife.",True,True,2026-09-03T11:51:06.270000
+1746196113254379,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên tên Huyền giới thiệu một phương án bảo hiểm sức khỏe cho bé với ngân sách khoảng 10 triệu/năm, liệt kê các quyền lợi chi trả y tế và hỗ trợ tại bệnh viện, đồng thời mời liên hệ qua Messenger hoặc Zalo để được tư vấn chi tiết.",True,False,2026-09-03T11:51:06.270000
+1746451913228799,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên tên Vy giới thiệu dòng thẻ sức khỏe đính kèm nhân thọ với các ưu điểm như cam kết tái tục, không tăng phí hoặc cắt thẻ khi sử dụng nhiều, và mời liên hệ qua Zalo để được tư vấn chi tiết.",True,False,2026-09-03T11:51:06.270000
+1746451956562128,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên tên Vy giới thiệu dòng thẻ sức khỏe đính kèm nhân thọ với các ưu điểm như cam kết tái tục, không tăng phí hoặc cắt thẻ khi sử dụng nhiều, và mời liên hệ qua Zalo để được tư vấn chi tiết.",True,False,2026-09-03T11:51:06.270000
+1746497963224194,spam,tich_cuc,0.7,none,,[],,"Một tư vấn viên giới thiệu gói bảo hiểm sức khỏe AIA cho trẻ em với nhiều quyền lợi và quy trình bồi thường nhanh chóng, đồng thời mời liên hệ để được tư vấn chi tiết.",True,True,2026-09-03T11:51:21.764328
+1745909909949666,khen,tich_cuc,0.7,none,,[],loi ich khi su dung bao hiem aia,Người dùng bày tỏ sự hài lòng và khuyên nên chuyển sang sử dụng bảo hiểm AIA.,False,False,2026-09-03T11:51:21.764328
+1745914583282532,san_pham_giai_phap,tieu_cuc,-0.5,low,phan nan ve dieu khoan san pham,"[""dieu khoan loai tru"", ""dong chi tra""]",giai thich dieu khoan loai tru,Người dùng bày tỏ sự không hài lòng với bảo hiểm AIA vì có nhiều điều khoản loại trừ xét nghiệm lặt vặt và áp dụng đồng chi trả.,False,False,2026-09-03T11:51:21.764328
+1745917859948871,y_kien_trung_lap,trung_lap,0.1,none,,[],chi tiet ve dong chi tra cho tre em,Người dùng giải thích về chính sách đồng chi trả của AIA áp dụng cho trẻ em dưới 4 tuổi tại bệnh viện tư nhân và các điều khoản loại trừ bệnh có trước.,False,False,2026-09-03T11:51:21.764328
+1745918859948771,y_kien_trung_lap,trung_lap,0.1,none,,[],quy dinh dong chi tra theo do tuoi va loai benh vien,Người dùng cung cấp thông tin về việc không áp dụng đồng chi trả cho trẻ em dưới 5 tuổi khi sử dụng bảo hiểm tại bệnh viện công.,False,False,2026-09-03T11:51:21.764328
+1745922373281753,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng chia sẻ thông tin về thành viên gia đình.,False,False,2026-09-03T11:51:39.362407
+1745935436613780,khen,tich_cuc,0.5,none,,[],loi ich cua viec khong dong chi tra,Người dùng bày tỏ sự hài lòng về việc không phải lo lắng về đồng chi trả và giới hạn phụ khi nằm viện.,False,False,2026-09-03T11:51:39.362407
+1745975123276478,y_kien_trung_lap,trung_lap,0.1,none,,[],cac truong hop loai tru trong bao hiem y te,Người dùng giải thích về việc loại trừ các chi phí xét nghiệm âm tính nhỏ trong bảo hiểm.,False,False,2026-09-03T11:51:39.362407
+1745977999942857,y_kien_trung_lap,trung_lap,0.2,none,,[],huong dan doc dieu khoan bao hiem,"Người dùng chia sẻ kinh nghiệm về bảo hiểm, nhấn mạnh sự phức tạp của bệnh tật và điều trị, tầm quan trọng của điều khoản và tốc độ chi trả giữa các công ty.",False,False,2026-09-03T11:51:39.362407
+1745980353275955,so_sanh_chung,tich_cuc,0.6,none,,[],loi ich khi tham gia bao hiem gia dinh,"Người dùng so sánh tốc độ chi trả và quyền lợi giữa Sun Life và Generali, nhấn mạnh vai trò của tư vấn viên trong việc hỗ trợ kỹ thuật và các lợi ích khi tham gia bảo hiểm gia đình của Sun Life.",True,True,2026-09-03T11:51:39.362407
+1745988359941821,spam,tich_cuc,0.8,none,,[],,,False,False,2026-09-03T11:53:35.655635
+1745994269941230,spam,trung_lap,0.0,,,[],,,False,False,2026-09-03T11:53:35.655635
+1746054693268521,spam,tich_cuc,0.5,,,[],,,False,False,2026-09-03T11:53:35.655635
+1746094389931218,y_kien_trung_lap,trung_lap,0.0,none,,[],,,False,False,2026-09-03T11:53:35.655635
+1746651019875555,check_chi_phi,trung_lap,0.1,none,,"[""pham vi bao hiem khong ro""]",Giai thich chi tiet cac khoan chi phi duoc bao gom trong goi bao hiem phau thuat,"Nguoi dung thac mac ve pham vi chi tra cua goi bao hiem phau thuat 60 trieu dong, cu the la lieu chi phi nay da bao gom tien giuong va cac chi phi khac hay chi rieng phau thuat.",False,False,2026-09-03T11:53:35.655635
+1746654096541914,spam,trung_lap,0.1,none,,[],,Commenter gợi ý tham khảo Daiichi vì phí và quyền lợi cạnh tranh trên thị trường.,True,True,2026-09-03T11:53:56.491441
+1746685139872143,y_kien_trung_lap,trung_lap,0.2,none,,[],giai thich han muc bao hiem benh hiem ngheo,"Commenter giải thích về hạn mức bảo hiểm 60 triệu VND bao gồm, và 120 triệu VND cho điều trị trong ngày, bệnh hiểm nghèo như ung thư, đột quỵ, nhồi máu cơ tim, cấy ghép tạng mà không bị ràng buộc giới hạn phụ.",True,False,2026-09-03T11:53:56.491441
+1746717979868859,spam,tich_cuc,0.5,none,,[],,"Một tư vấn viên của Daiichi giới thiệu sản phẩm của công ty, nhấn mạnh quy trình bồi thường nhanh chóng, thẻ sức khỏe hạn mức cao với chi phí hợp lý, và kinh nghiệm cá nhân để mời tư vấn.",True,True,2026-09-03T11:53:56.491441
+1745938613280129,y_kien_trung_lap,trung_lap,0.0,none,,[],thong tin ve chuong trinh bao hiem moi,Commenter đặt câu hỏi về việc liệu đây có phải là một chương trình mới.,False,False,2026-09-03T11:53:56.491441
+1745939949946662,y_kien_trung_lap,trung_lap,0.1,none,,[],,Commenter xác nhận rằng đó là một chương trình mới và có thể là một trải nghiệm gần đây.,False,False,2026-09-03T11:53:56.491441
+1745962899944367,muon_tu_van,trung_lap,0.1,none,,[],,Người dùng bày tỏ sự quan tâm đến chủ đề bảo hiểm.,False,False,2026-09-03T11:54:08.863811
+1745964223277568,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên Generali giới thiệu thẻ bảo hiểm sức khỏe cho trẻ em với ưu đãi giảm phí và quyền lợi chi trả 100% không đồng chi, mời inbox tư vấn.",True,False,2026-09-03T11:54:08.863811
+1745964463277544,spam,trung_lap,0.0,none,,[],,Một tư vấn viên mời inbox để tư vấn bảo hiểm Generali chi trả 100% cho trẻ.,True,False,2026-09-03T11:54:08.863811
+1745967319943925,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu thẻ bảo hiểm sức khỏe Dai-ichi Life với các quyền lợi nội trú, ngoại trú và điều kiện phí nhân thọ tối thiểu, mời inbox tư vấn.",True,False,2026-09-03T11:54:08.863811
+1745971939943463,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên Dai-ichi Life giới thiệu thẻ bảo hiểm sức khỏe gắn nhân thọ cho trẻ nhỏ, nhấn mạnh các ưu điểm về bảo lãnh viện phí, quyền lợi chi trả và bảo vệ bệnh bẩm sinh, mời inbox tư vấn.",True,False,2026-09-03T11:54:08.863811
+1745972059943451,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu thẻ bảo hiểm Gen với ưu đãi chi trả 100% chi phí bệnh viện và chương trình giảm giá 30%, mời inbox để biết thêm thông tin.",True,True,2026-09-03T11:54:24.857983
+1745974929943164,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu sản phẩm bảo hiểm Sun Life cho trẻ em từ 30 ngày tuổi với các quyền lợi như không đồng chi trả, chi trả xét nghiệm, vitamin, thuốc bổ, tiền giường tách riêng và cam kết giảm phí hàng năm cho bé từ 0-5 tuổi, kèm theo thông tin liên hệ.",True,True,2026-09-03T11:54:24.857983
+1745979639942693,spam,trung_lap,0.0,none,,[],,"Một người dùng giới thiệu thẻ bảo hiểm Gen có bảo lãnh tại Bệnh viện Nhi Trung ương và Hồng Ngọc, không đồng chi trả.",True,True,2026-09-03T11:54:24.857983
+1745986199942037,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên tên Linh của Dai-ichi Life với 10 năm kinh nghiệm giới thiệu chi tiết gói bảo hiểm cho trẻ em, bao gồm bảo lãnh trực tiếp tại bệnh viện, chi trả 100% chi phí ngoại trú sau 30 ngày chờ, chi trả 70% nội trú cho bé dưới 6 tuổi (có giải pháp bù đắp) và 100% từ 6 tuổi, yêu cầu kết hợp với gói nhân thọ tối thiểu 8 triệu/năm.",True,True,2026-09-03T11:54:24.857983
+1745989076608416,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu kinh nghiệm hỗ trợ nhiều hợp đồng bảo hiểm cho trẻ em khám và điều trị tại các bệnh viện lớn, mời inbox để được tư vấn gói phù hợp.",True,True,2026-09-03T11:54:24.857983
+1745997556607568,y_kien_trung_lap,tich_cuc,0.3,none,,[],huong dan chon bao hiem suc khoe cho be,"Một tư vấn viên cung cấp các tiêu chí và câu hỏi cần thiết để lựa chọn bảo hiểm sức khỏe cho bé, đồng thời mời inbox để được tư vấn chi tiết từ nhiều hãng.",True,False,2026-09-03T11:54:49.279502
+1746064849934172,spam,trung_lap,0.2,none,,[],,"Một tư vấn viên giới thiệu thẻ Sống Chất của Sun Life với các ưu điểm như bảo lãnh trực tiếp, không đồng chi trả, phí ổn định và quy trình claim nhanh chóng, mời liên hệ để được hỗ trợ chi tiết.",True,False,2026-09-03T11:54:49.279502
+1746071649933492,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên hỏi về loại thẻ sức khỏe mong muốn (rời hay tích lũy) và ngân sách để tư vấn cho bé, đồng thời mời inbox để được hỗ trợ với bảng so sánh chi tiết.",True,False,2026-09-03T11:54:49.279502
+1746090623264928,spam,trung_lap,0.0,none,,[],,Một tư vấn viên mời người dùng nhắn tin riêng để được tư vấn.,True,False,2026-09-03T11:54:49.279502
+1746131479927509,spam,trung_lap,0.2,none,,[],,,False,False,2026-09-03T11:54:49.279502
+1746195589921098,spam,trung_lap,0.0,none,,[],,Một tư vấn viên giới thiệu chi tiết về quyền lợi của thẻ sức khỏe y tế cho bé và mời liên hệ để được tư vấn.,True,False,2026-09-03T11:55:12.723931
+1746452379895419,spam,trung_lap,0.0,none,,[],,Một tư vấn viên giới thiệu thẻ sức khỏe đính kèm nhân thọ với các ưu điểm và mời liên hệ qua Zalo.,True,False,2026-09-03T11:55:12.723931
+1746452416562082,spam,trung_lap,0.0,none,,[],,Một tư vấn viên giới thiệu thẻ sức khỏe đính kèm nhân thọ với các ưu điểm và mời liên hệ qua Zalo.,True,False,2026-09-03T11:55:12.723931
+1746592919881365,spam,trung_lap,0.0,none,,[],,Một tư vấn viên hỏi về loại thẻ bảo hiểm khách hàng quan tâm và mời inbox để được tư vấn.,True,False,2026-09-03T11:55:12.723931
+1746061706601153,san_pham_giai_phap,tieu_cuc,-0.4,none,,[],Phân tích ưu nhược điểm bảo hiểm Bảo Việt cho cá nhân và doanh nghiệp,Người dùng nhận định rằng Bảo Việt phù hợp cho doanh nghiệp nhưng các gói bảo hiểm cá nhân của Bảo Việt không cạnh tranh.,False,False,2026-09-03T11:55:12.723931
+1746062893267701,phan_van,trung_lap,0.1,none,,[],so sanh cac goi bao hiem thai san,Người dùng hỏi bên bảo hiểm nào tốt.,False,False,2026-09-03T11:55:30.019787
+1746063256600998,y_kien_trung_lap,tich_cuc,0.4,none,,[],loi ich cua bao hiem thai san ket hop bao hiem nhan tho,Comment giải thích về quyền lợi thai sản của thẻ chăm sóc sức khỏe AIA và khuyên nên cân nhắc bảo hiểm thai sản gắn kèm trong gói bảo hiểm nhân thọ để đảm bảo quyền lợi lâu dài cho mẹ và bé.,True,False,2026-09-03T11:55:30.019787
+1746065569934100,spam,trung_lap,0.1,none,,[],,"Comment tư vấn rằng bảo hiểm thai sản có nhiều gói và hạn mức, khuyên người dùng nên chọn gói phù hợp dựa trên bệnh viện dự kiến và chi phí sinh, đồng thời giới thiệu gói Xanh Hạnh Phúc.",True,True,2026-09-03T11:55:30.019787
+1746069879933669,spam,trung_lap,0.1,none,,[],,"Comment giới thiệu Sun Life cho bảo hiểm thai sản nếu có kế hoạch sinh ở bệnh viện tư hoặc quốc tế, nhấn mạnh quyền lợi không giới hạn phòng đơn tiêu chuẩn và chi trả xét nghiệm theo chi phí y tế.",True,True,2026-09-03T11:55:30.019787
+1746070119933645,spam,trung_lap,0.0,none,,[],,"Comment khen ngợi người dùng chu đáo khi tìm hiểu bảo hiểm thai sản, sau đó đưa ra lời khuyên về quyền lợi sức khỏe toàn diện cho vợ và bé, và cuối cùng mời người dùng liên hệ qua Zalo để được tư vấn và so sánh các phương án, bao gồm Bảo Việt.",True,True,2026-09-03T11:55:30.019787
+1746071189933538,spam,trung_lap,0.0,none,,[],,Một tư vấn viên bảo hiểm mời chào tư vấn chi tiết về bảo hiểm thai sản và để lại số điện thoại liên hệ.,True,False,2026-09-03T11:57:10.913123
+1746073229933334,spam,trung_lap,0.2,,,[],,,False,False,2026-09-03T11:57:10.913123
+1746078949932762,spam,tich_cuc,0.8,none,,[],,"Comment giới thiệu chi tiết gói bảo hiểm thai sản Fuse Care của Techcombank, nhấn mạnh các quyền lợi như phí rẻ, hạn mức sinh cao, chi trả khám thai và IVF, đồng thời mời tư vấn.",True,False,2026-09-03T11:57:10.913123
+1746082296599094,y_kien_trung_lap,trung_lap,0.1,none,,[],kinh nghiem chon cong ty bao hiem,Người bình luận hỏi người tham gia ẩn danh đã quyết định mua bảo hiểm của công ty nào.,False,False,2026-09-03T11:57:10.913123
+1746084499932207,spam,tieu_cuc,-0.4,,,[],,,False,False,2026-09-03T11:57:10.913123
+1746089679931689,muon_tu_van,trung_lap,0.1,none,,[],lua chon goi bao hiem thai san,Người dùng hỏi về bảo hiểm thai sản cho vợ và được giới thiệu gói bảo hiểm chi trả tại các bệnh viện công và tư.,True,False,2026-09-03T11:58:36.976176
+1746097909930866,spam,trung_lap,0.0,none,,[],,Một tài khoản mời người dùng nhắn tin riêng nếu quan tâm.,True,False,2026-09-03T11:58:36.976176
+1746128073261183,y_kien_trung_lap,trung_lap,0.1,none,,[],"hướng dẫn tìm hiểu các gói bảo hiểm, so sánh các công ty bảo hiểm",Người dùng chia sẻ rằng họ mới chỉ biết về Bảo Việt và chưa tìm hiểu sâu về các lựa chọn khác.,False,False,2026-09-03T11:58:36.976176
+1746158443258146,spam,trung_lap,0.1,,,[],,,False,False,2026-09-03T11:58:36.976176
+1746286459912011,spam,tich_cuc,0.8,none,,[],,"Comment giới thiệu sản phẩm bảo hiểm thai sản của AIA bao gồm cả sức khỏe mẹ sau sinh và em bé, nhấn mạnh lợi ích tiết kiệm.",True,True,2026-09-03T11:58:36.976176
+1746399139900743,so_sanh_chung,trung_lap,0.2,none,,[],"So sánh các gói bảo hiểm thai sản cho IVF và sinh mổ; Lựa chọn bảo hiểm thai sản theo nhu cầu (chi phí, quyền lợi)","Commenter so sánh các gói bảo hiểm thai sản từ Sun Life, Techcom, BIC dựa trên quyền lợi IVF, bệnh viện quốc tế, chi phí và ưu tiên sinh mổ, đồng thời hỏi thêm thông tin để tư vấn.",True,False,2026-09-03T11:59:00.448658
+1746407113233279,spam,trung_lap,0.0,none,,[],,"Commenter để lại một câu ngắn gọn ""E tham khảo nhé"" kèm hashtag.",False,True,2026-09-03T11:59:00.448658
+1746445829896074,spam,trung_lap,0.1,none,,[],,"Vy tự giới thiệu là tư vấn viên bảo hiểm thai sản, có khả năng so sánh các hãng và chi phí bệnh viện, mời người dùng liên hệ Zalo để được tư vấn chi tiết.",True,False,2026-09-03T11:59:00.448658
+1746508273223163,y_kien_trung_lap,tich_cuc,0.4,none,,[],Các kênh phân phối bảo hiểm MIC; Đảm bảo uy tín khi mua bảo hiểm qua đại lý,"Commenter khẳng định bảo hiểm MIC được phân phối qua nhiều kênh đại lý tổ chức, giúp người dùng yên tâm.",False,True,2026-09-03T11:59:00.448658
+1746519553222035,y_kien_trung_lap,trung_lap,0.1,none,,[],Chọn kênh mua bảo hiểm sức khỏe: qua công ty hay đại lý?; Sự khác biệt về chuyên môn giữa nhân viên công ty và đại lý bảo hiểm,"Commenter nhận định nhân viên công ty thường bán sản phẩm xe ô tô và tài sản nhiều hơn, trong khi bảo hiểm sức khỏe nên mua qua các kênh đại lý để được tư vấn hiểu rõ sản phẩm hơn.",False,False,2026-09-03T11:59:00.448658
+1746530663220924,khen,tich_cuc,0.7,none,,[],,Người dùng khen ngợi hai người có kiến thức sâu rộng về bảo hiểm.,False,False,2026-09-03T11:59:10.154223
+1746534029887254,spam,trung_lap,0.0,none,,[],,Người dùng mời inbox nếu quan tâm.,True,False,2026-09-03T11:59:10.154223
+1746552009885456,spam,trung_lap,0.1,none,,[],,Người dùng giới thiệu liên hệ Nguyễn Hoa để được tư vấn.,True,False,2026-09-03T11:59:10.154223
+1746583203215670,spam,trung_lap,0.0,none,,[],,Comment chỉ chứa một dấu chấm.,False,False,2026-09-03T11:59:10.154223
+1746873216520002,y_kien_trung_lap,tich_cuc,0.6,none,,[],loi ich bao hiem suc khoe,"Một tư vấn viên chia sẻ trường hợp thực tế về việc hỗ trợ khách hàng claim bảo hiểm MIC Care với số tiền lớn và quy trình nhanh chóng, đồng thời mời tư vấn.",True,True,2026-09-03T11:59:10.154223
+1746978089842848,muon_tu_van,trung_lap,0.1,none,,[],,Người dùng muốn inbox hai chuyên gia tên Nguyễn HoaZương Zuồi.,False,False,2026-09-03T11:59:29.444213
+1747016159839041,spam,trung_lap,0.0,none,,[],,Người dùng mời inbox để tư vấn phương án bảo hiểm chỉ 1.6 triệu/năm bao gồm nội trú và ngoại trú.,True,False,2026-09-03T11:59:29.444213
+1746483243225666,spam,trung_lap,0.0,none,,[],,"Người dùng giới thiệu thẻ chăm sóc sức khỏe trọn đời của AIA cho mẹ và bé, mời inbox hoặc Zalo để được tư vấn.",True,False,2026-09-03T11:59:29.444213
+1746491629891494,y_kien_trung_lap,trung_lap,0.2,none,,[],"thoi diem mua bao hiem cho me va be, loi ich bao hiem cho thai ky va sau sinh, cach them the suc khoe cho be vao hop dong me","Người dùng chúc mừng và tư vấn về thời điểm tham gia bảo hiểm cho mẹ và bé, giới thiệu sản phẩm AIA, lưu ý về chi phí thai sản hiện tại không được chi trả và cách thêm thẻ sức khỏe cho bé sau sinh.",True,False,2026-09-03T11:59:29.444213
+1746499369890720,y_kien_trung_lap,trung_lap,0.2,none,,[],"loi ich bao hiem cho tre em, thoi diem mua bao hiem cho me va be, quyen loi dac biet cua bao hiem tre em","Người dùng tư vấn nên mua bảo hiểm cho mẹ sớm trong thai kỳ và cho con sau 30 ngày tuổi, đồng thời giới thiệu các quyền lợi rộng của Sun Life cho trẻ em như không đồng chi trả, chi trả xét nghiệm và vitamin, tiền giường tách riêng, và tái tục ổn định với phí giảm.",True,False,2026-09-03T11:59:29.444213
+1746505106556813,so_sanh_chung,tich_cuc,0.6,none,,[],,,False,False,2026-09-03T12:00:59.832760
+1746506219890035,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên Daiichi Life giới thiệu bản thân và quảng bá sản phẩm thẻ sức khỏe gắn nhân thọ cho trẻ nhỏ, nêu bật các ưu điểm về chi phí, quyền lợi và mời inbox để tư vấn chi tiết.",True,False,2026-09-03T12:00:59.832760
+1746509369889720,spam,trung_lap,0.15,none,,[],,"Một tư vấn viên giới thiệu sản phẩm thẻ sức khỏe đính kèm nhân thọ với các ưu điểm về tái tục và phí, đồng thời mời liên hệ qua Zalo để được tư vấn chi tiết.",True,False,2026-09-03T12:00:59.832760
+1746509446556379,spam,trung_lap,0.15,none,,[],,"Một tư vấn viên giới thiệu sản phẩm thẻ sức khỏe đính kèm nhân thọ với các ưu điểm về tái tục và phí, đồng thời mời liên hệ qua Zalo để được tư vấn chi tiết.",True,False,2026-09-03T12:00:59.832760
+1746562613217729,spam,trung_lap,0.1,,,[],,,False,False,2026-09-03T12:00:59.832760
+1746654956541828,spam,trung_lap,0.0,none,,[],,Một người mời inbox để gửi phương án bảo hiểm.,True,True,2026-09-03T12:01:26.503937
+1747252566482067,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên giới thiệu sản phẩm bảo hiểm sức khỏe của Gen cho mẹ và bé với ưu đãi hoàn phí và không đồng chi trả, mời inbox tư vấn.",True,True,2026-09-03T12:01:26.503937
+1747317183142272,spam,trung_lap,0.2,none,,[],,"Một tư vấn viên của Dai-ichi Life giới thiệu chi tiết về gói bảo hiểm sức khỏe cho trẻ em, bao gồm quyền lợi ngoại trú 100% và nội trú 70% (dưới 6 tuổi), cùng với yêu cầu kết hợp gói nhân thọ.",True,True,2026-09-03T12:01:26.503937
+1746493989891258,spam,trung_lap,0.2,none,,[],,"Một tư vấn viên của AIA giới thiệu gói bảo hiểm cho bé 2 tuổi với chi phí khoảng 10 triệu/năm, bao gồm nhân thọ và thẻ sức khỏe nội trú/ngoại trú, cùng các quyền lợi về bảo lãnh viện phí và xử lý bồi thường nhanh chóng.",True,True,2026-09-03T12:01:26.503937
+1746501796557144,spam,trung_lap,0.2,none,,[],,"Một chuyên viên quản lý khách hàng cao cấp của Sun Life giới thiệu gói bảo hiểm sức khỏe cho trẻ em dưới 6 tuổi, nhấn mạnh các tiêu chí như thời gian chờ, không đồng chi trả, chi trả 100% cho cả bệnh viện công/tư, và các quyền lợi đặc biệt khác.",True,True,2026-09-03T12:01:26.503937
+1746512563222734,spam,trung_lap,0.0,none,,[],,Một tư vấn viên giới thiệu thẻ sức khỏe đính kèm nhân thọ với các ưu điểm và mời liên hệ qua Zalo để được tư vấn chi tiết.,True,False,2026-09-03T12:01:41.996591
+1746531489887508,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu bảo hiểm Generali cho trẻ em, nhấn mạnh ưu điểm không đồng chi trả và mời liên hệ để tư vấn gói từ 10 triệu/năm.",True,True,2026-09-03T12:01:41.996591
+1746531926554131,spam,tich_cuc,0.4,none,,[],,Commenter thông báo Generali đang có chương trình khuyến mãi giảm 30% phí thẻ sức khỏe cho trẻ em trong tháng 9.,True,True,2026-09-03T12:01:41.996591
+1746533163220674,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu chi tiết gói bảo hiểm Generali cho trẻ em với nhiều ưu điểm như không đồng chi trả, tham gia độc lập, hạn mức cao, bảo lãnh rộng khắp và chi trả điều trị ung thư, kèm theo ưu đãi giá.",True,False,2026-09-03T12:01:41.996591
+1746533786553945,spam,trung_lap,0.0,none,,[],,Commenter gợi ý tham khảo thẻ sức khỏe của Dai-ichi Life.,True,True,2026-09-03T12:01:41.996591
+1746550503218940,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên AIA giới thiệu chi tiết các quyền lợi nổi bật của thẻ sức khỏe AIA, đặc biệt nhấn mạnh các điểm khác biệt so với các công ty khác và mời liên hệ tư vấn.",True,False,2026-09-03T12:01:55.165483
+1746552709885386,spam,trung_lap,0.0,none,,[],,Comment chỉ chứa một tên riêng.,False,False,2026-09-03T12:01:55.165483
+1746592776548046,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên Dai-ichi giới thiệu điều kiện mua thẻ sức khỏe, phí nhân thọ tối thiểu, lãi suất cam kết và các quyền lợi khác, kèm theo thông tin liên hệ.",True,False,2026-09-03T12:01:55.165483
+1746600839880573,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên tự giới thiệu và yêu cầu thông tin chi tiết về nhu cầu, tình trạng sức khỏe và ngân sách để tư vấn gói bảo hiểm phù hợp, kèm theo thông tin liên hệ.",True,False,2026-09-03T12:01:55.165483
+1746609719879685,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên yêu cầu thông tin chi tiết về tình trạng sức khỏe, nhu cầu y tế, quyền lợi mong muốn và ngân sách để tư vấn gói bảo hiểm sức khỏe phù hợp, đồng thời đưa ra một số lưu ý về thẻ sức khỏe.",True,False,2026-09-03T12:01:55.165483
+1746645129876144,spam,trung_lap,0.0,none,,[],,"Người dùng phản hồi ngắn gọn, mang tính xã giao.",False,False,2026-09-03T12:02:07.635883
+1746650119875645,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên hỏi về nhu cầu thẻ sức khỏe cho bé và ngân sách, đồng thời mời inbox để được hỗ trợ chi tiết.",True,False,2026-09-03T12:02:07.635883
+1746981103175880,spam,trung_lap,0.1,none,,[],,Một tư vấn viên cung cấp thông tin về chi trả 100% viện phí tại bệnh viện công cho bé 2 tuổi và mời inbox để tư vấn cụ thể.,True,False,2026-09-03T12:02:07.635883
+1746991639841493,spam,trung_lap,0.2,none,,[],,"Một tư vấn viên giới thiệu chi tiết về thẻ sức khỏe gắn nhân thọ của Daiichi cho trẻ 2 tuổi, nêu bật các ưu điểm về chi phí, quyền lợi và mời inbox để tư vấn.",True,False,2026-09-03T12:02:07.635883
+1747286939811963,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên hỏi về nhu cầu thẻ sức khỏe cho bé và ngân sách, đồng thời mời inbox để được hỗ trợ chi tiết.",True,False,2026-09-03T12:02:07.635883
+1746534216553902,y_kien_trung_lap,trung_lap,0.1,none,,[],so sanh cac san pham bao hiem suc khoe,Người dùng gợi ý tham khảo sản phẩm Fuse của Tech.,False,False,2026-09-03T12:02:25.742010
+1746544773219513,san_pham_giai_phap,tieu_cuc,-0.6,low,"chi phi cao, chinh sach tai tuc khong on dinh","[""chi phi cao"", ""tang phi tai tuc"", ""tu choi tai tuc""]",phan tich uu nhuoc diem the bao hiem suc khoe roi,"Người dùng nhận xét thẻ bảo hiểm sức khỏe rời cho trẻ dưới 1 tuổi rất đắt, dễ bị tăng phí hoặc từ chối tái tục nếu claim nhiều.",False,False,2026-09-03T12:02:25.742010
+1746550276552296,spam,trung_lap,0.0,none,,[],,Comment chỉ chứa một tên riêng không có nội dung ý nghĩa.,False,False,2026-09-03T12:02:25.742010
+1746551193218871,so_sanh_chung,trung_lap,0.2,none,,[],huong dan chon the bao hiem suc khoe phu hop,"Comment giải thích sự khác biệt giữa thẻ bảo hiểm sức khỏe rời và thẻ kèm bảo hiểm nhân thọ, nhấn mạnh bản chất, cam kết dài hạn, chính sách tái tục và chi phí để người dùng hiểu rõ trước khi lựa chọn.",True,False,2026-09-03T12:02:25.742010
+1746556509885006,spam,tich_cuc,0.5,none,,[],huong dan quy trinh bao lanh vien phi,"Comment khuyên nên sử dụng bảo lãnh viện phí để thủ tục nhanh gọn, đồng thời giới thiệu Manulife có phạm vi bảo lãnh rộng nhất và nhấn mạnh vai trò của tư vấn viên.",True,True,2026-09-03T12:02:25.742010
+1746655349875122,spam,trung_lap,0.0,none,,[],,"Người dùng gợi ý tham khảo bảo hiểm của MIC, VBI và Techcombank cho bé, mời inbox để được tư vấn thêm.",True,True,2026-09-03T12:02:37.438739
+1746717693202221,spam,trung_lap,0.2,none,,[],,"Thảo từ AIA Hà Nội giới thiệu thẻ bảo hiểm AIA với các quyền lợi như chi trả 700 triệu, tiền giường 2 triệu/ngày, không tăng phí, không cắt thẻ và yêu cầu phí nhân thọ tối thiểu 5 triệu.",True,True,2026-09-03T12:02:37.438739
+1746978589842798,spam,trung_lap,0.1,none,,[],,Người dùng gợi ý tham khảo bảo hiểm của Generali với quyền lợi chi trả 100% ở cả bệnh viện công và tư.,True,True,2026-09-03T12:02:37.438739
+1747319149808742,spam,tich_cuc,0.3,none,,[],,"Linh, một TVV của Dai-ichi Life, giới thiệu chi tiết gói bảo hiểm cho bé của Dai-ichi, bao gồm quyền lợi ngoại trú chi trả 100% và nội trú 70% (có giải pháp bù đắp), cùng với điều kiện tham gia gói nhân thọ tối thiểu 8 triệu/năm.",True,True,2026-09-03T12:02:37.438739
+1747320669808590,khen,tich_cuc,0.8,none,,[],phan hoi tich cuc,Người dùng bày tỏ lời cảm ơn đến Cao Thị Linh.,False,False,2026-09-03T12:02:37.438739
+1747332786474045,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên quảng cáo sản phẩm bảo hiểm nhân thọ và phi nhân thọ của Fubon Life, kèm thông tin liên hệ để tư vấn miễn phí.",True,False,2026-09-03T12:03:00.147892
+1747338573140133,spam,trung_lap,0.2,none,,[],,"Một tư vấn viên giới thiệu về ưu điểm của AIA như thủ tục bồi thường online, nhanh chóng, và cam kết không tăng phí, đồng thời đưa ra lời khuyên khi chọn thẻ bảo hiểm rời và mời liên hệ để được tư vấn cụ thể.",True,False,2026-09-03T12:03:00.147892
+1746492616558062,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu về điều kiện và quyền lợi khi mua thẻ bảo hiểm sức khỏe của Dai-ichi Life, bao gồm phí tối thiểu, thời hạn hợp đồng, lãi suất cam kết và khả năng thanh toán bệnh bẩm sinh, kèm thông tin liên hệ.",True,False,2026-09-03T12:03:00.147892
+1746501399890517,so_sanh_chung,tich_cuc,0.4,none,,[],so sanh cac goi bao hiem,"Người dùng đưa ra lời khuyên ưu tiên các công ty bảo hiểm như Generali, Sun Life và AIA cho mục đích bảo vệ, nhận định Manulife hiện thiên về đầu tư hơn.",False,False,2026-09-03T12:03:00.147892
+1746506503223340,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng hỏi thêm chi tiết về nhu cầu để có thể đưa ra lời khuyên phù hợp.,False,False,2026-09-03T12:03:00.147892
+1746507429889914,spam,tich_cuc,0.7,none,,[],,"Một tư vấn viên giới thiệu các ưu điểm của sản phẩm bảo hiểm Daiichi, bao gồm quỹ nằm viện cao, bảo vệ bệnh bẩm sinh và chi trả 100% chi phí khám, đồng thời mời inbox để tư vấn chi tiết.",True,False,2026-09-03T12:03:30.023298
+1746510219889635,phan_van,tieu_cuc,-0.4,none,,"[""chi phi cao""]",giai thich ve chi phi bao hiem,Người dùng bày tỏ sự lo ngại về việc giá thẻ bảo hiểm sức khỏe của các hãng được đề cập là quá cao.,False,False,2026-09-03T12:03:30.023298
+1746513993222591,so_sanh_chung,tich_cuc,0.4,none,,[],loi ich cua bao hiem tai tuc,"Người dùng so sánh các hãng bảo hiểm, cho rằng Sun Life có chi phí nhẹ nhất và giải thích rằng các dòng thẻ này có tái tục, cam kết phí ban đầu, không tăng phí theo lịch sử bồi thường và có hoàn lại sau 10-15 năm.",False,False,2026-09-03T12:03:30.023298
+1746518233222167,spam,trung_lap,0.1,none,,[],,"Người dùng khuyên nên chọn sản phẩm bảo hiểm phù hợp với nhu cầu cá nhân và tìm đúng tư vấn viên, sau đó để lại thông tin liên hệ để được tư vấn chi tiết.",True,False,2026-09-03T12:03:30.023298
+1746518653222125,spam,tich_cuc,0.3,none,,[],,,False,False,2026-09-03T12:03:30.023298
+1746528159887841,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên Generali mời chào tư vấn gói bảo hiểm và thẻ sức khỏe với ưu đãi giảm phí, kèm thông tin liên hệ.",True,False,2026-09-03T12:03:51.213078
+1746548143219176,phan_van,trung_lap,0.1,none,,[],giai thich ve gioi han chi tra benh hiem ngheo,"Người dùng thắc mắc về giới hạn chi trả 1 tỷ đồng cho bệnh hiểm nghèo là theo hợp đồng hay theo năm, bày tỏ lo ngại mức này có thể không đủ.",False,False,2026-09-03T12:03:51.213078
+1746553163218674,so_sanh_chung,tich_cuc,0.4,none,,[],so sanh quyen loi bao hiem tai nan va benh ly nghiem trong giua cac cong ty,"Commenter nhận định mỗi công ty bảo hiểm có lợi thế riêng, nhưng Manulife có nhiều ưu thế về quyền lợi tai nạn và bệnh lý nghiêm trọng.",True,False,2026-09-03T12:03:51.213078
+1746576039883053,san_pham_giai_phap,trung_lap,0.2,none,,[],giai thich cac hang the bao hiem va quyen loi,Commenter giải thích mức 1 tỷ là giới hạn chi trả trong suốt thời gian tham gia cho hạng thẻ cao cấp và khuyên mua hạng Thịnh Vượng 2 tỷ kèm quyền lợi bệnh hiểm nghèo nếu lo lắng về bệnh hiểm nghèo.,True,False,2026-09-03T12:03:51.213078
+1746577389882918,san_pham_giai_phap,tich_cuc,0.6,none,,[],phan biet the suc khoe va quyen loi benh hiem ngheo,"Commenter giải thích thẻ sức khỏe giúp kiểm soát chi phí y tế, còn quyền lợi bệnh hiểm nghèo là trợ cấp thu nhập, đồng thời khuyên mua thẻ Thịnh Vượng 2 tỷ và 1 tỷ quyền lợi bệnh hiểm nghèo nếu tài chính tốt để an tâm.",True,False,2026-09-03T12:03:51.213078
+1746578913216099,check_chi_phi,trung_lap,0.1,none,,[],chi phi bao hiem benh hiem ngheo,"Người dùng hỏi về mức chi phí bảo hiểm bệnh hiểm nghèo cần thiết, tham chiếu khuyến nghị 500 triệu đồng.",False,False,2026-09-03T12:04:02.845890
+1746647659875891,spam,trung_lap,0.0,none,,[],,Một tư vấn viên đưa ra lời khuyên chung và mời inbox để được hỗ trợ về bảo hiểm Generali hoặc Manulife.,True,False,2026-09-03T12:04:02.845890
+1746651153208875,spam,trung_lap,0.0,none,,[],,Người dùng mời inbox nếu quan tâm đến bảo hiểm Dai-ichi Life.,True,False,2026-09-03T12:04:02.845890
+1746788696528454,y_kien_trung_lap,trung_lap,0.1,none,,[],tieu chi chon tu van vien bao hiem,Người dùng chia sẻ quan điểm rằng việc chọn đúng tư vấn viên quan trọng hơn việc chọn công ty bảo hiểm.,False,False,2026-09-03T12:04:02.845890
+1746836226523701,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên nhận định Generali và Manulife đều tốt, mỗi hãng có lợi thế riêng và mời inbox để được tư vấn gói phù hợp.",True,False,2026-09-03T12:04:02.845890
+1747008036506520,so_sanh_chung,tich_cuc,0.65,none,,[],"so sanh the suc khoe manulife va generali, kinh nghiem boi thuong bao hiem, lua chon bao hiem nhan tho va the suc khoe","Người dùng chia sẻ kinh nghiệm sử dụng bảo hiểm của Manulife và Generali, đánh giá cao thẻ sức khỏe và quy trình bồi thường của Generali, trong khi Manulife mạnh về bảo hiểm nhân thọ.",False,False,2026-09-03T12:04:19.525998
+1747316803142310,y_kien_trung_lap,trung_lap,0.1,none,,[],"cach chon tu van vien bao hiem uy tin, tam quan trong cua tu van vien",Commenter đưa ra lời khuyên rằng mỗi công ty có sản phẩm phù hợp và điều quan trọng là chọn đúng tư vấn viên.,False,False,2026-09-03T12:04:19.525998
+1747358469804810,spam,tich_cuc,0.8,none,,[],,"Một tư vấn viên giới thiệu chi tiết các quyền lợi nổi bật của thẻ sức khỏe AIA, bao gồm bảo vệ trọn đời, chi trả đầy đủ, quyền lợi ung thư và quy trình bồi thường nhanh chóng, đồng thời mời inbox để được tư vấn.",True,True,2026-09-03T12:04:19.525998
+1746533269887330,y_kien_trung_lap,trung_lap,0.0,none,,[],"bao hiem khi cong ty pha san, quy dinh phap luat ve bao hiem",Người dùng chia sẻ một liên kết bài viết về việc hợp đồng của khách hàng được bảo đảm như thế nào khi doanh nghiệp bảo hiểm phá sản.,False,False,2026-09-03T12:04:19.525998
+1747301069810550,y_kien_trung_lap,tich_cuc,0.3,none,,[],,Người dùng bày tỏ rằng thông tin được chia sẻ là điều mà nhiều khách hàng quan tâm.,False,True,2026-09-03T12:04:19.525998
+1746578176549506,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên AIA giới thiệu chi tiết về sản phẩm bảo hiểm sức khỏe An Tâm Tái Tục và bảo hiểm nhân thọ cho cha mẹ lớn tuổi, kèm theo các quyền lợi và thông tin liên hệ.",True,False,2026-09-03T12:05:33.909879
+1746590076548316,spam,trung_lap,0.1,none,,[],,Một chuyên viên quản lý khách hàng của Sun Life giới thiệu sản phẩm thẻ Sống Chất 2.0 với các quyền lợi nổi bật và thông tin liên hệ.,True,False,2026-09-03T12:05:33.909879
+1746592186548105,y_kien_trung_lap,trung_lap,0.0,none,,[],,,False,False,2026-09-03T12:05:33.909879
+1746614123212578,spam,tich_cuc,0.55,,,[],,,False,False,2026-09-03T12:05:33.909879
+1746626933211297,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên đưa ra gợi ý về bảo hiểm nhân thọ và thẻ sức khỏe dựa trên ngân sách và tình trạng sức khỏe, đồng thời mời liên hệ để được tư vấn chi tiết.",True,False,2026-09-03T12:05:56.003751
+1746630013210989,spam,trung_lap,0.1,none,,[],,"Một người dùng gợi ý kết hợp bảo hiểm nhân thọ và thẻ chăm sóc sức khỏe, đồng thời giới thiệu sản phẩm của AIA có thời hạn bảo vệ đến 100 tuổi.",True,False,2026-09-03T12:05:56.003751
+1746651963208794,spam,trung_lap,0.1,none,,[],,Một tư vấn viên gợi ý các phương án bảo hiểm sức khỏe riêng lẻ hoặc kèm nhân thọ và mời liên hệ riêng để tham khảo.,True,False,2026-09-03T12:05:56.003751
+1746772909863366,muon_tu_van,trung_lap,0.0,none,,[],huong dan chon bao hiem,Người dùng bày tỏ mong muốn được tư vấn về bảo hiểm.,False,False,2026-09-03T12:05:56.003751
+1747370559803601,spam,trung_lap,0.1,none,,[],,Một người dùng gợi ý mua bảo hiểm nhân thọ kèm thẻ để đảm bảo tái tục lâu dài và mời liên hệ nếu quan tâm sản phẩm của AIA.,True,False,2026-09-03T12:05:56.003751
+1746598006547523,y_kien_trung_lap,trung_lap,0.1,none,,[],cach ket hop cac goi bao hiem,"Commenter khuyên nên gắn thêm thẻ ngoại trú và thai sản của Daiichi vào gói Daiichi cũ để tiết kiệm chi phí, đồng thời giải thích quy tắc mua thẻ nội trú trước.",False,False,2026-09-03T12:07:00.530634
+1746598123214178,spam,trung_lap,0.2,none,,[],,"Một tư vấn viên quảng cáo thẻ sức khỏe Sun Life với quyền lợi nội trú cao, kèm ngoại trú và thai sản, phí ổn định, và mời liên hệ để tư vấn chi tiết.",True,False,2026-09-03T12:07:00.530634
+1746598149880842,spam,trung_lap,0.2,none,,[],,Tư vấn viên Vy xác nhận có thể mua bảo hiểm thai sản của Daiichi nếu có hợp đồng hiện hữu và mời liên hệ Zalo để được tư vấn chi tiết các gói và so sánh chi phí.,True,False,2026-09-03T12:07:00.530634
+1746600739880583,spam,trung_lap,0.1,,,[],,,False,False,2026-09-03T12:07:00.530634
+1746607023213288,y_kien_trung_lap,trung_lap,0.1,none,,[],Hướng dẫn bổ sung quyền lợi ngoại trú và thai sản vào hợp đồng bảo hiểm hiện hữu,Người dùng hỏi về khả năng bổ sung quyền lợi ngoại trú và thai sản của Dai-ichi vào hợp đồng bảo hiểm hiện có.,False,False,2026-09-03T12:07:00.530634
+1746621649878492,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên đề xuất tham khảo hợp đồng độc lập để chủ động thời gian chờ và hỏi thông tin cá nhân để thiết kế phương án tối ưu, mời liên hệ qua inbox hoặc Zalo.",True,True,2026-09-03T12:07:25.741212
+1746625069878150,spam,tich_cuc,0.4,none,,[],,"Một tư vấn viên của Sun Life so sánh chi tiết các quyền lợi vượt trội của Sun Life so với Dai-ichi Life, đặc biệt về thai sản, ngoại trú, nha khoa và chi phí, đồng thời giải thích quy định về trục lợi bảo hiểm khi claim nhiều công ty, và mời liên hệ để tư vấn chi tiết.",True,True,2026-09-03T12:07:25.741212
+1746635493210441,y_kien_trung_lap,trung_lap,0.1,none,,[],cách thêm quyền lợi bảo hiểm vào hợp đồng hiện có,Commenter cho biết có thể gắn trực tiếp quyền lợi ngoại trú và thai sản vào hợp đồng bảo hiểm hiện có.,False,False,2026-09-03T12:07:25.741212
+1746651446542179,y_kien_trung_lap,trung_lap,0.1,none,,[],các quyền lợi bổ sung của daiichi,Commenter thông báo rằng Dai-ichi Life có cung cấp thêm quyền lợi thai sản và ngoại trú.,False,False,2026-09-03T12:07:25.741212
+1747237349816922,y_kien_trung_lap,trung_lap,0.1,none,,[],lựa chọn gia tăng quyền lợi bảo hiểm,Commenter đưa ra hai lựa chọn để gia tăng quyền lợi bảo hiểm: gắn thêm vào hợp đồng Dai-ichi Life hiện có hoặc tham gia hợp đồng mới của công ty khác kèm các quyền lợi sức khỏe.,False,False,2026-09-03T12:07:25.741212
+1747251196482204,spam,trung_lap,0.0,none,,[],,Một tư vấn viên gợi ý khách hàng xem xét thêm quyền lợi thai sản và ngoại trú cho mẹ vào hợp đồng Daiichi hoặc mua riêng.,True,False,2026-09-03T12:08:26.431074
+1747332499807407,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên hỏi về hợp đồng Daiichi hiện tại và kế hoạch thai sản của khách hàng, đồng thời cung cấp thông tin về thời gian chờ của bảo hiểm thai sản và mời inbox để tư vấn chi tiết.",True,False,2026-09-03T12:08:26.431074
+1746649653209025,spam,trung_lap,0.0,none,,[],,,False,False,2026-09-03T12:08:26.431074
+1746650913208899,spam,trung_lap,0.0,none,,[],,"Một người bán bảo hiểm giới thiệu có cả bảo hiểm sức khỏe và nhân thọ, hỏi về ngân sách của người dùng và mời inbox để tư vấn.",True,False,2026-09-03T12:08:26.431074
+1746652419875415,spam,trung_lap,0.0,,,[],,,False,False,2026-09-03T12:08:26.431074
+1746653103208680,spam,trung_lap,0.0,none,,[],,Một tư vấn viên AIA mời khách hàng liên hệ để được tư vấn về mức phí bảo hiểm phù hợp cho gia đình.,True,False,2026-09-03T12:08:52.151506
+1746653819875275,y_kien_trung_lap,tich_cuc,0.4,none,,[],kinh nghiem chon goi bao hiem cho gia dinh,Một người dùng chia sẻ kinh nghiệm mua gói bảo hiểm 30 triệu/năm cho gia đình 5 người và cảm thấy đủ quyền lợi.,False,False,2026-09-03T12:08:52.151506
+1746656913208299,spam,trung_lap,0.0,none,,[],,"Một chuyên viên quản lý khách hàng cao cấp của Sun Life Việt Nam giới thiệu chi tiết về gói bảo hiểm sức khỏe của Sun Life, nhấn mạnh các quyền lợi độc đáo và mời liên hệ để tư vấn.",True,False,2026-09-03T12:08:52.151506
+1746657349874922,y_kien_trung_lap,trung_lap,0.1,none,,[],cac lua chon bao hiem cho gia dinh theo ngan sach,"Một người dùng gợi ý ba giải pháp bảo hiểm cho gia đình, từ chi phí cao đến thấp, bao gồm bảo hiểm nhân thọ riêng, bảo hiểm nhân thọ chính kèm thành viên, và bảo hiểm sức khỏe rời.",False,False,2026-09-03T12:08:52.151506
+1746662476541076,y_kien_trung_lap,trung_lap,0.0,none,,[],,Một bình luận ngắn gọn mời người khác tham khảo thông tin.,False,False,2026-09-03T12:08:52.151506
+1746678143206176,y_kien_trung_lap,tich_cuc,0.6,none,,[],,,False,False,2026-09-03T12:10:48.304668
+1746681873205803,spam,trung_lap,0.1,,,[],,,False,False,2026-09-03T12:10:48.304668
+1746683639872293,spam,trung_lap,0.0,,,[],,,False,False,2026-09-03T12:10:48.304668
+1746686786538645,spam,tich_cuc,0.6,,,[],,,False,False,2026-09-03T12:10:48.304668
+1746703773203613,muon_tu_van,trung_lap,0.1,none,,[],hướng dẫn cách nhận tư vấn bảo hiểm cá nhân,Người dùng muốn được tư vấn riêng.,False,False,2026-09-03T12:10:48.304668
+1746704246536899,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng đặt câu hỏi về độ tuổi của vợ và con.,False,False,2026-09-03T12:12:11.290210
+1746706576536666,spam,tich_cuc,0.5,none,,[],,Người dùng giới thiệu bảo hiểm Dai-ichi và khuyên liên hệ tư vấn viên Nguyễn Thế Nam vì tư vấn có tâm và chu đáo.,True,True,2026-09-03T12:12:11.290210
+1746713253202665,spam,tich_cuc,0.6,none,,[],,"Tư vấn viên Dai-ichi giới thiệu sản phẩm bảo hiểm nhân thọ kèm thẻ sức khỏe với chi phí và quyền lợi hấp dẫn, đồng thời chia sẻ kinh nghiệm và bằng cấp của bản thân.",True,True,2026-09-03T12:12:11.290210
+1746721673201823,spam,tich_cuc,0.6,,,[],,,False,False,2026-09-03T12:12:11.290210
+1746763229864334,spam,tich_cuc,0.8,,,[],,,False,False,2026-09-03T12:12:11.290210
+1746765226530801,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên AIA giới thiệu sản phẩm bảo hiểm gia đình tối ưu, tích lũy tốt và mời khách hàng inbox để được tư vấn chi tiết.",True,False,2026-09-03T12:12:37.721029
+1746786209862036,khen,tich_cuc,0.7,none,,[],trai nghiem khach hang dai-ichi,"Khách hàng chia sẻ trải nghiệm tích cực với bảo hiểm Dai-ichi sau 7 năm sử dụng, đánh giá dịch vụ khá tốt và nhanh chóng.",False,False,2026-09-03T12:12:37.721029
+1746850276522296,spam,trung_lap,0.1,none,,[],,Một người giới thiệu sản phẩm bảo hiểm của Generali và thông báo có ưu đãi giảm 20% cho thẻ.,True,False,2026-09-03T12:12:37.721029
+1746894946517829,spam,trung_lap,0.2,none,,[],,"Một người giới thiệu chi tiết về điều kiện và quyền lợi khi mua thẻ sức khỏe kèm bảo hiểm nhân thọ của Dai-ichi, bao gồm lãi suất cam kết và chi trả bệnh bẩm sinh.",True,False,2026-09-03T12:12:37.721029
+1746924006514923,spam,trung_lap,0.2,none,,[],,"Phương Thúy, một tư vấn viên AIA, giới thiệu chi tiết về các gói bảo hiểm gia đình và quyền lợi nổi bật của thẻ sức khỏe MR1, nhấn mạnh vai trò của tư vấn viên có tâm và kiến thức.",True,False,2026-09-03T12:12:37.721029
+1747010013172989,khen,tich_cuc,0.7,none,,[],"kinh nghiem su dung bao hiem Generali, so sanh bao hiem Generali va Sun Life",Người dùng bày tỏ sự hài lòng với thẻ bảo hiểm của Generali và gợi ý tham khảo thêm Sun Life.,False,False,2026-09-03T12:12:52.840209
+1747121093161881,spam,trung_lap,0.1,none,,[],,Một tư vấn viên AIA đưa ra lời khuyên về cách phân bổ quỹ bảo hiểm nhân thọ cho gia đình và mời liên hệ để tư vấn.,True,False,2026-09-03T12:12:52.840209
+1746950876512236,spam,trung_lap,0.0,none,,[],,Người dùng bình luận 'Chấm'.,False,False,2026-09-03T12:12:52.840209
+1746952656512058,spam,trung_lap,0.0,none,,[],,Người dùng bình luận '.'.,False,False,2026-09-03T12:12:52.840209
+1746954413178549,spam,trung_lap,0.0,none,,[],,Người dùng bình luận 'Chấm'.,False,False,2026-09-03T12:12:52.840209
+1746963049844352,spam,tich_cuc,0.7,none,,[],,"Một chuyên viên quản lý khách hàng của Sun Life giới thiệu gói bảo hiểm cho bé 1 tháng tuổi với nhiều quyền lợi như không đồng chi trả, chi trả xét nghiệm âm tính, bảo lãnh viện phí và giảm phí hàng năm.",True,True,2026-09-03T12:13:07.416861
+1746970856510238,spam,trung_lap,0.1,none,,[],,Một tư vấn viên của Daiichi bày tỏ mong muốn được tư vấn cho khách hàng.,True,True,2026-09-03T12:13:07.416861
+1746977016509622,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng gợi ý tên một công ty bảo hiểm là Gen.,False,False,2026-09-03T12:13:07.416861
+1746982866509037,y_kien_trung_lap,trung_lap,0.1,none,,[],bao hiem cho con,Người dùng gợi ý nên gắn kèm bảo hiểm cho con vào hợp đồng của mẹ từ Manulife hoặc Dai-ichi Life.,False,False,2026-09-03T12:13:07.416861
+1746990469841610,spam,tich_cuc,0.8,none,,[],,"Một tư vấn viên của Daiichi giới thiệu thẻ sức khỏe gắn nhân thọ cho trẻ sơ sinh với nhiều ưu điểm như phí thấp, hạn mức cao, bảo vệ bệnh bẩm sinh và thời gian chờ ngắn.",True,True,2026-09-03T12:13:07.416861
+1747024756504848,y_kien_trung_lap,trung_lap,0.1,none,,[],"loi khuyen khi mua bao hiem cho con, toi uu hop dong bao hiem gia dinh",Người dùng đưa ra lời khuyên nên gắn kèm con vào hợp đồng bảo hiểm hiện có của Dai-ichi Life hoặc Manulife để đảm bảo quyền lợi lâu dài.,False,False,2026-09-03T12:13:20.943287
+1747081543165836,spam,tich_cuc,0.4,none,,[],,"Người dùng đưa ra lời khuyên về việc thêm thẻ con vào hợp đồng Dai-ichi Life hoặc Manulife để tiết kiệm chi phí, hoặc tham khảo gói riêng của AIA, sau đó mời liên hệ để được hỗ trợ.",True,True,2026-09-03T12:13:20.943287
+1747088023165188,spam,tich_cuc,0.4,none,,[],,"Một tư vấn viên của Dai-ichi Life tự giới thiệu kinh nghiệm và thành tích, đưa ra lời khuyên về việc thêm bé vào hợp đồng Dai-ichi Life hoặc tham khảo gói mini, và mời tư vấn.",True,True,2026-09-03T12:13:20.943287
+1747093083164682,spam,tich_cuc,0.3,none,,[],,Người dùng đưa ra một tuyên bố chung chung rằng AIA là số 1 Đông Nam Á.,True,True,2026-09-03T12:13:20.943287
+1747286606478663,y_kien_trung_lap,trung_lap,0.1,none,,[],"loi khuyen khi mua bao hiem cho con, toi uu hop dong bao hiem gia dinh",Người dùng khuyên nên gắn thêm thẻ con vào hợp đồng bảo hiểm của Manulife và Dai-ichi Life.,False,False,2026-09-03T12:13:20.943287
+1747315946475729,y_kien_trung_lap,trung_lap,0.1,none,,[],cách tối ưu thẻ sức khỏe bảo hiểm,Commenter gợi ý gắn thẻ sức khỏe vào hợp đồng Dai-ichi hoặc Manulife để tối ưu.,False,False,2026-09-03T12:13:36.199328
+1747326196474704,check_chi_phi,trung_lap,0.0,none,,[],cách tính phí bảo hiểm,Người dùng hỏi về mức phí bảo hiểm.,False,False,2026-09-03T12:13:36.199328
+1747338683140122,y_kien_trung_lap,trung_lap,0.2,none,,[],các gói bảo hiểm cho bé,"Commenter cung cấp thông tin về mức phí gói bảo hiểm thấp nhất, bắt đầu từ 9,3 triệu đồng/năm và giảm dần theo độ tuổi của bé.",True,False,2026-09-03T12:13:36.199328
+1747356823138308,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên tên Ninh khuyên người dùng đã có 3 hợp đồng bảo hiểm nên xem xét lại các hợp đồng hiện tại để tối ưu chi phí và gợi ý tham gia bảo hiểm nhân thọ cho người trụ cột kèm thẻ sức khỏe cho bé tại AIA, mời liên hệ qua Zalo để được tư vấn.",True,False,2026-09-03T12:13:36.199328
+1746951576512166,y_kien_trung_lap,trung_lap,0.1,none,,[],quy định về thay đổi thông tin hợp đồng bảo hiểm,"Commenter giải thích rằng người được bảo hiểm không thể thay đổi, nhưng người mua bảo hiểm và người thụ hưởng thì có thể.",False,False,2026-09-03T12:13:36.199328
+1746952729845384,y_kien_trung_lap,trung_lap,0.0,none,,[],,Commenter đồng ý hoặc xác nhận ngắn gọn.,False,False,2026-09-03T12:13:46.435621
+1746963159844341,y_kien_trung_lap,trung_lap,0.0,none,,[],,Commenter đồng ý hoặc xác nhận một cách thân thiện.,False,False,2026-09-03T12:13:46.435621
+1746966063177384,y_kien_trung_lap,trung_lap,0.2,none,,[],hướng dẫn thay đổi bên mua bảo hiểm,"Hướng dẫn cách thay đổi bên mua bảo hiểm nếu đủ 18 tuổi, cần mang CCCD của cả hai người đến văn phòng AIA gần nhất.",False,False,2026-09-03T12:13:46.435621
+1746967306510593,y_kien_trung_lap,trung_lap,0.1,none,,[],phân biệt bên mua và người được bảo hiểm,Giải thích rằng bên mua bảo hiểm có thể thay đổi nhưng người được bảo hiểm chính thì không.,False,False,2026-09-03T12:13:46.435621
+1746973693176621,y_kien_trung_lap,trung_lap,0.0,none,,[],hướng dẫn thay đổi thông tin hợp đồng bảo hiểm online,Hỏi liệu có thể thay đổi thông tin hợp đồng bảo hiểm trực tuyến được không.,False,False,2026-09-03T12:13:46.435621
+1746974649843192,spam,trung_lap,0.0,none,,[],,Một tư vấn viên của AIA để lại thông tin liên hệ và hashtag.,True,True,2026-09-03T12:14:00.534907
+1746976189843038,spam,trung_lap,0.0,none,,[],,"Một người dùng mời inbox để được hỗ trợ, kèm theo tên.",True,True,2026-09-03T12:14:00.534907
+1746977719842885,y_kien_trung_lap,trung_lap,0.1,none,,[],Hướng dẫn thủ tục bảo hiểm không làm online được,"Comment hướng dẫn về thủ tục không thể làm online, cần nhờ tư vấn viên hỗ trợ nộp đơn tại văn phòng, kèm theo CCCD và lưu ý về chữ ký đúng.",True,False,2026-09-03T12:14:00.534907
+1746979903176000,y_kien_trung_lap,trung_lap,0.0,none,,[],,"Một lời đáp ngắn gọn, lịch sự.",False,False,2026-09-03T12:14:00.534907
+1746980573175933,y_kien_trung_lap,trung_lap,0.1,none,,[],Hướng dẫn khách hàng đến quầy dịch vụ để làm thủ tục,"Comment hướng dẫn hai mẹ con đến quầy chăm sóc khách hàng gần nhất để được hướng dẫn thủ tục, cần mang theo CCCD bản gốc.",True,False,2026-09-03T12:14:00.534907
+1746983529842304,spam,trung_lap,0.1,none,,[],,Một tư vấn viên hướng dẫn cách đổi bên mua bảo hiểm và mời liên hệ để được hỗ trợ.,True,False,2026-09-03T12:14:16.214780
+1746983599842297,y_kien_trung_lap,tich_cuc,0.8,none,,[],huong dan chi tiet doi ben mua bao hiem,"Một tư vấn viên cung cấp hướng dẫn chi tiết về thủ tục đổi bên mua bảo hiểm, bao gồm các bước thực hiện online hoặc trực tiếp tại văn phòng AIA và các giấy tờ cần thiết.",True,False,2026-09-03T12:14:16.214780
+1746986169842040,y_kien_trung_lap,trung_lap,0.2,none,,[],huong dan su dung app aia+,Commenter thông báo rằng thủ tục đổi bên mua không có trên ứng dụng AIA+ và gợi ý cách nhanh nhất là điền form giấy và gửi cho tư vấn viên.,True,False,2026-09-03T12:14:16.214780
+1746990949841562,y_kien_trung_lap,trung_lap,0.1,none,,[],,Commenter xác nhận có thể đổi bên mua bảo hiểm.,False,False,2026-09-03T12:14:16.214780
+1747287203145270,y_kien_trung_lap,trung_lap,0.1,none,,[],,Commenter xác nhận có thể đổi bên mua bảo hiểm.,False,False,2026-09-03T12:14:16.214780
+1747315509809106,y_kien_trung_lap,trung_lap,0.1,none,,[],quy trinh thay doi ben mua bao hiem,Commenter cho biet ben mua bao hiem co the thay doi va khuyen nguoi dung lien he van phong hoac tu van vien de duoc ho tro.,True,False,2026-09-03T12:14:28.521306
+1747367723137218,y_kien_trung_lap,trung_lap,0.1,none,,[],huong dan thay doi ben mua bao hiem,Commenter xac nhan co the thay doi ben mua bao hiem bang cach den van phong gan nhat de lam don.,False,False,2026-09-03T12:14:28.521306
+1746949333179057,spam,trung_lap,0.0,none,,[],,Commenter tra loi co va yeu cau nguoi dung nhan tin rieng.,True,True,2026-09-03T12:14:28.521306
+1746954849845172,spam,trung_lap,0.0,none,,[],,"Commenter cung cap so Zalo va quang cao ban bao hiem nha o, cua hang.",True,True,2026-09-03T12:14:28.521306
+1746965869844070,spam,trung_lap,0.0,none,,[],,Commenter tra loi co mot cach chung chung.,True,True,2026-09-03T12:14:28.521306
+1746970763176914,spam,trung_lap,0.0,none,,[],,Người dùng để lại số Zalo để được liên hệ.,True,False,2026-09-03T12:14:43.747157
+1746977333176257,spam,trung_lap,0.0,none,,[],,Một người dùng khác giới thiệu liên hệ với Zương Zuồi Nguyễn Hoa để được tư vấn.,True,False,2026-09-03T12:14:43.747157
+1746945936512730,spam,tich_cuc,0.4,none,,[],,Người dùng giới thiệu Sun Life cho bảo hiểm nội trú 100% và cung cấp thông tin liên hệ của hai tư vấn viên.,True,False,2026-09-03T12:14:43.747157
+1746947163179274,san_pham_giai_phap,tieu_cuc,-0.4,low,Phạm vi bảo hiểm không rõ ràng/không đầy đủ,"[""pham vi bao hiem khong ro""]","Giải thích phạm vi bảo hiểm cho các trường hợp xét nghiệm âm tính, Quyền lợi bảo hiểm cho chi phí khám chữa bệnh không phát hiện bệnh",Người dùng bày tỏ sự ngạc nhiên và không hài lòng khi chưa thấy công ty bảo hiểm nào thanh toán cho các trường hợp xét nghiệm âm tính.,False,False,2026-09-03T12:14:43.747157
+1746947703179220,spam,tich_cuc,0.5,none,,[],,Người dùng giới thiệu sản phẩm bảo hiểm nội trú của Generali chi trả 100% cho trẻ em từ 0-5 tuổi và nhận định không có công ty nào chi trả 100% cho ngoại trú.,True,False,2026-09-03T12:14:43.747157
+1746947993179191,check_chi_phi,trung_lap,0.1,none,,[],,Người dùng hỏi về mức phí bảo hiểm có rẻ không.,False,False,2026-09-03T12:14:55.791522
+1746948013179189,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng nhắc đến các công ty bảo hiểm Gen và Sun.,False,False,2026-09-03T12:14:55.791522
+1746948073179183,spam,tich_cuc,0.3,none,,[],,"Người dùng giới thiệu về các quyền lợi của bảo hiểm Gen như chi trả cả âm tính, không đồng chi trả nội trú và ưu đãi cho trẻ 0-5 tuổi.",True,True,2026-09-03T12:14:55.791522
+1746952373178753,y_kien_trung_lap,trung_lap,0.1,none,,[],so sanh quyen loi bao hiem ngoai tru noi tru,"Người dùng chia sẻ thông tin về quyền lợi bảo hiểm của Dai-ichi Life, chi trả 100% cho ngoại trú nhưng 70/30 cho nội trú.",False,False,2026-09-03T12:14:55.791522
+1746955573178433,san_pham_giai_phap,tieu_cuc,-0.4,none,,"[""pham vi bao hiem khong can thiet""]",giai thich quyen loi chi tra am tinh,"Người dùng bày tỏ sự hoài nghi về việc bảo hiểm chi trả cho các trường hợp âm tính, cho rằng đó là dư thừa.",False,False,2026-09-03T12:14:55.791522
+1746956326511691,y_kien_trung_lap,trung_lap,0.1,none,,[],,Người dùng đặt câu hỏi liệu bài viết có phải là seeding hay không.,False,False,2026-09-03T12:15:15.591590
+1746957449844912,muon_tu_van,trung_lap,0.1,none,,[],"Độ tuổi tối thiểu tham gia bảo hiểm cho bé, Lợi ích khi mua bảo hiểm sớm cho trẻ",Người dùng hỏi về độ tuổi tối thiểu của bé để tham gia bảo hiểm.,False,False,2026-09-03T12:15:15.591590
+1746957493178241,spam,tich_cuc,0.5,none,,[],,Người dùng giới thiệu sản phẩm bảo hiểm của Bame Life hoặc Ongba Life và nhấn mạnh quyền lợi chi trả chi phí lót tay bác sĩ.,True,True,2026-09-03T12:15:15.591590
+1746957589844898,spam,trung_lap,0.2,none,,[],,Người dùng thông tin rằng Minh Minh Gen và Sun Life có chi trả (cho một quyền lợi nào đó).,True,True,2026-09-03T12:15:15.591590
+1746958046511519,spam,tich_cuc,0.5,none,,[],,Người dùng thông báo bé từ 30 ngày tuổi có thể mua bảo hiểm và khuyên mua sớm để hưởng đầy đủ quyền lợi.,True,True,2026-09-03T12:15:15.591590
+1746959563178034,spam,tich_cuc,0.8,none,,[],,Một chuyên viên quản lý khách hàng cao cấp của Sun Life giới thiệu các quyền lợi nổi bật của bảo hiểm Sun Life dành cho trẻ em và mời liên hệ để được tư vấn.,True,True,2026-09-03T12:15:29.182004
+1746961786511145,y_kien_trung_lap,trung_lap,0.1,none,,[],do tuoi tham gia bao hiem cho tre em,Commenter thông báo rằng trẻ em từ 30 ngày tuổi có thể tham gia bảo hiểm.,False,False,2026-09-03T12:15:29.182004
+1746962079844449,spam,tich_cuc,0.5,none,,[],,"Commenter so sánh quyền lợi chi trả xét nghiệm âm tính của Generali và Sun Life, sau đó mời inbox để mua thẻ Sun Life.",True,True,2026-09-03T12:15:29.182004
+1746966493177341,y_kien_trung_lap,trung_lap,0.0,none,,[],thong tin ve generali,Commenter chỉ đề cập đến tên công ty bảo hiểm Generali.,False,False,2026-09-03T12:15:29.182004
+1746967009843956,san_pham_giai_phap,tieu_cuc,-0.4,low,quyen loi san pham chua toi uu cho benh nang,"[""gioi han chi tra"", ""quyen loi khong phu hop benh nang""]","phan tich quyen loi chi tra 100% va gioi han chi tra, lua chon bao hiem cho benh nang","Commenter cho rằng việc chi trả 100% cho trẻ nhỏ không quan trọng bằng việc có thẻ không giới hạn số tiền chi trả mỗi lần nằm viện, vì quyền lợi 100% có thể không đủ cho bệnh nặng.",False,False,2026-09-03T12:15:29.182004
+1746967553177235,so_sanh_chung,trung_lap,0.25,none,,[],so sanh chi tiet quyen loi bao hiem suc khoe cua Generali va Sun Life,"Người dùng đang sử dụng bảo hiểm Gen và thấy ổn, nhưng muốn so sánh với Sun để đưa ra quyết định.",False,False,2026-09-03T12:15:45.115067
+1746972983176692,spam,tich_cuc,0.8,none,,[],,"Một tư vấn viên bảo hiểm Generali tên Hoa quảng cáo sản phẩm Gen với quyền lợi chi trả nội trú và xét nghiệm âm tính, đồng thời mời khách hàng liên hệ để được tư vấn.",True,True,2026-09-03T12:15:45.115067
+1746973796509944,spam,tich_cuc,0.7,none,,[],,Một người dùng giới thiệu tư vấn viên Hoa cho những ai cần tư vấn bảo hiểm nhiệt tình và có nghiệp vụ.,False,True,2026-09-03T12:15:45.115067
+1746974703176520,spam,tich_cuc,0.3,none,,[],,Một người dùng giới thiệu gói bảo hiểm nội trú với chi phí 10 triệu/năm (đã bao gồm nhân thọ) và chi trả 100%.,True,True,2026-09-03T12:15:45.115067
+1746976746509649,spam,tich_cuc,0.6,none,,[],,"Một người dùng thông báo về gói bảo hiểm Gen có chi trả 0 đồng tại cả bệnh viện tư và công, đồng thời mời inbox để được tư vấn.",True,True,2026-09-03T12:15:45.115067
+1746977456509578,khen,tich_cuc,0.8,none,,[],uu diem san pham generali,Người dùng khen Generali đáp ứng được các yêu cầu đã nêu.,False,True,2026-09-03T12:16:01.593928
+1746984979842159,spam,trung_lap,0.0,none,,[],,Người dùng mời inbox để gửi thông tin tư vấn.,True,True,2026-09-03T12:16:01.593928
+1746990486508275,so_sanh_chung,trung_lap,0.2,none,,[],so sanh quyen loi sun life va generali,"Một chuyên viên quản lý khách hàng của Sun Life Vietnam so sánh chi tiết quyền lợi giữa Sun Life và Generali, nhấn mạnh các ưu điểm của Sun Life và mời liên hệ để tư vấn.",True,False,2026-09-03T12:16:01.593928
+1746992246508099,y_kien_trung_lap,trung_lap,0.0,none,,[],chi tra tien giuong va dich vu y te cua sun life,Người dùng hỏi về việc chi trả tiền giường và chi phí dịch vụ y tế của Sun Life có tách biệt như các bệnh viện lớn hay không.,False,False,2026-09-03T12:16:01.593928
+1746993609841296,khen,tich_cuc,0.5,none,,[],thong tin the bao hiem roi cua generali,Người dùng giới thiệu Generali và thông báo sắp có thẻ rời.,False,True,2026-09-03T12:16:01.593928
+1746995993174391,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu inbox.,True,False,2026-09-03T12:16:13.536969
+1746996273174363,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu inbox.,True,False,2026-09-03T12:16:13.536969
+1747001516507172,check_chi_phi,trung_lap,0.1,none,,[],Giải đáp quyền lợi bảo hiểm sức khỏe: Chi phí khám sức khỏe có được chi trả 100%?,Người dùng hỏi về khả năng chi trả 100% cho chi phí khám sức khỏe 10-20 triệu đồng.,False,False,2026-09-03T12:16:13.536969
+1747001696507154,so_sanh_chung,tich_cuc,0.4,none,,[],So sánh quyền lợi bảo hiểm sức khỏe: Chi trả tiền giường giữa các công ty bảo hiểm.,Người dùng chia sẻ thông tin về việc Sun Life và Generali đều không giới hạn phòng đơn tiêu chuẩn trong hạn mức chi trả tiền giường.,False,False,2026-09-03T12:16:13.536969
+1747004406506883,spam,trung_lap,0.1,none,,[],,Người dùng thông báo đã nhắn tin và cung cấp số Zalo để liên hệ thêm.,True,False,2026-09-03T12:16:13.536969
+1747009199839737,y_kien_trung_lap,tich_cuc,0.4,none,,[],quyen loi bao hiem gia dinh,"Comment giới thiệu về quyền lợi của sản phẩm Sunlife, đặc biệt là quỹ san sẻ yêu thương cho gia đình, như một giải pháp đáp ứng điều kiện.",True,False,2026-09-03T12:16:31.273894
+1747026096504714,so_sanh_chung,trung_lap,0.1,none,,[],so sanh cac goi bao hiem,"Comment so sánh các công ty bảo hiểm Gen, Sunlife và UIC dựa trên các tiêu chí như tốc độ, chi phí và loại thẻ.",False,False,2026-09-03T12:16:31.273894
+1747033009837356,spam,tich_cuc,0.3,none,,[],,"Comment khẳng định Generali là lựa chọn tốt, khuyến khích tham khảo feedback, thông báo khuyến mãi 30% phí thẻ Gen cho em bé trong tháng 8 và kêu gọi liên hệ qua số điện thoại.",True,True,2026-09-03T12:16:31.273894
+1747044859836171,y_kien_trung_lap,trung_lap,0.0,none,,[],hieu dung ve pham vi bao hiem,Comment làm rõ rằng không có bảo hiểm nào chi trả 100% hóa đơn y tế mà chỉ chi trả 100% chi phí y tế tối đa theo hạn mức.,False,False,2026-09-03T12:16:31.273894
+1747048089835848,y_kien_trung_lap,trung_lap,0.0,none,,[],,Comment chỉ đề cập đến tên công ty bảo hiểm Generali (có thể là lỗi chính tả).,False,False,2026-09-03T12:16:31.273894
+1747057299834927,spam,trung_lap,0.0,none,,[],,Comment chỉ chứa tên người dùng và không có nội dung cụ thể.,False,False,2026-09-03T12:16:48.488312
+1747090586498265,phan_van,trung_lap,0.1,none,,[],So sánh bảo hiểm sức khỏe Pacific Cross với các hãng khác,Người dùng hỏi ý kiến về bảo hiểm Pacific Cross.,False,False,2026-09-03T12:16:48.488312
+1747092066498117,spam,tich_cuc,0.5,none,,[],,Một tư vấn viên giới thiệu AIA và mời tư vấn.,True,False,2026-09-03T12:16:48.488312
+1747100749830582,y_kien_trung_lap,trung_lap,0.2,none,,[],So sánh chi tiết các gói bảo hiểm sức khỏe cho bé,"Một tư vấn viên Dai-ichi cung cấp thông tin chi tiết về gói bảo hiểm sức khỏe, so sánh quyền lợi chi trả ngoại trú, nội trú, chi phí với các hãng khác và giới thiệu giải pháp bù đắp đồng chi trả.",True,False,2026-09-03T12:16:48.488312
+1747241059816551,y_kien_trung_lap,trung_lap,0.1,none,,[],Quy định đồng chi trả bảo hiểm Pacific Cross cho trẻ em,Comment giải thích về quy định đồng chi trả của Pacific Cross cho trẻ em khi mua riêng hoặc mua kèm bố mẹ.,False,False,2026-09-03T12:16:48.488312
+1747248086482515,y_kien_trung_lap,trung_lap,0.2,none,,[],Phan tich dieu khoan bao hiem va thuc te chi tra,"Một tư vấn viên chia sẻ về việc Gen (Generali) hiện đang chi trả cho các xét nghiệm âm tính dù điều khoản không ghi rõ, khuyến khích khách hàng có cái nhìn khách quan.",True,True,2026-09-03T12:17:04.246898
+1747257786481545,muon_tu_van,trung_lap,0.0,none,,[],,Người dùng Hoa Nguyen bày tỏ mong muốn được tư vấn về bảo hiểm.,False,False,2026-09-03T12:17:04.246898
+1747259586481365,khen,tich_cuc,0.8,none,,[],Phan hoi tich cuc ve Generali,Người dùng bày tỏ sự hài lòng và đồng tình với Generali.,False,False,2026-09-03T12:17:04.246898
+1747265419814115,spam,trung_lap,0.0,none,,[],,Nguyen Minh Thao yêu cầu người khác nhắn tin riêng cho mình.,True,True,2026-09-03T12:17:04.246898
+1747267343147256,so_sanh_chung,trung_lap,0.2,none,,[],So sanh cac goi bao hiem voi quyen loi va phi tai tuc,"Người dùng khuyên nên mua bảo hiểm của Sun Life hoặc Generali thay vì Pacific Cross vì phí và quyền lợi tương đương, kèm cam kết phí tái tục.",False,False,2026-09-03T12:17:04.246898
+1747268286480495,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu người nhận inbox hoặc liên hệ Zalo để được tư vấn.,True,False,2026-09-03T12:17:54.676046
+1747269086480415,so_sanh_chung,trung_lap,0.1,none,,[],so sanh cam ket bao hiem sun life va generali,Người dùng hỏi về các cam kết của Sun Life và Generali.,False,False,2026-09-03T12:17:54.676046
+1747270043146986,check_chi_phi,trung_lap,0.1,none,,[],huong dan chon goi bao hiem pacific phu hop,Người dùng hỏi về mức phí bảo hiểm hàng năm phù hợp cho gói của Pacific.,False,False,2026-09-03T12:17:54.676046
+1747271363146854,so_sanh_chung,tich_cuc,0.6,none,,[],,,False,False,2026-09-03T12:17:54.676046
+1747276279813029,y_kien_trung_lap,trung_lap,0.0,,,[],,,False,False,2026-09-03T12:17:54.676046
+1747282623145728,khen,tich_cuc,0.8,none,,[],loi ich the bao hiem nhan tho,"Commenter giải thích về ưu điểm của thẻ bảo hiểm Sun và Gen, nhấn mạnh việc tái tục tự động, không tái thẩm định sức khỏe hàng năm và phí chỉ thay đổi theo tuổi, mang lại sự an toàn.",True,True,2026-09-03T12:18:16.945053
+1747285089812148,spam,trung_lap,0.0,none,,[],,Commenter yêu cầu người dùng Phương Hoa nhắn tin riêng.,True,True,2026-09-03T12:18:16.945053
+1747285159812141,spam,trung_lap,0.0,none,,[],,Commenter yêu cầu người dùng Hoa nhắn tin riêng.,True,True,2026-09-03T12:18:16.945053
+1747285249812132,spam,trung_lap,0.0,none,,[],,Commenter hướng dẫn Nguyễn Mạnh nhắn tin cho Hoa nếu cần hỗ trợ.,True,True,2026-09-03T12:18:16.945053
+1747285693145421,y_kien_trung_lap,trung_lap,0.1,none,,"[""pham vi bao hiem co gioi han""]",gioi han chi tra the bao hiem ngoai tru,Commenter cho rằng các thẻ bảo hiểm ngoại trú đều có hạn mức chi trả tương tự và không thể chi trả 100%.,False,False,2026-09-03T12:18:16.945053
+1747300073143983,so_sanh_chung,trung_lap,0.0,none,,[],so sanh bao hiem generali va sun life,Người dùng muốn so sánh giữa Generali và Sun Life.,False,False,2026-09-03T12:18:29.836016
+1747312579809399,y_kien_trung_lap,trung_lap,0.1,none,,[],do tuoi tham gia bao hiem cho be,Comment cung cấp thông tin về độ tuổi tối thiểu để tham gia bảo hiểm cho trẻ em là từ 30 ngày tuổi.,False,False,2026-09-03T12:18:29.836016
+1747313786475945,spam,trung_lap,0.2,none,,[],,"Một tư vấn viên của Dai-ichi Life giới thiệu chi tiết về các gói bảo hiểm cho trẻ em, bao gồm quyền lợi ngoại trú và nội trú, chi phí, và mời kết nối để tư vấn thêm.",True,True,2026-09-03T12:18:29.836016
+1747315686475755,y_kien_trung_lap,tieu_cuc,-0.3,none,,"[""chi phi bao hiem cao""]",giai thich ve chi phi bao hiem,Người dùng bình luận một cách hài hước rằng phí bảo hiểm không hề rẻ như mọi người thường nói.,False,False,2026-09-03T12:18:29.836016
+1747318573142133,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng hỏi liệu Sơn Phạm có làm trong lĩnh vực bảo hiểm nhân thọ không.,False,False,2026-09-03T12:18:29.836016
+1747333099807347,spam,trung_lap,0.1,none,,[],,"Comment quảng cáo sản phẩm bảo hiểm nhân thọ và phi nhân thọ của Fubon Life, kèm thông tin liên hệ tư vấn.",True,False,2026-09-03T12:18:44.699358
+1747357416471582,check_chi_phi,trung_lap,0.1,none,,[],,Comment cung cấp thông tin về mức phí tối thiểu 8 triệu đồng cho gói bảo hiểm nhân thọ có tích lũy.,False,False,2026-09-03T12:18:44.699358
+1746986066508717,y_kien_trung_lap,trung_lap,-0.1,none,,[],Lợi ích khi mua bảo hiểm trực tiếp từ tư vấn viên,Commenter khuyên nên mua bảo hiểm trực tiếp từ tư vấn viên thay vì qua ngân hàng để được chăm sóc và kê hợp đồng tốt hơn.,False,False,2026-09-03T12:18:44.699358
+1746986313175359,dich_vu_tu_van,tieu_cuc,-0.5,low,Chất lượng tư vấn và hỗ trợ bồi thường kém khi mua bảo hiểm qua ngân hàng,"[""tu van khong chuyen nghiep"", ""ho tro boi thuong kem"", ""nghiep vu bao hiem yeu""]",Ưu nhược điểm khi mua bảo hiểm qua ngân hàng,"Commenter bày tỏ sự không hài lòng về chất lượng tư vấn và hỗ trợ bồi thường của nhân viên ngân hàng khi bán bảo hiểm, khuyên nên mua trực tiếp từ sale của công ty bảo hiểm.",False,False,2026-09-03T12:18:44.699358
+1746989296508394,phan_van,trung_lap,0.0,none,,[],Cách đánh giá uy tín công ty bảo hiểm,Người dùng đang phân vân về uy tín của một sản phẩm bảo hiểm và muốn xin đánh giá từ những khách hàng đã sử dụng.,False,False,2026-09-03T12:18:44.699358
+1746992439841413,y_kien_trung_lap,trung_lap,0.1,none,,[],"lua chon kenh mua bao hiem, tam quan trong cua tu van vien, kinh nghiem chon tu van vien","Commenter khuyên nên mua bảo hiểm trực tiếp từ tư vấn viên của công ty bảo hiểm, đặc biệt là người làm lâu dài với nghề để được chăm sóc hợp đồng tốt hơn, thay vì qua ngân hàng.",False,False,2026-09-03T12:18:57.676016
+1746992829841374,y_kien_trung_lap,trung_lap,0.2,none,,[],"uy tin cua bao hiem qua ngan hang, cach chon bao hiem qua kenh ngan hang","Commenter cho rằng các ngân hàng lớn sẽ chọn đối tác bảo hiểm uy tín để bảo vệ danh tiếng của họ, và khuyên người dùng nên chọn các công ty bảo hiểm được ngân hàng lớn lựa chọn rồi liên hệ trực tiếp với sale.",False,False,2026-09-03T12:18:57.676016
+1747034043170586,spam,tich_cuc,0.5,none,,[],,"Commenter quảng cáo AIA là tập đoàn bảo hiểm lớn nhất châu Á với chất lượng tư vấn viên hàng đầu, khuyên không nên mua bảo hiểm qua kênh ngân hàng.",True,True,2026-09-03T12:18:57.676016
+1747035636503760,y_kien_trung_lap,trung_lap,0.0,none,,[],"moi lien he giua bao hiem va khoan vay ngan hang, nhung dieu can biet khi mua bao hiem qua ngan hang","Commenter giải thích rằng việc mua bảo hiểm qua kênh ngân hàng thường liên quan đến các khoản vay và lãi suất ưu đãi, đồng thời khuyên người mua nên tìm hiểu kỹ dù mua ở đâu.",False,False,2026-09-03T12:18:57.676016
+1747036409837016,y_kien_trung_lap,trung_lap,0.0,none,,[],,Commenter chia sẻ đã mua bảo hiểm Sunlife qua kênh ngân hàng ACB.,False,False,2026-09-03T12:18:57.676016
+1747042613169729,spam,trung_lap,0.1,none,,[],,,False,False,2026-09-03T12:21:04.802949
+1747046859835971,bao_hiem_chung,tieu_cuc,-0.4,,,[],,,False,False,2026-09-03T12:21:04.802949
+1747049333169057,spam,trung_lap,0.15,none,,[],,,False,False,2026-09-03T12:21:04.802949
+1747051876502136,dich_vu_tu_van,trung_lap,0.0,,,[],,,False,False,2026-09-03T12:21:04.802949
+1747103253163665,spam,trung_lap,0.15,,,[],,,False,False,2026-09-03T12:21:04.802949
+1747268249813832,y_kien_trung_lap,trung_lap,0.2,none,,"[""thiet ke goi khong phu hop"", ""khong ke khai suc khoe day du"", ""tu choi boi thuong"", ""khong co nguoi ho tro sau ban""]",,,False,False,2026-09-03T12:22:56.448677
+1747314956475828,spam,trung_lap,0.1,,,[],,,False,False,2026-09-03T12:22:56.448677
+2501582310345660,spam,trung_lap,0.0,none,,[],,Người dùng mời người khác tham khảo bảo hiểm PTI và liên hệ trực tiếp.,True,False,2026-09-03T12:22:56.448677
+2501600183677206,spam,trung_lap,0.0,,,[],,,False,False,2026-09-03T12:22:56.448677
+2501921193645105,check_chi_phi,trung_lap,0.0,none,,[],cac muc phi bao hiem,Người dùng đưa ra một con số liên quan đến chi phí.,False,False,2026-09-03T12:22:56.448677
+2502176716952886,spam,trung_lap,0.0,none,,[],,"Người dùng tự giới thiệu là nhân viên Bảo Việt Bank, mời chào mua bảo hiểm ô tô và yêu cầu liên hệ qua Zalo để được tư vấn và báo phí.",True,False,2026-09-03T12:23:19.611315
+2502873973549827,spam,trung_lap,0.0,none,,[],,Người dùng để lại số điện thoại và mời liên hệ để được hỗ trợ tư vấn về Bảo Việt.,True,False,2026-09-03T12:23:19.611315
+2501587610345130,y_kien_trung_lap,trung_lap,0.1,none,,[],quy trinh lien he tu van vien,Người dùng khuyên nên liên hệ với người bán bảo hiểm trực tiếp để được hướng dẫn.,False,False,2026-09-03T12:23:19.611315
+2501591933678031,chinh_sach_quy_trinh_boi_thuong,trung_lap,-0.1,none,,[],huong dan xu ly tai nan giao thong,"Người dùng đưa ra lời khuyên về cách xử lý khi có sự cố liên quan đến bảo hiểm, nhấn mạnh việc không thỏa thuận với bên thứ ba và yêu cầu bảo hiểm đền bù 100%.",False,False,2026-09-03T12:23:19.611315
+2501924210311470,y_kien_trung_lap,trung_lap,0.0,none,,[],,"Người dùng đưa ra cụm từ ""Chế tài 50%"".",False,False,2026-09-03T12:23:19.611315
+2501928813644343,dich_vu_tu_van,tieu_cuc,-0.4,low,phan hoi cham,"[""phan hoi cham"", ""khong ho tro kip thoi""]",Quy trình xử lý sự cố giao thông và vai trò của bảo hiểm,"Người dùng gặp tai nạn giao thông, đã chụp ảnh và gọi bảo hiểm nhưng công ty bảo hiểm phản hồi không kịp thời.",False,False,2026-09-03T12:23:31.577479
+2501929393644285,dich_vu_tu_van,trung_lap,-0.2,none,,"[""phan hoi cham""]",,Người dùng xác nhận đã gọi bảo hiểm và được hẹn gặp tư vấn vào ngày mai.,False,False,2026-09-03T12:23:31.577479
+2501960983641126,y_kien_trung_lap,trung_lap,0.1,none,,[],Mẹo bảo vệ quyền lợi khi làm việc với bảo hiểm,Người dùng khuyên nên ghi âm lại các cuộc gọi để tránh bị bảo hiểm bắt bẻ sau này.,False,False,2026-09-03T12:23:31.577479
+2501978076972750,y_kien_trung_lap,trung_lap,0.2,none,,[],Hướng dẫn xử lý tai nạn giao thông có bên thứ ba bỏ chạy,"Người dùng khuyên nên báo công an giao thông để cùng bảo hiểm thu đòi bên thứ ba trong trường hợp xe gây tai nạn bỏ chạy, đồng thời cần minh bạch với bảo hiểm.",False,False,2026-09-03T12:23:31.577479
+2501993370304554,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng xác nhận đã ghi âm cuộc gọi và chụp tin nhắn liên lạc với bên bảo hiểm.,False,False,2026-09-03T12:23:31.577479
+2502885473548677,y_kien_trung_lap,trung_lap,0.0,none,,[],,"Commenter đưa ra lời khuyên về cách xử lý tình huống tai nạn giao thông, gợi ý sử dụng video cam hành trình và báo công an.",False,False,2026-09-03T12:23:44.342290
+2502478523589372,y_kien_trung_lap,trung_lap,0.1,none,,[],quy trinh the quyen trong bao hiem,Commenter thông báo rằng PTI vẫn có thể xử lý vụ việc nếu người dùng làm thế quyền cho PTI để đòi bồi thường từ bên thứ ba.,False,False,2026-09-03T12:23:44.342290
+2502479200255971,phan_van,trung_lap,0.0,none,,[],cac dieu kien de thuc hien the quyen bao hiem,Người dùng hỏi liệu có thể thực hiện thế quyền mà không có biên bản của công an hay không.,False,False,2026-09-03T12:23:44.342290
+2502483720255519,spam,trung_lap,0.0,none,,[],,Commenter mời người dùng nhắn tin riêng.,True,False,2026-09-03T12:23:44.342290
+2502490600254831,y_kien_trung_lap,trung_lap,0.0,none,,[],anh huong cua thoa thuan tu viet den quyen truy doi bao hiem,Commenter cho rằng việc viết tay thỏa thuận đã đồng nghĩa với việc không bảo lưu quyền truy đòi.,False,False,2026-09-03T12:23:44.342290
+2502506936919864,y_kien_trung_lap,trung_lap,0.1,none,,[],hướng dẫn quy trình thế quyền trong bảo hiểm,Commenter đưa ra ý kiến về việc không cần thế quyền đòi bồi thường nếu bên thứ ba đã thỏa thuận chịu trách nhiệm.,False,False,2026-09-03T12:23:59.640631
+2502827356887822,chinh_sach_quy_trinh_boi_thuong,trung_lap,0.0,none,,[],trách nhiệm của công ty bảo hiểm trong bồi thường,Commenter khẳng định công ty bảo hiểm phải chịu trách nhiệm bồi thường 100% cho khách hàng và tự giải quyết các vấn đề liên quan.,False,False,2026-09-03T12:23:59.640631
+2502827606887797,chinh_sach_quy_trinh_boi_thuong,trung_lap,0.0,none,,[],quyền và nghĩa vụ của khách hàng trong quá trình bồi thường,Commenter khuyên người khác không cần ủy quyền và nhấn mạnh trách nhiệm của bảo hiểm là đền bù 100%.,False,False,2026-09-03T12:23:59.640631
+2128509014402567,spam,trung_lap,0.0,none,,[],,"Một quản lý kinh doanh của Manulife tự giới thiệu và tư vấn về khả năng tham gia bảo hiểm cho người có bệnh cao huyết áp, kèm theo điều kiện loại trừ và tăng phí.",True,True,2026-09-03T12:23:59.640631
+2128509394402529,spam,trung_lap,0.0,none,,[],,Commenter yêu cầu người đọc nhắn tin riêng và để lại số điện thoại.,True,True,2026-09-03T12:23:59.640631
+2128511611068974,spam,trung_lap,0.0,none,,[],,Một người dùng mời inbox để tham vấn.,True,False,2026-09-03T12:24:11.328848
+2128513374402131,spam,trung_lap,0.0,none,,[],,Một người dùng mời inbox để hỗ trợ nếu đang có bảo hiểm AIA.,True,False,2026-09-03T12:24:11.328848
+2128515817735220,spam,trung_lap,0.1,none,,[],"bao hiem cho nguoi co benh nen, quyen loi the bao hiem suc khoe, tai tham dinh va tang phi bao hiem","Một tư vấn viên Sun Life giới thiệu bản thân, chia sẻ kinh nghiệm xử lý hồ sơ huyết áp và quảng bá chi tiết về thẻ bảo hiểm Sống Chất 2.0 với các quyền lợi nổi bật, đồng thời mời liên hệ để tư vấn.",True,False,2026-09-03T12:24:11.328848
+2128517664401702,spam,trung_lap,0.0,none,,[],,Một người dùng tự xưng là Tuyến từ AIA mời inbox.,True,False,2026-09-03T12:24:11.328848
+2128519217734880,spam,trung_lap,0.0,none,,[],,Một người dùng mời inbox.,True,False,2026-09-03T12:24:11.328848
+2128523624401106,spam,trung_lap,0.0,none,,[],,Một tư vấn viên AIA giới thiệu bản thân và mời inbox để được hỗ trợ.,True,False,2026-09-03T12:24:24.671604
+2128527661067369,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên bảo hiểm giới thiệu khả năng hỗ trợ kê khai hồ sơ toàn quốc, đặc biệt cho thẻ sức khỏe của AIA và ưu tiên cho mẹ.",True,False,2026-09-03T12:24:24.671604
+2128528161067319,y_kien_trung_lap,trung_lap,-0.1,none,,[],Bảo hiểm cho người có bệnh nền; Các yếu tố ảnh hưởng đến phí bảo hiểm; Điều kiện tham gia bảo hiểm sức khỏe,Bình luận cho biết người có huyết áp cao sẽ khó tham gia bảo hiểm hoặc phải chịu mức phí cao hơn.,False,False,2026-09-03T12:24:24.671604
+2128529944400474,spam,trung_lap,0.0,none,,[],,Một lời mời nhắn tin để được tư vấn.,True,False,2026-09-03T12:24:24.671604
+2128535661066569,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên tên Hoa giới thiệu kinh nghiệm 9 năm trong ngành bảo hiểm, khả năng xử lý hồ sơ khó, và cam kết đồng hành hỗ trợ khách hàng 24/7, kèm theo thông tin liên hệ.",True,False,2026-09-03T12:24:24.671604
+2128541757732626,spam,trung_lap,0.0,none,,[],,Một người dùng mời inbox để trao đổi.,True,False,2026-09-03T12:24:34.077429
+2128542141065921,spam,trung_lap,0.0,none,,[],,Một người dùng mời inbox để hỗ trợ.,True,False,2026-09-03T12:24:34.077429
+2128544134399055,spam,trung_lap,0.0,none,,[],,Một người dùng từ công ty Bảo Việt mời inbox.,True,False,2026-09-03T12:24:34.077429
+2128548991065236,spam,trung_lap,0.0,none,,[],,Ngân từ Sun Life mời inbox để tư vấn giải pháp phù hợp.,True,False,2026-09-03T12:24:34.077429
+2128553897731412,spam,trung_lap,0.0,none,,[],,"Hương Giang, tư vấn viên Manulife tại TP.HCM, mời inbox để trao đổi cụ thể.",True,False,2026-09-03T12:24:34.077429
+2128561574397311,spam,trung_lap,0.0,none,,[],,Một tư vấn viên Manulife giới thiệu bản thân và để lại số điện thoại để kết nối hỗ trợ.,True,False,2026-09-03T12:24:53.956111
+2128574704395998,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên AIA giới thiệu kinh nghiệm xử lý hồ sơ bệnh nền (huyết áp) và đề nghị hỗ trợ thiết kế gói bảo hiểm, rà soát hồ sơ y tế, kèm theo thông tin liên hệ.",True,False,2026-09-03T12:24:53.956111
+2128583327728469,spam,trung_lap,0.0,none,,[],,Một tư vấn viên AIA giới thiệu bản thân và mời liên hệ nếu quan tâm đến bảo hiểm AIA.,True,False,2026-09-03T12:24:53.956111
+2128592574394211,spam,trung_lap,0.2,none,,[],,"Một chuyên viên AIA giới thiệu về kinh nghiệm hỗ trợ khách hàng có bệnh nền và liệt kê chi tiết 11 quyền lợi nổi bật của sản phẩm bảo hiểm sức khỏe trọn đời 100 tuổi của AIA, kèm theo thông tin liên hệ.",True,False,2026-09-03T12:24:53.956111
+2128642777722524,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên chia sẻ kinh nghiệm xử lý thành công hồ sơ bảo hiểm cho khách hàng 69 tuổi có tiền sử cao huyết áp và mã bệnh giả trên VSSID, đồng thời mời liên hệ để được hỗ trợ.",True,False,2026-09-03T12:24:53.956111
+2128683701051765,spam,trung_lap,0.0,none,,[],,Một tư vấn viên Dai-ichi Life mời liên hệ để được tư vấn tại TPHCM.,True,False,2026-09-03T12:25:08.442865
+2128797597707042,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên đưa ra nhiều câu hỏi chi tiết về tình trạng huyết áp để đánh giá khả năng tham gia bảo hiểm, đồng thời giới thiệu kinh nghiệm hỗ trợ khách hàng bị từ chối và mời liên hệ để được tư vấn cụ thể.",True,False,2026-09-03T12:25:08.442865
+2129412004312268,spam,trung_lap,0.1,none,,[],,"Một tư vấn viên bảo hiểm Dai-ichi Life tên Hải giới thiệu về bản thân, khu vực hoạt động và chuyên môn về bảo hiểm nhân thọ, chăm sóc sức khỏe.",True,False,2026-09-03T12:25:08.442865
+2129413474312121,spam,trung_lap,0.0,none,,[],,Lời mời nhắn tin riêng.,True,False,2026-09-03T12:25:08.442865
+2129423124311156,spam,trung_lap,0.0,none,,[],,Đề cập đến Prudential tại Đà Nẵng.,True,False,2026-09-03T12:25:08.442865
+2129423877644414,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu liên hệ riêng.,True,True,2026-09-03T12:25:19.134733
+2129453604308108,y_kien_trung_lap,trung_lap,0.0,none,,[],,Người dùng nhắc đến Bảo Việt Đồng Nai.,False,False,2026-09-03T12:25:19.134733
+2129454580974677,spam,trung_lap,0.0,none,,[],,Người dùng yêu cầu liên hệ riêng.,True,True,2026-09-03T12:25:19.134733
+2129465840973551,spam,trung_lap,0.0,none,,[],,Người dùng nhắc đến bảo hiểm nhân thọ tại Gia Lai.,True,True,2026-09-03T12:25:19.134733
+2129467070973428,spam,trung_lap,0.0,none,,[],,Người dùng để lại tên và số điện thoại.,True,True,2026-09-03T12:25:19.134733
+2129499517636850,spam,trung_lap,0.0,none,,[],,Một chuyên viên bảo hiểm AIA tự giới thiệu và mong muốn kết nối.,True,False,2026-09-03T12:25:29.540446
+2129515207635281,spam,trung_lap,0.0,none,,[],,"Một người từ AIA Hà Nội tự giới thiệu và mong muốn trao đổi, giao lưu.",True,False,2026-09-03T12:25:29.540446
+2129554977631304,spam,trung_lap,0.0,none,,[],,Một người từ Hanwhalife tự giới thiệu và liệt kê các khu vực hoạt động.,True,False,2026-09-03T12:25:29.540446
+2129678784285590,spam,trung_lap,0.0,none,,[],,Một người tên Thu từ Bảo Việt tại Hà Nội bày tỏ mong muốn kết nối và giao lưu.,True,False,2026-09-03T12:25:29.540446
+1746604563213534,spam,trung_lap,0.0,none,,[],,"Một tư vấn viên giới thiệu gói bảo hiểm nhân thọ cho người 57 tuổi với mức phí và quyền lợi cụ thể, mời inbox để biết thêm chi tiết.",True,True,2026-09-03T12:50:31.640531
