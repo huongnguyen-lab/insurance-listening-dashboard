@@ -2339,14 +2339,19 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
         crisis_count = sum(crisis_levels.values())
 
         negative_mentions = []
+        negative_prudential_count = 0
         prudential_mentions = []
         if not post_labeled.empty and "Content" in post_labeled:
             pru_scope = post_labeled[post_labeled["Content"].apply(_contains_prudential).astype(bool)]
             prudential_mentions = [str(x).replace("\n", " ")[:220] for x in pru_scope["Content"].dropna()]
             neg_scope = organic_labeled[sentiments == "tieu_cuc"]
             if brand_id and str(brand_id).lower() == "prudential" and not neg_scope.empty:
-                brand_mask = neg_scope["Content"].apply(_contains_prudential).astype(bool)
+                brand_mask = (
+                    _clean_text_series(neg_scope["CommentID"]).isin(prudential_comment_ids)
+                    | neg_scope["Content"].apply(_contains_prudential).astype(bool)
+                )
                 neg_scope = neg_scope[brand_mask]
+            negative_prudential_count = len(neg_scope)
             if not neg_scope.empty and "Content" in neg_scope:
                 negative_mentions = [str(x).replace("\n", " ")[:220] for x in neg_scope["Content"].dropna().head(3)]
 
@@ -2407,6 +2412,7 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
             "prudential_mentions": prudential_mentions,
             "prudential_mention_count": len(prudential_mentions),
             "negative_prudential_mentions": negative_mentions,
+            "negative_prudential_count": negative_prudential_count,
             "negative_ratio": negative_ratio,
             "negative_ratio_formula": f"{negative} / ({positive} + {neutral})",
             "seeding_recommendation": _recommend_seeding(negative_ratio, bool(negative_mentions)),

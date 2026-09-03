@@ -20,6 +20,7 @@ const POST_EXPORT_FIELDS = [
   ["sentiment_positive", "Tích cực"], ["sentiment_neutral", "Trung lập"],
   ["sentiment_negative", "Tiêu cực"], ["sentiment_spam", "Spam"], ["sentiment_total", "Total sentiment"],
   ["prudential_mention_count", "Số comment mention Pru"], ["prudential_mentions", "Comment mention Pru"],
+  ["negative_prudential_count", "Số negative comment của Pru"],
   ["negative_prudential_mentions", "Comment tiêu cực mention Pru"],
   ["negative_ratio", "Tỷ lệ tiêu cực/(tích cực + trung lập)"], ["negative_ratio_formula", "Công thức tỷ lệ"],
   ["seeding_recommendation", "Đề xuất seeding"], ["pillar", "Trụ cột"],
@@ -154,11 +155,13 @@ function renderSummary(rows) {
   const urgent = rows.filter(r => r.seeding_recommendation === "Urgent").length;
   const following = rows.filter(r => r.seeding_recommendation === "Following").length;
   const negative = rows.reduce((sum, r) => sum + Number(r.sentiment_negative || 0), 0);
+  const negativePru = rows.reduce((sum, r) => sum + Number(r.negative_prudential_count || 0), 0);
   const crisis = rows.reduce((sum, r) => sum + Number(r.crisis_comments || 0), 0);
   document.getElementById("m-rows").textContent = fmt(rows.length);
   document.getElementById("m-urgent").textContent = fmt(urgent);
   document.getElementById("m-following").textContent = fmt(following);
   document.getElementById("m-negative").textContent = fmt(negative);
+  document.getElementById("m-negative-pru").textContent = fmt(negativePru);
   document.getElementById("m-crisis").textContent = fmt(crisis);
 }
 
