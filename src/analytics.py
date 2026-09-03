@@ -2220,6 +2220,7 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
     comments = _read_csv_cached(f"{base_dir}/raw_comments.csv")
     labels = _read_csv_cached(f"{base_dir}/ai_labels.csv")
     crisis = _read_csv_cached(f"{base_dir}/crisis_alerts.csv")
+    mentions = _read_csv_cached(f"{base_dir}/brand_mentions.csv")
 
     group_values = _report_split_filter(groups)
     sentiment_values = _report_split_filter(sentiments)
@@ -2261,6 +2262,16 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
         crisis_ids = set(_clean_text_series(crisis["CommentID"]))
     else:
         crisis_ids = set()
+
+    if not mentions.empty and {"CommentID", "brand_id"}.issubset(mentions.columns):
+        prudential_comment_ids = set(
+            _clean_text_series(mentions.loc[
+                _clean_text_series(mentions["brand_id"]).str.lower() == "prudential",
+                "CommentID",
+            ])
+        )
+    else:
+        prudential_comment_ids = set()
 
     post_lookup = {}
     if not posts.empty:
@@ -2312,7 +2323,19 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
 
         base = positive + neutral
         negative_ratio = round(negative / base, 2) if base else (999.0 if negative else 0.0)
-        crisis_levels = _crisis_level_counts(organic_labeled, crisis)
+        all_crisis_levels = _crisis_level_counts(organic_labeled, crisis)
+        post_mentions_prudential = _contains_prudential(post.get("PostContent", ""))
+        if not organic_labeled.empty:
+            comment_mentions_prudential = (
+                _clean_text_series(organic_labeled["CommentID"]).isin(prudential_comment_ids)
+                | organic_labeled.get("Content", pd.Series("", index=organic_labeled.index)).apply(_contains_prudential)
+            )
+            prudential_crisis_scope = organic_labeled[
+                comment_mentions_prudential | bool(post_mentions_prudential)
+            ]
+        else:
+            prudential_crisis_scope = organic_labeled
+        crisis_levels = _crisis_level_counts(prudential_crisis_scope, crisis)
         crisis_count = sum(crisis_levels.values())
 
         negative_mentions = []
@@ -2338,7 +2361,7 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
         angry = _reaction_sum(post_df, ["Angry_Count"])
         comment_count = int(raw_comment_counts.get(pid, len(post_comments)))
         negative_scores = organic_labeled.loc[sentiments == "tieu_cuc", "sentiment_score"] if "sentiment_score" in organic_labeled else pd.Series(dtype=float)
-        risk_score = _post_risk_score(negative, positive, neutral, negative_scores, crisis_levels, angry, sad)
+        risk_score = _post_risk_score(negative, positive, neutral, negative_scores, all_crisis_levels, angry, sad)
         comment_details = []
         for _, comment_row in post_labeled.iterrows():
             intent_value = str(comment_row.get("intent", "") or "").strip()
@@ -2407,6 +2430,8 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
             "sentiments": sentiments,
             "available_groups": available_groups,
             "row_count": len(rows),
+            "crisis_scope": "prudential_mentions_only",
+            "negative_scope": "all_brands",
         },
         "rows": rows,
     }
