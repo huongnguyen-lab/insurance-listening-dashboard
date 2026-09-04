@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prudential Table Report</title>
-  <link rel="stylesheet" href="/static/community_report_table.css?v=table-7">
+  <link rel="stylesheet" href="/static/community_report_table.css?v=table-8">
 </head>
 <body>
   <header class="topbar">
@@ -51,7 +51,15 @@
         <div id="statusText">Loading...</div>
       </div>
       <div class="table-wrap">
-        <table>
+        <table class="post-report-table">
+          <colgroup>
+            <col class="col-stt"><col class="col-group"><col class="col-link"><col class="col-caption">
+            <col class="col-reaction"><col class="col-reaction"><col class="col-reaction">
+            <col class="col-comment"><col class="col-subtype">
+            <col class="col-sentiment"><col class="col-sentiment"><col class="col-sentiment"><col class="col-sentiment">
+            <col class="col-pru-mention"><col class="col-pru-negative">
+            <col class="col-ratio"><col class="col-seeding"><col class="col-pillar">
+          </colgroup>
           <thead>
             <tr>
               <th rowspan="2">STT</th>
@@ -82,8 +90,35 @@
         </table>
       </div>
     </section>
+
+    <section id="commentView" class="comment-view" hidden aria-live="polite">
+      <div class="comment-view-head">
+        <button id="backToPosts" type="button" class="back-button">← Quay lại Post Level Report</button>
+        <div class="comment-post-context">
+          <h2 id="commentViewTitle">Comment table</h2>
+          <div id="commentViewMeta" class="muted"></div>
+        </div>
+        <a id="commentPostLink" href="#" target="_blank" rel="noopener noreferrer">Mở post</a>
+      </div>
+      <div class="comment-table-wrap">
+        <table class="comment-detail-table">
+          <colgroup>
+            <col class="comment-col-index"><col class="comment-col-copy"><col class="comment-col-subtype">
+            <col class="comment-col-check"><col class="comment-col-check"><col class="comment-col-check"><col class="comment-col-check">
+            <col class="comment-col-check-wide"><col class="comment-col-check-wide">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>STT</th><th>Comment</th><th>Sub-loại</th><th>Tích cực</th><th>Trung lập</th>
+              <th>Tiêu cực</th><th>Spam</th><th>Mention Pru</th><th>Mention Pru tiêu cực</th>
+            </tr>
+          </thead>
+          <tbody id="commentRows"></tbody>
+        </table>
+      </div>
+    </section>
   </main>
 
-  <script src="/static/community_report_table.js?v=table-7"></script>
+  <script src="/static/community_report_table.js?v=table-8"></script>
 </body>
 </html>

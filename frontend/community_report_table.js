@@ -129,6 +129,7 @@ function params() {
 }
 
 async function loadTable() {
+  if (document.body.classList.contains("comment-mode")) closeCommentView();
   const status = document.getElementById("statusText");
   if (status) status.textContent = "Loading...";
   const data = await fetch(`/api/community/prudential_table_report?${params()}`, { cache: "no-store" }).then(r => r.json());
@@ -183,21 +184,6 @@ function renderRows(rows) {
       ? `<ul>${row.negative_prudential_mentions.map(x => `<li>${escapeHtml(x)}</li>`).join("")}</ul>`
       : "-";
     const recClass = String(row.seeding_recommendation || "").toLowerCase();
-    const details = (row.comment_details || []).map(comment => {
-      const commentLink = comment.permalink
-        ? `<a href="${escapeAttr(comment.permalink)}" target="_blank">${escapeHtml(comment.content || "-")}</a>`
-        : escapeHtml(comment.content || "-");
-      return `<tr>
-        <td class="comment-copy">${commentLink}<div class="muted">${escapeHtml(comment.author || "-")} · ${escapeHtml(comment.date || "")}</div></td>
-        <td>${escapeHtml(comment.sub_loai || "-")}</td>
-        <td class="check pos">${comment.positive ? "✓" : ""}</td>
-        <td class="check neu">${comment.neutral ? "✓" : ""}</td>
-        <td class="check neg">${comment.negative ? "✓" : ""}</td>
-        <td class="check spam">${comment.spam ? "✓" : ""}</td>
-        <td class="check">${comment.mentions_prudential ? "✓" : ""}</td>
-        <td class="check neg">${comment.negative_prudential_mention ? "✓" : ""}</td>
-      </tr>`;
-    }).join("");
     return `<tr class="post-row">
       <td class="num">${fmt(row.stt)}</td>
       <td>${escapeHtml(row.group_name || row.group_id || "-")}</td>
@@ -206,7 +192,7 @@ function renderRows(rows) {
       <td class="num">${fmt(row.reaction_positive_group)}</td>
       <td class="num">${fmt(row.reaction_sad)}</td>
       <td class="num angry">${fmt(row.reaction_angry)}</td>
-      <td class="num">${fmt(row.comment)}<div class="muted">${fmt(row.comment_reaction)} reactions</div><button class="comment-toggle" type="button" data-comment-target="comments-${index}">Xem comment</button></td>
+      <td class="num">${fmt(row.comment)}<div class="muted">${fmt(row.comment_reaction)} reactions</div><button class="comment-toggle" type="button" data-post-index="${index}">Xem comment</button></td>
       <td>${escapeHtml(row.sub_loai || "-")}</td>
       <td class="num pos">${fmt(row.sentiment_positive)}<div class="muted">Total sentiment: ${fmt(row.sentiment_total)}</div></td>
       <td class="num neu">${fmt(row.sentiment_neutral)}</td>
@@ -217,28 +203,58 @@ function renderRows(rows) {
       <td class="num"><b>${Number(row.negative_ratio || 0).toFixed(2)}</b><div class="muted">${escapeHtml(row.negative_ratio_formula || "")}</div></td>
       <td><span class="badge ${recClass}">${escapeHtml(row.seeding_recommendation || "Normal")}</span></td>
       <td class="manual">${escapeHtml(row.pillar || "")}</td>
-    </tr>
-    <tr id="comments-${index}" class="comment-detail-row">
-      <td colspan="18">
-        <div class="comment-detail-wrap">
-          <table class="comment-detail-table">
-            <thead><tr><th>Comment</th><th>Sub-loại</th><th>Tích cực</th><th>Trung lập</th><th>Tiêu cực</th><th>Spam</th><th>Mention Pru</th><th>Mention Pru tiêu cực</th></tr></thead>
-            <tbody>${details || '<tr><td colspan="8" class="empty">Không có comment đã phân loại</td></tr>'}</tbody>
-          </table>
-        </div>
-      </td>
     </tr>`;
   }).join("");
 }
 
+function openCommentView(index) {
+  const row = currentReportRows[index];
+  const view = document.getElementById("commentView");
+  const tbody = document.getElementById("commentRows");
+  if (!row || !view || !tbody) return;
+
+  const comments = row.comment_details || [];
+  tbody.innerHTML = comments.length ? comments.map((comment, commentIndex) => {
+    const commentLink = comment.permalink
+      ? `<a href="${escapeAttr(comment.permalink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(comment.content || "-")}</a>`
+      : escapeHtml(comment.content || "-");
+    return `<tr>
+      <td class="num">${fmt(commentIndex + 1)}</td>
+      <td class="comment-copy">${commentLink}<div class="muted">${escapeHtml(comment.author || "-")} · ${escapeHtml(comment.date || "")}</div></td>
+      <td>${escapeHtml(comment.sub_loai || "-")}</td>
+      <td class="check pos">${comment.positive ? "✓" : ""}</td>
+      <td class="check neu">${comment.neutral ? "✓" : ""}</td>
+      <td class="check neg">${comment.negative ? "✓" : ""}</td>
+      <td class="check spam">${comment.spam ? "✓" : ""}</td>
+      <td class="check">${comment.mentions_prudential ? "✓" : ""}</td>
+      <td class="check neg">${comment.negative_prudential_mention ? "✓" : ""}</td>
+    </tr>`;
+  }).join("") : '<tr><td colspan="9" class="empty">Không có comment đã phân loại</td></tr>';
+
+  document.getElementById("commentViewTitle").textContent = `Comments của post #${row.stt || index + 1}`;
+  document.getElementById("commentViewMeta").textContent = `${row.group_name || row.group_id || "-"} · ${fmt(comments.length)} comment đã phân loại`;
+  const postLink = document.getElementById("commentPostLink");
+  postLink.href = row.link_post || "#";
+  postLink.hidden = !row.link_post;
+  document.body.classList.add("comment-mode");
+  view.hidden = false;
+  document.querySelector(".comment-table-wrap")?.scrollTo({ top: 0, left: 0 });
+  window.scrollTo({ top: 0, behavior: "auto" });
+}
+
+function closeCommentView() {
+  document.body.classList.remove("comment-mode");
+  document.getElementById("commentView").hidden = true;
+  window.scrollTo({ top: 0, behavior: "auto" });
+}
+
 document.getElementById("reportRows")?.addEventListener("click", event => {
-  const button = event.target.closest("[data-comment-target]");
+  const button = event.target.closest("[data-post-index]");
   if (!button) return;
-  const row = document.getElementById(button.dataset.commentTarget);
-  if (!row) return;
-  const opened = row.classList.toggle("open");
-  button.textContent = opened ? "Ẩn comment" : "Xem comment";
+  openCommentView(Number(button.dataset.postIndex));
 });
+
+document.getElementById("backToPosts")?.addEventListener("click", closeCommentView);
 
 renderExportFields();
 loadTable();
