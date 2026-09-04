@@ -140,8 +140,6 @@ CommentID,topic_name,confidence
 28558957353716667,dich vu tu van,1.0
 28558961470382922,dich vu tu van,1.0
 28558996820379387,muon tu van,1.0
-28559132510365818,dich vu tu van,1.0
-28559132510365818,spam,1.0
 28559587550320314,muon tu van,1.0
 28559589583653444,muon tu van,1.0
 28559687786976957,tu van,1.0
@@ -253,9 +251,6 @@ CommentID,topic_name,confidence
 28573881042224298,manulife,1.0
 28573881042224298,phú quý flex,1.0
 28573881042224298,xanh tương lai,1.0
-28573885165557219,san pham va giai phap,1.0
-28573885165557219,ilp,1.0
-28573885165557219,phức tạp,1.0
 28573902425555493,tu van bao hiem,1.0
 28573902425555493,lien he,1.0
 28573910598888009,san pham moi,1.0
@@ -337,8 +332,6 @@ CommentID,topic_name,confidence
 28585426464403089,lien he,1.0
 28585585341053868,lien he,1.0
 28585596201052782,phan hoi,1.0
-28585852974360438,cảnh báo lừa đảo,1.0
-28585852974360438,spam,1.0
 28586567330955669,tương tác cá nhân,1.0
 28587029744242761,spam,1.0
 28587029744242761,tư vấn bảo hiểm,1.0
@@ -347,9 +340,6 @@ CommentID,topic_name,confidence
 1745676156639708,quyền lợi bảo hiểm,1.0
 1745676156639708,thẻ bảo hiểm,1.0
 1745676156639708,tái tục,1.0
-1745688996638424,chinh sach va quy trinh boi thuong,1.0
-1745688996638424,giay to bao hiem,1.0
-1745688996638424,cap nhat thong tin,1.0
 1745689983304992,phi bao hiem,1.0
 1745689983304992,phan loai the,1.0
 1745689983304992,tuoi tham gia,1.0
@@ -363,9 +353,6 @@ CommentID,topic_name,confidence
 1745697079970949,hop dong dien tu,1.0
 1745697079970949,quyen loi,1.0
 1745697079970949,phi bao hiem,1.0
-1745701299970527,hop dong dien tu,1.0
-1745701299970527,app bao hiem,1.0
-1745701299970527,thieu thong tin,1.0
 1745702986637025,hop dong dien tu,1.0
 1745702986637025,app bao hiem,1.0
 1745702986637025,quyen loi,1.0
@@ -381,9 +368,6 @@ CommentID,topic_name,confidence
 1745740706633253,hop dong dien tu,1.0
 1745784659962191,hop dong dien tu,1.0
 1745784659962191,san pham va giai phap,1.0
-1745913683282622,dich vu tu van,1.0
-1745913683282622,ung dung,1.0
-1745913683282622,hop dong dien tu,1.0
 1745921393281851,ho tro khach hang,1.0
 1746066456600678,san pham bao hiem,1.0
 1746066456600678,the cham soc suc khoe,1.0
@@ -459,8 +443,6 @@ CommentID,topic_name,confidence
 1745812746626049,loai tru,1.0
 1745813433292647,dich vu tu van,1.0
 1746105036596820,spam,1.0
-1746484919892165,san pham va giai phap,1.0
-1746484919892165,dieu khoan loai tru,1.0
 1746488949891762,tu van bao hiem,1.0
 1746488949891762,bao hiem tre em,1.0
 1746488949891762,dieu khoan loai tru,1.0
@@ -539,10 +521,6 @@ CommentID,topic_name,confidence
 1745931289947528,bao hiem nhan tho,1.0
 1745931289947528,tu van bao hiem,1.0
 1745931289947528,tai tuc bao hiem,1.0
-1745956163278374,bao hiem suc khoe,1.0
-1745956163278374,san pham bo tro,1.0
-1745956163278374,tham dinh suc khoe,1.0
-1745956163278374,benh nen,1.0
 1745973289943328,bao hiem nhan tho,1.0
 1745973289943328,bao hiem suc khoe,1.0
 1745973289943328,bao hiem cho nguoi lon tuoi,1.0
@@ -651,9 +629,6 @@ CommentID,topic_name,confidence
 1746061146601209,bao hiem nhan tho,1.0
 1746061146601209,san pham bao hiem,1.0
 1746092839931373,tu van,1.0
-1746102479930409,san pham va giai phap,1.0
-1746102479930409,dieu khoan loai tru,1.0
-1746102479930409,bao hiem suc khoe,1.0
 1746108096596514,phan van,1.0
 1746108096596514,dieu khoan loai tru,1.0
 1746108096596514,thoi gian cho,1.0
@@ -728,9 +703,6 @@ CommentID,topic_name,confidence
 1746497963224194,boi thuong nhanh,1.0
 1745909909949666,san pham aia,1.0
 1745909909949666,trai nghiem tot,1.0
-1745914583282532,san pham aia,1.0
-1745914583282532,dieu khoan loai tru,1.0
-1745914583282532,dong chi tra,1.0
 1745917859948871,dong chi tra,1.0
 1745917859948871,dieu khoan loai tru,1.0
 1745917859948871,bao hiem tre em,1.0
@@ -837,9 +809,6 @@ CommentID,topic_name,confidence
 1746592919881365,thẻ sức khỏe,1.0
 1746592919881365,bảo hiểm nhân thọ,1.0
 1746592919881365,tư vấn bảo hiểm,1.0
-1746061706601153,bảo việt,1.0
-1746061706601153,cạnh tranh,1.0
-1746061706601153,sản phẩm bảo hiểm,1.0
 1746062893267701,lua chon bao hiem,1.0
 1746062893267701,so sanh,1.0
 1746063256600998,bao hiem thai san,1.0
@@ -997,10 +966,6 @@ CommentID,topic_name,confidence
 1747286939811963,tư vấn bảo hiểm,1.0
 1746534216553902,san pham va giai phap,1.0
 1746534216553902,bao hiem suc khoe,1.0
-1746544773219513,san pham va giai phap,1.0
-1746544773219513,phi bao hiem,1.0
-1746544773219513,chinh sach tai tuc,1.0
-1746544773219513,bao hiem tre em,1.0
 1746551193218871,so sanh san pham,1.0
 1746551193218871,the bao hiem suc khoe,1.0
 1746551193218871,bao hiem nhan tho,1.0
@@ -1042,8 +1007,6 @@ CommentID,topic_name,confidence
 1746507429889914,san pham va giai phap,1.0
 1746507429889914,bao hiem suc khoe,1.0
 1746507429889914,daiichi,1.0
-1746510219889635,phi bao hiem,1.0
-1746510219889635,bao hiem suc khoe,1.0
 1746513993222591,so sanh bao hiem,1.0
 1746513993222591,phi bao hiem,1.0
 1746513993222591,quyen loi bao hiem,1.0
@@ -1302,8 +1265,6 @@ CommentID,topic_name,confidence
 1746965869844070,spam,1.0
 1746945936512730,san pham va giai phap,1.0
 1746945936512730,bao hiem noi tru,1.0
-1746947163179274,san pham va giai phap,1.0
-1746947163179274,pham vi bao hiem,1.0
 1746947703179220,san pham va giai phap,1.0
 1746947703179220,bao hiem noi tru,1.0
 1746947703179220,bao hiem tre em,1.0
@@ -1315,8 +1276,6 @@ CommentID,topic_name,confidence
 1746952373178753,quyen loi bao hiem,1.0
 1746952373178753,bao hiem ngoai tru,1.0
 1746952373178753,bao hiem noi tru,1.0
-1746955573178433,pham vi bao hiem,1.0
-1746955573178433,quyen loi bao hiem,1.0
 1746956326511691,seeding,1.0
 1746957449844912,bao hiem tre em,1.0
 1746957449844912,do tuoi tham gia bao hiem,1.0
@@ -1339,10 +1298,6 @@ CommentID,topic_name,confidence
 1746962079844449,sun life,1.0
 1746962079844449,generali,1.0
 1746966493177341,generali,1.0
-1746967009843956,san pham va giai phap,1.0
-1746967009843956,quyen loi bao hiem,1.0
-1746967009843956,gioi han chi tra,1.0
-1746967009843956,bao hiem tre em,1.0
 1746967553177235,so sanh bao hiem,1.0
 1746967553177235,bao hiem suc khoe,1.0
 1746967553177235,generali,1.0
@@ -1444,7 +1399,6 @@ CommentID,topic_name,confidence
 1747313786475945,bao hiem tre em,1.0
 1747313786475945,bao hiem ngoai tru,1.0
 1747313786475945,bao hiem noi tru,1.0
-1747315686475755,phi bao hiem,1.0
 1747318573142133,bao hiem nhan tho,1.0
 1747333099807347,bao hiem nhan tho,1.0
 1747333099807347,bao hiem phi nhan tho,1.0
@@ -1456,10 +1410,6 @@ CommentID,topic_name,confidence
 1746986066508717,tu van vien,1.0
 1746986066508717,ngan hang,1.0
 1746986066508717,cham soc khach hang,1.0
-1746986313175359,dich vu tu van,1.0
-1746986313175359,kenh phan phoi,1.0
-1746986313175359,ngan hang,1.0
-1746986313175359,boi thuong,1.0
 1746989296508394,uy tin,1.0
 1746989296508394,phan van,1.0
 1746989296508394,review,1.0
@@ -1502,9 +1452,6 @@ CommentID,topic_name,confidence
 2501591933678031,tranh chap,1.0
 2501924210311470,che tai,1.0
 2501924210311470,quy dinh,1.0
-2501928813644343,dich vu tu van,1.0
-2501928813644343,phan hoi cham,1.0
-2501928813644343,boi thuong,1.0
 2501929393644285,dich vu tu van,1.0
 2501929393644285,phan hoi cham,1.0
 2501960983641126,kinh nghiem bao hiem,1.0
@@ -1609,3 +1556,54 @@ CommentID,topic_name,confidence
 1746604563213534,bao hiem nhan tho,1.0
 1746604563213534,chi phi bao hiem,1.0
 1746604563213534,quyen loi bao hiem,1.0
+28559132510365818,dịch vụ tư vấn,1.0
+28559132510365818,spam,1.0
+28573885165557219,sản phẩm và giải pháp,1.0
+28573885165557219,bao hiểm chung,1.0
+28585852974360438,spam,1.0
+28585852974360438,cảnh báo,1.0
+1745688996638424,chính sách và quy trình bồi thường,1.0
+1745688996638424,dịch vụ tư vấn,1.0
+1745701299970527,dịch vụ tư vấn,1.0
+1745701299970527,ứng dụng di động,1.0
+1745913683282622,dịch vụ tư vấn,1.0
+1745913683282622,ứng dụng di động,1.0
+1746484919892165,sản phẩm và giải pháp,1.0
+1746484919892165,điều khoản loại trừ,1.0
+1745956163278374,sản phẩm và giải pháp,1.0
+1745956163278374,điều khoản loại trừ,1.0
+1745956163278374,thẩm định sức khỏe,1.0
+1746102479930409,sản phẩm và giải pháp,1.0
+1746102479930409,điều khoản loại trừ,1.0
+1746102479930409,thẩm định sức khỏe,1.0
+1745914583282532,sản phẩm và giải pháp,1.0
+1745914583282532,điều khoản loại trừ,1.0
+1745914583282532,quyền lợi bảo hiểm,1.0
+1746061706601153,so sánh chung,1.0
+1746061706601153,sản phẩm và giải pháp,1.0
+1746061706601153,bảo hiểm doanh nghiệp,1.0
+1746084499932207,sản phẩm và giải pháp,1.0
+1746084499932207,bảo hiểm thai sản,1.0
+1746084499932207,tư vấn bảo hiểm,1.0
+1746544773219513,sản phẩm và giải pháp,1.0
+1746544773219513,chi phí bảo hiểm,1.0
+1746544773219513,tái tục hợp đồng,1.0
+1746510219889635,chi phí bảo hiểm,1.0
+1746510219889635,sản phẩm và giải pháp,1.0
+1746947163179274,quyền lợi bảo hiểm,1.0
+1746947163179274,chi trả bảo hiểm,1.0
+1746955573178433,quyền lợi bảo hiểm,1.0
+1746955573178433,chi trả bảo hiểm,1.0
+1746967009843956,sản phẩm và giải pháp,1.0
+1746967009843956,quyền lợi bảo hiểm,1.0
+1746967009843956,bảo hiểm trẻ em,1.0
+1747315686475755,chi phí bảo hiểm,1.0
+1746986313175359,dịch vụ tư vấn,1.0
+1746986313175359,kênh phân phối,1.0
+1746986313175359,bancassurance,1.0
+1747046859835971,kênh phân phối,1.0
+1747046859835971,bancassurance,1.0
+1747046859835971,quy trình bán hàng,1.0
+2501928813644343,dich vu tu van,1.0
+2501928813644343,phan hoi cham,1.0
+2501928813644343,boi thuong,1.0
