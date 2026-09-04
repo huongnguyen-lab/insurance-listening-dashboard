@@ -170,7 +170,7 @@ function renderRows(rows) {
   const tbody = document.getElementById("reportRows");
   if (!tbody) return;
   if (!rows.length) {
-    tbody.innerHTML = '<tr><td colspan="18" class="empty">No rows in selected scope</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="17" class="empty">No rows in selected scope</td></tr>';
     return;
   }
   tbody.innerHTML = rows.map((row, index) => {
@@ -202,7 +202,6 @@ function renderRows(rows) {
       <td class="mention">${mentions}</td>
       <td class="num"><b>${Number(row.negative_ratio || 0).toFixed(2)}</b><div class="muted">${escapeHtml(row.negative_ratio_formula || "")}</div></td>
       <td><span class="badge ${recClass}">${escapeHtml(row.seeding_recommendation || "Normal")}</span></td>
-      <td class="manual">${escapeHtml(row.pillar || "")}</td>
     </tr>`;
   }).join("");
 }

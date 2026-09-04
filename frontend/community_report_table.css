@@ -123,7 +123,7 @@ main { padding: 16px 20px 36px; }
 .table-wrap { overflow: auto; max-height: calc(100vh - 220px); }
 table { border-collapse: separate; border-spacing: 0; }
 .post-report-table {
-  width: 2796px;
+  width: 2616px;
   table-layout: fixed;
 }
 .post-report-table .col-stt { width: 54px; }
@@ -138,7 +138,6 @@ table { border-collapse: separate; border-spacing: 0; }
 .post-report-table .col-pru-negative { width: 280px; }
 .post-report-table .col-ratio { width: 190px; }
 .post-report-table .col-seeding { width: 160px; }
-.post-report-table .col-pillar { width: 180px; }
 th, td {
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -162,7 +161,7 @@ th.hl { background: #fff200; }
 td { background: #fff; }
 tr:hover td { background: #f8fbff; }
 td.num { text-align: center; font-variant-numeric: tabular-nums; }
-td.caption, td.mention, td.manual { vertical-align: top; overflow-wrap: anywhere; }
+td.caption, td.mention { vertical-align: top; overflow-wrap: anywhere; }
 td.mention ul { margin: 0; padding-left: 16px; }
 td a { color: var(--blue); font-weight: 700; text-decoration: none; }
 .muted { color: var(--muted); font-size: 11px; }
