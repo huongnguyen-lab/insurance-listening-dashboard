@@ -57,11 +57,20 @@ function renderExportFields() {
   root.innerHTML = exportFieldDefinitions().map(([key, label]) =>
     `<label><input type="checkbox" value="${escapeAttr(key)}" ${defaults.has(key) ? "checked" : ""}> ${escapeHtml(label)}</label>`
   ).join("");
+  updateExportFieldCount();
   document.getElementById("exportStatus").textContent = "";
 }
 
 function toggleAllExportFields(checked) {
   document.querySelectorAll("#exportFields input[type=checkbox]").forEach(el => { el.checked = checked; });
+  updateExportFieldCount();
+}
+
+function updateExportFieldCount() {
+  const all = [...document.querySelectorAll("#exportFields input[type=checkbox]")];
+  const selected = all.filter(el => el.checked).length;
+  const count = document.getElementById("exportFieldCount");
+  if (count) count.textContent = `(${selected}/${all.length})`;
 }
 
 function csvCell(value) {
@@ -254,6 +263,7 @@ document.getElementById("reportRows")?.addEventListener("click", event => {
 });
 
 document.getElementById("backToPosts")?.addEventListener("click", closeCommentView);
+document.getElementById("exportFields")?.addEventListener("change", updateExportFieldCount);
 
 renderExportFields();
 loadTable();

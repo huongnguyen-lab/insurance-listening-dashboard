@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prudential Table Report</title>
-  <link rel="stylesheet" href="/static/community_report_table.css?v=table-9">
+  <link rel="stylesheet" href="/static/community_report_table.css?v=table-10">
 </head>
 <body>
   <header class="topbar">
@@ -35,13 +35,20 @@
 
     <section class="export-panel">
       <div class="export-bar">
-        <div><h2>Xuất dữ liệu CSV</h2><p>File xuất dùng đúng dữ liệu theo bộ lọc hiện tại.</p></div>
+        <div><h2>Xuất CSV</h2><p>Theo bộ lọc hiện tại</p></div>
         <label>Loại dữ liệu<select id="exportMode" onchange="renderExportFields()"><option value="posts">Mỗi dòng là một post</option><option value="comments">Mỗi dòng là một comment</option></select></label>
-        <button type="button" class="secondary" onclick="toggleAllExportFields(true)">Chọn tất cả</button>
-        <button type="button" class="secondary" onclick="toggleAllExportFields(false)">Bỏ chọn</button>
+        <details class="export-picker">
+          <summary>Chọn trường <span id="exportFieldCount"></span></summary>
+          <div class="export-popover">
+            <div class="export-popover-actions">
+              <button type="button" class="secondary" onclick="toggleAllExportFields(true)">Chọn tất cả</button>
+              <button type="button" class="secondary" onclick="toggleAllExportFields(false)">Bỏ chọn</button>
+            </div>
+            <div id="exportFields" class="export-fields"></div>
+          </div>
+        </details>
         <button type="button" class="export-button" onclick="exportSelectedCsv()">Tải CSV</button>
       </div>
-      <div id="exportFields" class="export-fields"></div>
       <div id="exportStatus" class="export-status"></div>
     </section>
 
@@ -118,6 +125,6 @@
     </section>
   </main>
 
-  <script src="/static/community_report_table.js?v=table-9"></script>
+  <script src="/static/community_report_table.js?v=table-10"></script>
 </body>
 </html>

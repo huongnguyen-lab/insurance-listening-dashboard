@@ -69,7 +69,7 @@ main { padding: 16px 20px 36px; }
 
 .export-panel {
   margin-bottom: 12px;
-  padding: 12px 14px;
+  padding: 9px 12px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -92,9 +92,43 @@ main { padding: 16px 20px 36px; }
 .export-bar button { cursor: pointer; font-weight: 700; }
 .export-bar .secondary { background: #f8fafc; }
 .export-bar .export-button { color: #fff; background: var(--blue); border-color: var(--blue); }
+.export-picker { position: relative; }
+.export-picker summary {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #f8fafc;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+  white-space: nowrap;
+}
+.export-picker summary::-webkit-details-marker { display: none; }
+.export-picker summary::after { content: "▾"; color: var(--muted); margin-left: 3px; }
+.export-picker[open] summary::after { content: "▴"; }
+.export-popover {
+  position: absolute;
+  top: calc(100% + 7px);
+  right: 0;
+  z-index: 10;
+  width: min(760px, calc(100vw - 40px));
+  max-height: min(520px, calc(100vh - 150px));
+  overflow: auto;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, .18);
+}
+.export-popover-actions { display: flex; justify-content: flex-end; gap: 8px; }
 .export-fields {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
   gap: 7px 12px;
   margin-top: 12px;
   padding-top: 12px;
@@ -102,7 +136,8 @@ main { padding: 16px 20px 36px; }
 }
 .export-fields label { font-size: 12px; color: var(--text); cursor: pointer; }
 .export-fields input { margin-right: 5px; vertical-align: -1px; }
-.export-status { min-height: 16px; margin-top: 8px; color: var(--muted); font-size: 12px; }
+.export-status:empty { display: none; }
+.export-status { margin-top: 7px; color: var(--muted); font-size: 12px; }
 
 .table-shell {
   background: var(--surface);
@@ -254,4 +289,5 @@ td a { color: var(--blue); font-weight: 700; text-decoration: none; }
   .actions { justify-content: flex-start; }
   .summary { grid-template-columns: 1fr 1fr; }
   .comment-view-head { grid-template-columns: 1fr; }
+  .export-fields { grid-template-columns: 1fr 1fr; }
 }
