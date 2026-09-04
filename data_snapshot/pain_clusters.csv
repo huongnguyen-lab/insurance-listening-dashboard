@@ -1,41 +1,34 @@
 pain_point,cluster_name,cluster_id
+app thieu thong tin,Khác,other
 bi loai tru bao hiem,Sản phẩm / giải pháp,san_pham_giai_phap
-bán hàng theo kpi,Khác,other
-bảo hiểm thai sản không phù hợp,Khác,other
-bị spam,Spam,spam
-bị từ chối bảo hiểm,Khác,other
-chăm sóc khách hàng kém,Dịch vụ tư vấn,dich_vu_tu_van
-giới hạn chi trả,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+bi spam,Spam,spam
+bi tu choi bao hiem,Khác,other
+bi tu choi san pham bo tro,Sản phẩm / giải pháp,san_pham_giai_phap
+chi phi cao,Khác,other
+chi phí cao,Khác,other
+dieu khoan loai tru,Sản phẩm / giải pháp,san_pham_giai_phap
+dieu kien suc khoe,Bảo hiểm chung,bao_hiem_chung
+dong chi tra,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+hop dong dien tu khong day du,Sản phẩm / giải pháp,san_pham_giai_phap
+kho mua bao hiem,Khác,other
 kho mua the suc khoe cho nguoi lon tuoi,Khác,other
 khong biet thoi gian tham dinh lai,Khác,other
 khong co nguoi ho tro sau ban,Khác,other
 khong ke khai suc khoe day du,Khác,other
-khách hàng bị động,Khác,other
-khách hàng khó hiểu,Khác,other
+khong tai tuc hop dong,Sản phẩm / giải pháp,san_pham_giai_phap
 khó mua bảo hiểm do tiền sử bệnh,Khác,other
-khó mua bảo hiểm sức khỏe,Khác,other
-không tái tục,Khác,other
 loai tru benh co san,Sản phẩm / giải pháp,san_pham_giai_phap
-loại trừ bệnh hô hấp,Sản phẩm / giải pháp,san_pham_giai_phap
-loại trừ xét nghiệm,Sản phẩm / giải pháp,san_pham_giai_phap
-lừa đảo,Bảo hiểm chung,bao_hiem_chung
 pham vi bao hiem co gioi han,Sản phẩm / giải pháp,san_pham_giai_phap
 pham vi bao hiem khong ro,Sản phẩm / giải pháp,san_pham_giai_phap
 phan hoi cham,Dịch vụ tư vấn,dich_vu_tu_van
-phí bảo hiểm cao,Khác,other
-quy trình không rõ ràng,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
-spam,Spam,spam
-sản phẩm phức tạp,Sản phẩm / giải pháp,san_pham_giai_phap
+quy trinh khong ro rang,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+san pham khong canh tranh,Sản phẩm / giải pháp,san_pham_giai_phap
+san pham khong phu hop,Sản phẩm / giải pháp,san_pham_giai_phap
+san pham khong ro rang,Sản phẩm / giải pháp,san_pham_giai_phap
+san pham phuc tap,Sản phẩm / giải pháp,san_pham_giai_phap
+tang phi sau claim,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+tham dinh suc khoe,Khác,other
 thiet ke goi khong phu hop,Khác,other
-thiếu giấy tờ,Khác,other
-thiếu kiến thức nghiệp vụ,Bảo hiểm chung,bao_hiem_chung
-thiếu thông tin hợp đồng,Sản phẩm / giải pháp,san_pham_giai_phap
-thẩm định sức khỏe,Khác,other
-tiền sử bệnh lý,Khác,other
+thieu giay to hop dong,Sản phẩm / giải pháp,san_pham_giai_phap
 tu chi tra chi phi y te,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
 tu choi boi thuong,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
-tu choi ho tro,Dịch vụ tư vấn,dich_vu_tu_van
-tăng phí,Khác,other
-tư vấn không chuyên nghiệp,Dịch vụ tư vấn,dich_vu_tu_van
-đồng chi trả,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
-ứng dụng lỗi,Khác,other

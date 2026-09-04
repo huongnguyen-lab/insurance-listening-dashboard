@@ -1556,54 +1556,45 @@ CommentID,topic_name,confidence
 1746604563213534,bao hiem nhan tho,1.0
 1746604563213534,chi phi bao hiem,1.0
 1746604563213534,quyen loi bao hiem,1.0
-28559132510365818,dịch vụ tư vấn,1.0
+28559132510365818,bao hiem chung,1.0
 28559132510365818,spam,1.0
-28573885165557219,sản phẩm và giải pháp,1.0
-28573885165557219,bao hiểm chung,1.0
+28573885165557219,bao hiem chung,1.0
+28573885165557219,san pham va giai phap,1.0
+28573885165557219,bao hiem lien ket dau tu,1.0
+28585852974360438,canh bao lua dao,1.0
 28585852974360438,spam,1.0
-28585852974360438,cảnh báo,1.0
-1745688996638424,chính sách và quy trình bồi thường,1.0
-1745688996638424,dịch vụ tư vấn,1.0
-1745701299970527,dịch vụ tư vấn,1.0
-1745701299970527,ứng dụng di động,1.0
-1745913683282622,dịch vụ tư vấn,1.0
-1745913683282622,ứng dụng di động,1.0
-1746484919892165,sản phẩm và giải pháp,1.0
-1746484919892165,điều khoản loại trừ,1.0
-1745956163278374,sản phẩm và giải pháp,1.0
-1745956163278374,điều khoản loại trừ,1.0
-1745956163278374,thẩm định sức khỏe,1.0
-1746102479930409,sản phẩm và giải pháp,1.0
-1746102479930409,điều khoản loại trừ,1.0
-1746102479930409,thẩm định sức khỏe,1.0
-1745914583282532,sản phẩm và giải pháp,1.0
-1745914583282532,điều khoản loại trừ,1.0
-1745914583282532,quyền lợi bảo hiểm,1.0
-1746061706601153,so sánh chung,1.0
-1746061706601153,sản phẩm và giải pháp,1.0
-1746061706601153,bảo hiểm doanh nghiệp,1.0
-1746084499932207,sản phẩm và giải pháp,1.0
-1746084499932207,bảo hiểm thai sản,1.0
-1746084499932207,tư vấn bảo hiểm,1.0
-1746544773219513,sản phẩm và giải pháp,1.0
-1746544773219513,chi phí bảo hiểm,1.0
-1746544773219513,tái tục hợp đồng,1.0
+1745688996638424,chinh sach va quy trinh boi thuong,1.0
+1745688996638424,giay to hop dong,1.0
+1745701299970527,dich vu tu van,1.0
+1745701299970527,ung dung di dong,1.0
+1745701299970527,hop dong dien tu,1.0
+1745913683282622,dich vu tu van,1.0
+1745913683282622,ung dung di dong,1.0
+1745913683282622,hop dong dien tu,1.0
+1746484919892165,san pham va giai phap,1.0
+1746484919892165,dieu khoan loai tru,1.0
+1746484919892165,benh ho hap,1.0
+1745956163278374,san pham va giai phap,1.0
+1745956163278374,bao hiem suc khoe,1.0
+1745956163278374,tham dinh suc khoe,1.0
+1745956163278374,dieu khoan loai tru,1.0
+1746102479930409,san pham va giai phap,1.0
+1746102479930409,bao hiem suc khoe,1.0
+1746102479930409,tham dinh suc khoe,1.0
+1746102479930409,dieu khoan loai tru,1.0
+1745914583282532,san pham va giai phap,1.0
+1745914583282532,dieu khoan loai tru,1.0
+1745914583282532,dong chi tra,1.0
+1746061706601153,san pham va giai phap,1.0
+1746061706601153,bao hiem ca nhan,1.0
+1746061706601153,tinh canh tranh,1.0
+1746544773219513,san pham va giai phap,1.0
+1746544773219513,phi bao hiem,1.0
+1746544773219513,tai tuc hop dong,1.0
+1746544773219513,bao hiem tre em,1.0
 1746510219889635,chi phí bảo hiểm,1.0
-1746510219889635,sản phẩm và giải pháp,1.0
-1746947163179274,quyền lợi bảo hiểm,1.0
-1746947163179274,chi trả bảo hiểm,1.0
-1746955573178433,quyền lợi bảo hiểm,1.0
-1746955573178433,chi trả bảo hiểm,1.0
-1746967009843956,sản phẩm và giải pháp,1.0
-1746967009843956,quyền lợi bảo hiểm,1.0
-1746967009843956,bảo hiểm trẻ em,1.0
-1747315686475755,chi phí bảo hiểm,1.0
-1746986313175359,dịch vụ tư vấn,1.0
-1746986313175359,kênh phân phối,1.0
-1746986313175359,bancassurance,1.0
-1747046859835971,kênh phân phối,1.0
-1747046859835971,bancassurance,1.0
-1747046859835971,quy trình bán hàng,1.0
+1746510219889635,sản phẩm bảo hiểm,1.0
+1746947163179274,san pham va giai phap,1.0
+1746947163179274,quyen loi bao hiem,1.0
+2501928813644343,chinh sach va quy trinh boi thuong,1.0
 2501928813644343,dich vu tu van,1.0
-2501928813644343,phan hoi cham,1.0
-2501928813644343,boi thuong,1.0
