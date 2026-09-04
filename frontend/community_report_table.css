@@ -264,7 +264,7 @@ td a { color: var(--blue); font-weight: 700; text-decoration: none; }
 }
 .comment-detail-table {
   width: 100%;
-  min-width: 1320px;
+  min-width: 1185px;
   table-layout: fixed;
 }
 .comment-detail-table .comment-col-index { width: 54px; }

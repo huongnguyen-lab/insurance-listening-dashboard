@@ -33,7 +33,6 @@ const COMMENT_EXPORT_FIELDS = [
   ["content", "Comment"], ["author", "Tác giả"], ["date", "Ngày comment"], ["permalink", "Link comment"],
   ["sub_loai", "Sub-loại"], ["positive", "Tích cực"], ["neutral", "Trung lập"],
   ["negative", "Tiêu cực"], ["spam", "Spam"], ["mentions_prudential", "Mention Pru"],
-  ["negative_prudential_mention", "Mention Pru tiêu cực"],
   ["post_negative_ratio", "Tỷ lệ tiêu cực level post"],
   ["post_seeding_recommendation", "Đề xuất seeding level post"]
 ];
@@ -43,7 +42,7 @@ const DEFAULT_POST_FIELDS = new Set(["stt", "group_name", "link_post", "caption"
   "prudential_mention_count", "negative_ratio", "seeding_recommendation"]);
 const DEFAULT_COMMENT_FIELDS = new Set(["post_id", "group_name", "link_post", "comment_id", "content", "author",
   "date", "permalink", "sub_loai", "positive", "neutral", "negative", "spam",
-  "mentions_prudential", "negative_prudential_mention", "post_seeding_recommendation"]);
+  "mentions_prudential", "post_seeding_recommendation"]);
 
 function exportFieldDefinitions() {
   return document.getElementById("exportMode")?.value === "comments" ? COMMENT_EXPORT_FIELDS : POST_EXPORT_FIELDS;
@@ -235,9 +234,8 @@ function openCommentView(index) {
       <td class="check neg">${comment.negative ? "✓" : ""}</td>
       <td class="check spam">${comment.spam ? "✓" : ""}</td>
       <td class="check">${comment.mentions_prudential ? "✓" : ""}</td>
-      <td class="check neg">${comment.negative_prudential_mention ? "✓" : ""}</td>
     </tr>`;
-  }).join("") : '<tr><td colspan="9" class="empty">Không có comment đã phân loại</td></tr>';
+  }).join("") : '<tr><td colspan="8" class="empty">Không có comment đã phân loại</td></tr>';
 
   document.getElementById("commentViewTitle").textContent = `Comments của post #${row.stt || index + 1}`;
   document.getElementById("commentViewMeta").textContent = `${row.group_name || row.group_id || "-"} · ${fmt(comments.length)} comment đã phân loại`;
