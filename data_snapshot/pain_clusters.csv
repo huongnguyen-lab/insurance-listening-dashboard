@@ -1,7 +1,6 @@
 pain_point,cluster_name,cluster_id
 app thieu thong tin,Khác,other
 bi loai tru bao hiem,Sản phẩm / giải pháp,san_pham_giai_phap
-bi spam,Spam,spam
 bi tu choi bao hiem,Khác,other
 bi tu choi san pham bo tro,Sản phẩm / giải pháp,san_pham_giai_phap
 chi phi cao,Khác,other
@@ -21,7 +20,6 @@ loai tru benh co san,Sản phẩm / giải pháp,san_pham_giai_phap
 pham vi bao hiem co gioi han,Sản phẩm / giải pháp,san_pham_giai_phap
 pham vi bao hiem khong ro,Sản phẩm / giải pháp,san_pham_giai_phap
 phan hoi cham,Dịch vụ tư vấn,dich_vu_tu_van
-quy trinh khong ro rang,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
 san pham khong canh tranh,Sản phẩm / giải pháp,san_pham_giai_phap
 san pham khong phu hop,Sản phẩm / giải pháp,san_pham_giai_phap
 san pham khong ro rang,Sản phẩm / giải pháp,san_pham_giai_phap
@@ -29,6 +27,5 @@ san pham phuc tap,Sản phẩm / giải pháp,san_pham_giai_phap
 tang phi sau claim,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
 tham dinh suc khoe,Khác,other
 thiet ke goi khong phu hop,Khác,other
-thieu giay to hop dong,Sản phẩm / giải pháp,san_pham_giai_phap
 tu chi tra chi phi y te,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
 tu choi boi thuong,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
