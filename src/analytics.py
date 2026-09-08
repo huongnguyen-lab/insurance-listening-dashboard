@@ -90,7 +90,7 @@ def _taxonomy_intent(row) -> str:
     intent = _text_slug(row.get("intent"))
     sentiment = _text_slug(row.get("sentiment"))
     text = " ".join(str(row.get(col, "") or "") for col in ["Content", "summary", "pain_points"])
-    if intent == "spam" or bool(row.get("is_seeding", False)):
+    if intent == "spam":
         return "spam"
     if intent in TAXONOMY_INTENT_LABELS:
         return intent
@@ -2176,8 +2176,7 @@ def _organic_comments(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
     if df.empty:
         return df.copy(), pd.Series(dtype=bool)
     intent = _clean_text_series(df.get("intent", pd.Series(index=df.index, dtype=str)))
-    seeded = df.get("is_seeding", pd.Series(index=df.index, dtype=object)).fillna(False).astype(str).str.lower().isin(["true", "1", "yes"])
-    spam_mask = (intent == "spam") | seeded
+    spam_mask = intent == "spam"
     return df.loc[~spam_mask].copy(), spam_mask
 
 
@@ -2370,8 +2369,7 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
         comment_details = []
         for _, comment_row in post_labeled.iterrows():
             intent_value = str(comment_row.get("intent", "") or "").strip()
-            seeded_value = str(comment_row.get("is_seeding", "") or "").strip().lower() in {"true", "1", "yes"}
-            is_spam = intent_value == "spam" or seeded_value
+            is_spam = intent_value == "spam"
             sentiment_value = str(comment_row.get("sentiment", "") or "").strip()
             content_value = str(comment_row.get("Content", "") or "").strip()
             mentions_pru = _contains_prudential(content_value)

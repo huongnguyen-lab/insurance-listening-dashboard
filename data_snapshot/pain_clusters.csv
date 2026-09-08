@@ -1,31 +1,228 @@
 pain_point,cluster_name,cluster_id
+ap luc gia dinh,Khác,other
 app thieu thong tin,Khác,other
+bao hiem lua dao,Bảo hiểm chung,bao_hiem_chung
+bao hiem ngan hang,Khác,other
+bao hiem truc loi,Khác,other
+benh co san,Khác,other
+benh co truoc,Khác,other
+benh nen,Khác,other
+bi ep mua bao hiem,Khác,other
 bi loai tru bao hiem,Sản phẩm / giải pháp,san_pham_giai_phap
 bi tu choi bao hiem,Khác,other
 bi tu choi san pham bo tro,Sản phẩm / giải pháp,san_pham_giai_phap
+bị loại trừ bệnh,Sản phẩm / giải pháp,san_pham_giai_phap
+bị từ chối bồi thường,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+bỏ mặc sau khi bán,Khác,other
+bức xúc về dịch vụ,Khác,other
+cam ket dai han,Khác,other
+cao buoc gian doi,Khác,other
+cham dut hop dong,Sản phẩm / giải pháp,san_pham_giai_phap
+cham dut hop dong vo ly,Sản phẩm / giải pháp,san_pham_giai_phap
+cham soc khach hang kem,Dịch vụ tư vấn,dich_vu_tu_van
+chi phi bao hiem cao,Khác,other
 chi phi cao,Khác,other
+chi phi vien phi cao,Khác,other
 chi phí cao,Khác,other
+chi phí tăng đột ngột,Khác,other
+chấm dứt hợp đồng,Sản phẩm / giải pháp,san_pham_giai_phap
+chất lượng dịch vụ kém,Khác,other
+chất lượng sản phẩm kém,Sản phẩm / giải pháp,san_pham_giai_phap
+cong ty co tinh tri hoan,Khác,other
+công ty cố tình gây khó khăn,Khác,other
+công ty né tránh chi trả,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+dai ly kem chat luong,Dịch vụ tư vấn,dich_vu_tu_van
+danh gia benh ly khong cong bang,Khác,other
+dao duc tu van vien,Dịch vụ tư vấn,dich_vu_tu_van
+dich vu khach hang kem,Khác,other
+dich vu tu van kem,Dịch vụ tư vấn,dich_vu_tu_van
 dieu khoan loai tru,Sản phẩm / giải pháp,san_pham_giai_phap
+dieu khoan loai tru mo ho,Sản phẩm / giải pháp,san_pham_giai_phap
+dieu khoan loai tru nhieu,Sản phẩm / giải pháp,san_pham_giai_phap
+dieu khoan loai tru vo ly,Sản phẩm / giải pháp,san_pham_giai_phap
 dieu kien suc khoe,Bảo hiểm chung,bao_hiem_chung
 dong chi tra,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+dịch vụ khách hàng kém,Khác,other
+dịch vụ kém,Khác,other
+dịch vụ kém chất lượng,Khác,other
+dịch vụ ngân hàng kém,Khác,other
+ep chap nhan dieu khoan,Sản phẩm / giải pháp,san_pham_giai_phap
+ep mua bao hiem,Khác,other
+ep mua san pham phu,Sản phẩm / giải pháp,san_pham_giai_phap
+giam chiet khau,Khác,other
+gioi han chi tra nam vien,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+giá trị hoàn lại thấp,Khác,other
+giấu thông tin bệnh án,Khác,other
+gánh nặng tài chính,Khác,other
+ho so ke khai,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+hop dong bi vo hieu,Sản phẩm / giải pháp,san_pham_giai_phap
 hop dong dien tu khong day du,Sản phẩm / giải pháp,san_pham_giai_phap
+hop dong kho hieu,Sản phẩm / giải pháp,san_pham_giai_phap
+huy hop dong,Sản phẩm / giải pháp,san_pham_giai_phap
+hỏng pin,Khác,other
+hủy hợp đồng,Sản phẩm / giải pháp,san_pham_giai_phap
+ke khai benh sai,Khác,other
+ke khai thieu thong tin,Khác,other
+khach hang kho tin,Khác,other
+khach hang khong hieu quy dinh,Khác,other
+khach hang khong tin tu van,Dịch vụ tư vấn,dich_vu_tu_van
+khach hang thiet thoi,Khác,other
+khai bao benh su,Khác,other
+khai bao y te,Khác,other
+kho khan phan anh tvv,Dịch vụ tư vấn,dich_vu_tu_van
 kho mua bao hiem,Khác,other
 kho mua the suc khoe cho nguoi lon tuoi,Khác,other
+kho thoat hop dong,Sản phẩm / giải pháp,san_pham_giai_phap
 khong biet thoi gian tham dinh lai,Khác,other
+khong cam ket tai tuc,Khác,other
+khong chac chan ve tai tuc hop dong,Sản phẩm / giải pháp,san_pham_giai_phap
+khong chap nhan ket qua,Khác,other
+khong chi tra,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
 khong co nguoi ho tro sau ban,Khác,other
+khong co van ban,Khác,other
+khong ho tro tu nguyen,Dịch vụ tư vấn,dich_vu_tu_van
 khong ke khai suc khoe day du,Khác,other
+khong minh bach dieu khoan,Sản phẩm / giải pháp,san_pham_giai_phap
+khong ra van ban,Khác,other
 khong tai tuc hop dong,Sản phẩm / giải pháp,san_pham_giai_phap
+khong the them quyen loi bo sung,Sản phẩm / giải pháp,san_pham_giai_phap
+khó khăn kê khai,Khác,other
+khó khăn tài chính,Khác,other
 khó mua bảo hiểm do tiền sử bệnh,Khác,other
+khó tái tục bảo hiểm,Khác,other
+không chi trả,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+không có thời hạn chờ,Sản phẩm / giải pháp,san_pham_giai_phap
+không giữ hiện trường,Khác,other
+không minh bạch thông tin,Dịch vụ tư vấn,dich_vu_tu_van
+không minh bạch điều khoản,Sản phẩm / giải pháp,san_pham_giai_phap
+không mua được thẻ sức khỏe,Khác,other
+không rõ lý do chờ,Khác,other
+không rõ trách nhiệm,Khác,other
+không được chi trả,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+không đền bù pin xe điện,Khác,other
+kiem tra ho so khong hop ly,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+kê khai thông tin không đầy đủ,Khác,other
+lo ngai dieu kien tham gia,Bảo hiểm chung,bao_hiem_chung
 loai tru benh co san,Sản phẩm / giải pháp,san_pham_giai_phap
+loi ich tu van vien,Dịch vụ tư vấn,dich_vu_tu_van
+loại trừ bệnh lý,Sản phẩm / giải pháp,san_pham_giai_phap
+loại trừ quyền lợi,Sản phẩm / giải pháp,san_pham_giai_phap
+lua dao,Bảo hiểm chung,bao_hiem_chung
+lua dao bao hiem,Bảo hiểm chung,bao_hiem_chung
+lua dao khach hang,Bảo hiểm chung,bao_hiem_chung
+lý do từ chối không rõ ràng,Khác,other
+lịch sử bệnh án phức tạp,Khác,other
+lỗi sản phẩm,Sản phẩm / giải pháp,san_pham_giai_phap
+lỗi thiết kế sản phẩm,Sản phẩm / giải pháp,san_pham_giai_phap
+lỗi thiết kế xe,Khác,other
+mat tien khi huy hop dong,Sản phẩm / giải pháp,san_pham_giai_phap
+mau thuan trong quy trinh,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+mất niềm tin bảo hiểm,Khác,other
+mất tiền khi chấm dứt hợp đồng,Sản phẩm / giải pháp,san_pham_giai_phap
+ngai va cham khi phan anh,Khác,other
+nguy co huy hop dong,Sản phẩm / giải pháp,san_pham_giai_phap
+né tránh trách nhiệm,Khác,other
+nước vào pin,Khác,other
 pham vi bao hiem co gioi han,Sản phẩm / giải pháp,san_pham_giai_phap
+pham vi bao hiem han che,Sản phẩm / giải pháp,san_pham_giai_phap
 pham vi bao hiem khong ro,Sản phẩm / giải pháp,san_pham_giai_phap
 phan hoi cham,Dịch vụ tư vấn,dich_vu_tu_van
+phi bao hiem cao,Khác,other
+phi bao hiem tang,Khác,other
+phi cao,Khác,other
+phi huy hop dong cao,Sản phẩm / giải pháp,san_pham_giai_phap
+phân biệt đối xử,Khác,other
+phí bảo hiểm cao,Khác,other
+phạm vi bảo hiểm không rõ,Sản phẩm / giải pháp,san_pham_giai_phap
+phản hồi không rõ ràng,Dịch vụ tư vấn,dich_vu_tu_van
+quang cao thieu minh bach,Bảo hiểm chung,bao_hiem_chung
+quy trinh bao lanh cham,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trinh boi thuong kho khan,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trinh boi thuong khong ro rang,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trinh boi thuong lau,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trinh boi thuong phuc tap,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trinh dieu tra khong minh bach,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trinh ke khai phuc tap,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trinh khong cong bang,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trinh tham dinh,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trinh tham dinh cham,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trình bồi thường chậm,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trình bồi thường không minh bạch,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trình bồi thường kém,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trình bồi thường phức tạp,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trình phức tạp,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+quy trình đánh giá thiếu minh bạch,Bảo hiểm chung,bao_hiem_chung
+quyen loi bao hiem thap,Sản phẩm / giải pháp,san_pham_giai_phap
+quyen loi bi cat giam,Sản phẩm / giải pháp,san_pham_giai_phap
+quyen loi ngoai tru khong hieu qua,Sản phẩm / giải pháp,san_pham_giai_phap
+quyen loi thap,Sản phẩm / giải pháp,san_pham_giai_phap
+quyền lợi không hấp dẫn,Sản phẩm / giải pháp,san_pham_giai_phap
+quyền lợi ung thư hạn chế,Sản phẩm / giải pháp,san_pham_giai_phap
+quên lịch sử bệnh,Khác,other
+rui ro bi loai tru,Sản phẩm / giải pháp,san_pham_giai_phap
+rui ro khi ke khai sai,Khác,other
+rủi ro khi chọn bảo hiểm rẻ,Khác,other
+rủi ro tái tục,Khác,other
 san pham khong canh tranh,Sản phẩm / giải pháp,san_pham_giai_phap
+san pham khong hieu qua,Sản phẩm / giải pháp,san_pham_giai_phap
+san pham khong linh hoat,Sản phẩm / giải pháp,san_pham_giai_phap
 san pham khong phu hop,Sản phẩm / giải pháp,san_pham_giai_phap
 san pham khong ro rang,Sản phẩm / giải pháp,san_pham_giai_phap
 san pham phuc tap,Sản phẩm / giải pháp,san_pham_giai_phap
 tang phi sau claim,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+thai do tu van vien,Dịch vụ tư vấn,dich_vu_tu_van
 tham dinh suc khoe,Khác,other
 thiet ke goi khong phu hop,Khác,other
+thieu ho tro,Khác,other
+thieu minh bach,Bảo hiểm chung,bao_hiem_chung
+thieu quyen loi bo tro,Sản phẩm / giải pháp,san_pham_giai_phap
+thiết kế xe bất tiện,Khác,other
+thiếu minh bạch thông tin,Bảo hiểm chung,bao_hiem_chung
+thoi gian cho dai,Sản phẩm / giải pháp,san_pham_giai_phap
+thong tin khong nhat quan,Khác,other
+thong tin vssid sai,Khác,other
+tich luy it,Khác,other
+trach nhiem cong ty bao hiem,Khác,other
+tru tien khong minh bach,Dịch vụ tư vấn,dich_vu_tu_van
+trách nhiệm thiết kế xe,Khác,other
+trách nhiệm tư vấn viên,Dịch vụ tư vấn,dich_vu_tu_van
+trục lợi bảo hiểm,Khác,other
 tu chi tra chi phi y te,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+tu choi bao hiem,Khác,other
 tu choi boi thuong,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+tu choi ho tro,Dịch vụ tư vấn,dich_vu_tu_van
+tu van khong chuyen nghiep,Dịch vụ tư vấn,dich_vu_tu_van
+tu van khong dong nhat,Dịch vụ tư vấn,dich_vu_tu_van
+tu van khong ky,Dịch vụ tư vấn,dich_vu_tu_van
+tu van khong minh bach,Dịch vụ tư vấn,dich_vu_tu_van
+tu van khong ro rang,Dịch vụ tư vấn,dich_vu_tu_van
+tu van sai thong tin,Dịch vụ tư vấn,dich_vu_tu_van
+tu van thieu dao duc,Dịch vụ tư vấn,dich_vu_tu_van
+tu van thieu trach nhiem,Dịch vụ tư vấn,dich_vu_tu_van
+tu van vien kem chat luong,Dịch vụ tư vấn,dich_vu_tu_van
+tu van vien khong nhiet tinh,Dịch vụ tư vấn,dich_vu_tu_van
+tu van vien thieu chuyen nghiep,Dịch vụ tư vấn,dich_vu_tu_van
+tu van vien thieu trach nhiem,Dịch vụ tư vấn,dich_vu_tu_van
+tvv cat hoa hong,Dịch vụ tư vấn,dich_vu_tu_van
+tvv không chịu trách nhiệm,Dịch vụ tư vấn,dich_vu_tu_van
+tích lũy thấp,Khác,other
+tư vấn không chuyên nghiệp,Dịch vụ tư vấn,dich_vu_tu_van
+tư vấn không kỹ,Dịch vụ tư vấn,dich_vu_tu_van
+tư vấn không đúng nhu cầu,Dịch vụ tư vấn,dich_vu_tu_van
+tư vấn không đầy đủ,Dịch vụ tư vấn,dich_vu_tu_van
+tư vấn sai thông tin,Dịch vụ tư vấn,dich_vu_tu_van
+tư vấn viên thiếu trách nhiệm,Dịch vụ tư vấn,dich_vu_tu_van
+từ chối bảo hiểm,Khác,other
+từ chối bảo hành,Khác,other
+từ chối bảo hành không hợp lý,Khác,other
+từ chối bồi thường,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+ung dung lag,Khác,other
+uy tin cong ty kem,Khác,other
+xe bi ngam,Khác,other
+xet nghiem am tinh khong chi tra,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+xót tiền,Khác,other
+yêu cầu vô lý,Khác,other
+ép giá bồi thường,Chính sách & quy trình bồi thường,chinh_sach_quy_trinh_boi_thuong
+ép mua sản phẩm,Sản phẩm / giải pháp,san_pham_giai_phap
+điều khoản mơ hồ,Sản phẩm / giải pháp,san_pham_giai_phap
+điều kiện bồi thường phức tạp,Bảo hiểm chung,bao_hiem_chung
