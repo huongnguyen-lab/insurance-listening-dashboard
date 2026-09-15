@@ -24,6 +24,11 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], all
 app.mount("/static", StaticFiles(directory="frontend"), name="static")
 
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
 class CrisisStatusUpdate(BaseModel):
     comment_id: str
     status: str
