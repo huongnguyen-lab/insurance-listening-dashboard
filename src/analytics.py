@@ -2211,6 +2211,67 @@ def _recommend_seeding(negative_ratio: float, has_negative_pru_mention: bool) ->
     return "Following"
 
 
+def _comment_detail_rows(post_labeled: pd.DataFrame) -> list[dict]:
+    rows = []
+    if post_labeled.empty:
+        return rows
+    for _, comment_row in post_labeled.iterrows():
+        intent_value = str(comment_row.get("intent", "") or "").strip()
+        is_spam = intent_value == "spam"
+        sentiment_value = str(comment_row.get("sentiment", "") or "").strip()
+        content_value = str(comment_row.get("Content", "") or "").strip()
+        mentions_pru = _contains_prudential(content_value)
+        rows.append({
+            "comment_id": str(comment_row.get("CommentID", "") or ""),
+            "content": content_value,
+            "author": str(comment_row.get("Author", "") or ""),
+            "date": str(comment_row.get("Date", "") or ""),
+            "permalink": str(comment_row.get("Permalink", "") or ""),
+            "sub_loai": TAXONOMY_INTENT_LABELS.get(intent_value, intent_value),
+            "positive": bool(not is_spam and sentiment_value == "tich_cuc"),
+            "neutral": bool(not is_spam and sentiment_value == "trung_lap"),
+            "negative": bool(not is_spam and sentiment_value == "tieu_cuc"),
+            "spam": bool(is_spam),
+            "mentions_prudential": bool(mentions_pru),
+            "negative_prudential_mention": bool(mentions_pru and not is_spam and sentiment_value == "tieu_cuc"),
+        })
+    return rows
+
+
+def get_community_post_comments(base_dir: str = "./data", post_id: str = "",
+                                start: str | None = None, end: str | None = None,
+                                groups: str = "all", sentiments: str = "all") -> dict:
+    comments = _read_csv_cached(f"{base_dir}/raw_comments.csv")
+    labels = _read_csv_cached(f"{base_dir}/ai_labels.csv")
+    group_values = _report_split_filter(groups)
+    sentiment_values = _report_split_filter(sentiments)
+
+    if comments.empty or labels.empty or not post_id:
+        return {"meta": {"post_id": post_id, "count": 0}, "comments": []}
+
+    comments = comments.copy()
+    comments["CommentID"] = _clean_text_series(comments.get("CommentID", pd.Series(dtype=str)))
+    comments["PostID"] = _clean_text_series(comments.get("PostID", pd.Series(dtype=str)))
+    comments["group_id"] = _clean_text_series(comments.get("group_id", pd.Series(dtype=str)))
+    comments = comments[(comments["CommentID"] != "") & (comments["PostID"] == str(post_id))]
+    comments = _filter_report_dates(comments, start, end)
+    if group_values:
+        comments = comments[comments["group_id"].isin(group_values)]
+    if comments.empty:
+        return {"meta": {"post_id": post_id, "count": 0}, "comments": []}
+
+    labels = labels.copy()
+    labels["CommentID"] = _clean_text_series(labels["CommentID"])
+    comments = comments.merge(labels, on="CommentID", how="left", suffixes=("", "_label"))
+    comments = comments[comments.get("sentiment", pd.Series(index=comments.index, dtype=object)).notna()].copy()
+    if sentiment_values and not comments.empty and "sentiment" in comments:
+        comments = comments[_clean_text_series(comments["sentiment"]).isin(sentiment_values)]
+    return {
+        "meta": {"post_id": post_id, "count": int(len(comments))},
+        "comments": _comment_detail_rows(comments),
+    }
+
+
 def get_community_table_report(base_dir: str = "./data", brand_id: str = "prudential",
                                start: str | None = None, end: str | None = None,
                                groups: str = "all", sentiments: str = "all",
@@ -2322,6 +2383,8 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
 
         base = positive + neutral
         negative_ratio = round(negative / base, 2) if base else (999.0 if negative else 0.0)
+        # Keep all-brand crisis levels for the existing risk score, but expose
+        # only Prudential-related crisis cases in the Crisis Comment metric.
         all_crisis_levels = _crisis_level_counts(organic_labeled, crisis)
         post_mentions_prudential = _contains_prudential(post.get("PostContent", ""))
         if not organic_labeled.empty:
@@ -2366,27 +2429,6 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
         comment_count = int(raw_comment_counts.get(pid, len(post_comments)))
         negative_scores = organic_labeled.loc[sentiments == "tieu_cuc", "sentiment_score"] if "sentiment_score" in organic_labeled else pd.Series(dtype=float)
         risk_score = _post_risk_score(negative, positive, neutral, negative_scores, all_crisis_levels, angry, sad)
-        comment_details = []
-        for _, comment_row in post_labeled.iterrows():
-            intent_value = str(comment_row.get("intent", "") or "").strip()
-            is_spam = intent_value == "spam"
-            sentiment_value = str(comment_row.get("sentiment", "") or "").strip()
-            content_value = str(comment_row.get("Content", "") or "").strip()
-            mentions_pru = _contains_prudential(content_value)
-            comment_details.append({
-                "comment_id": str(comment_row.get("CommentID", "") or ""),
-                "content": content_value,
-                "author": str(comment_row.get("Author", "") or ""),
-                "date": str(comment_row.get("Date", "") or ""),
-                "permalink": str(comment_row.get("Permalink", "") or ""),
-                "sub_loai": TAXONOMY_INTENT_LABELS.get(intent_value, intent_value),
-                "positive": bool(not is_spam and sentiment_value == "tich_cuc"),
-                "neutral": bool(not is_spam and sentiment_value == "trung_lap"),
-                "negative": bool(not is_spam and sentiment_value == "tieu_cuc"),
-                "spam": bool(is_spam),
-                "mentions_prudential": bool(mentions_pru),
-                "negative_prudential_mention": bool(mentions_pru and not is_spam and sentiment_value == "tieu_cuc"),
-            })
         group_id = str(post.get("group_id", "") or (post_comments["group_id"].iloc[0] if not post_comments.empty and "group_id" in post_comments else ""))
 
         rows.append({
@@ -2418,7 +2460,6 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
             "crisis_comments": crisis_count,
             "crisis_levels": crisis_levels,
             "risk_score": risk_score,
-            "comment_details": comment_details,
         })
 
     rows = sorted(rows, key=lambda r: (r["crisis_comments"], r["sentiment_negative"], r["risk_score"], r["comment"]), reverse=True)[:limit]

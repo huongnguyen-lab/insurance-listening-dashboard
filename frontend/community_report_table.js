@@ -80,13 +80,33 @@ function csvCell(value) {
   return `"${cell.replace(/"/g, '""')}"`;
 }
 
-function commentExportRows() {
-  return currentReportRows.flatMap(post => (post.comment_details || []).map(comment => ({
+async function ensurePostComments(post) {
+  if (!post || !post.post_id) return [];
+  if (Array.isArray(post.comment_details)) return post.comment_details;
+  const query = new URLSearchParams(params());
+  query.delete("limit");
+  query.set("post_id", post.post_id);
+  const data = await fetch(`/api/community/prudential_post_comments?${query.toString()}`, { cache: "no-store" })
+    .then(r => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    });
+  post.comment_details = data.comments || [];
+  return post.comment_details;
+}
+
+async function commentExportRows() {
+  const all = [];
+  for (const post of currentReportRows) {
+    const comments = await ensurePostComments(post);
+    all.push(...comments.map(comment => ({
     post_id: post.post_id, group_id: post.group_id, group_name: post.group_name,
     link_post: post.link_post, caption: post.caption, ...comment,
     post_negative_ratio: post.negative_ratio,
     post_seeding_recommendation: post.seeding_recommendation
-  })));
+    })));
+  }
+  return all;
 }
 
 function downloadCsv(rows, selected, definitions, filename) {
@@ -103,7 +123,7 @@ function downloadCsv(rows, selected, definitions, filename) {
   URL.revokeObjectURL(url);
 }
 
-function exportSelectedCsv() {
+async function exportSelectedCsv() {
   const status = document.getElementById("exportStatus");
   const selected = [...document.querySelectorAll("#exportFields input:checked")].map(el => el.value);
   if (!selected.length) {
@@ -112,7 +132,8 @@ function exportSelectedCsv() {
   }
   const mode = document.getElementById("exportMode")?.value || "posts";
   const labels = new Map(exportFieldDefinitions());
-  const rows = mode === "comments" ? commentExportRows() : currentReportRows;
+  if (mode === "comments") status.textContent = "Đang tải comment details...";
+  const rows = mode === "comments" ? await commentExportRows() : currentReportRows;
   if (!rows.length) {
     status.textContent = "Không có dữ liệu trong bộ lọc hiện tại để xuất.";
     return;
@@ -139,13 +160,25 @@ function params() {
 async function loadTable() {
   if (document.body.classList.contains("comment-mode")) closeCommentView();
   const status = document.getElementById("statusText");
+  const refreshButton = document.querySelector('.actions button[onclick="loadTable()"]');
   if (status) status.textContent = "Loading...";
-  const data = await fetch(`/api/community/prudential_table_report?${params()}`, { cache: "no-store" }).then(r => r.json());
-  currentReportRows = data.rows || [];
-  renderFilters(data.meta || {});
-  renderSummary(data.rows || []);
-  renderRows(data.rows || []);
-  if (status) status.textContent = `${fmt((data.rows || []).length)} post rows`;
+  if (refreshButton) refreshButton.disabled = true;
+  try {
+    const data = await fetch(`/api/community/prudential_table_report?${params()}`, { cache: "no-store" }).then(r => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    });
+    currentReportRows = data.rows || [];
+    renderFilters(data.meta || {});
+    renderSummary(data.rows || []);
+    renderRows(data.rows || []);
+    if (status) status.textContent = `${fmt((data.rows || []).length)} post rows`;
+  } catch (error) {
+    console.error(error);
+    if (status) status.textContent = `Load failed: ${error.message}`;
+  } finally {
+    if (refreshButton) refreshButton.disabled = false;
+  }
 }
 
 function renderFilters(meta) {
@@ -214,13 +247,26 @@ function renderRows(rows) {
   }).join("");
 }
 
-function openCommentView(index) {
+async function openCommentView(index) {
   const row = currentReportRows[index];
   const view = document.getElementById("commentView");
   const tbody = document.getElementById("commentRows");
   if (!row || !view || !tbody) return;
 
-  const comments = row.comment_details || [];
+  tbody.innerHTML = '<tr><td colspan="8" class="empty">Đang tải comment...</td></tr>';
+  document.body.classList.add("comment-mode");
+  view.hidden = false;
+  const postLink = document.getElementById("commentPostLink");
+  postLink.href = row.link_post || "#";
+  postLink.hidden = !row.link_post;
+  let comments = [];
+  try {
+    comments = await ensurePostComments(row);
+  } catch (error) {
+    console.error(error);
+    tbody.innerHTML = `<tr><td colspan="8" class="empty">Không tải được comment: ${escapeHtml(error.message)}</td></tr>`;
+    return;
+  }
   tbody.innerHTML = comments.length ? comments.map((comment, commentIndex) => {
     const commentLink = comment.permalink
       ? `<a href="${escapeAttr(comment.permalink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(comment.content || "-")}</a>`
@@ -239,11 +285,6 @@ function openCommentView(index) {
 
   document.getElementById("commentViewTitle").textContent = `Comments của post #${row.stt || index + 1}`;
   document.getElementById("commentViewMeta").textContent = `${row.group_name || row.group_id || "-"} · ${fmt(comments.length)} comment đã phân loại`;
-  const postLink = document.getElementById("commentPostLink");
-  postLink.href = row.link_post || "#";
-  postLink.hidden = !row.link_post;
-  document.body.classList.add("comment-mode");
-  view.hidden = false;
   document.querySelector(".comment-table-wrap")?.scrollTo({ top: 0, left: 0 });
   window.scrollTo({ top: 0, behavior: "auto" });
 }

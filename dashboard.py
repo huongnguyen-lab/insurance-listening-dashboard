@@ -14,18 +14,14 @@ from src.analytics import (
     get_campaign_impact,
     get_overview_spec, get_trends_spec, get_brand_intelligence_spec, get_deep_insight_spec,
     get_crisis_management_spec, get_intent_topic_showcase, get_community_report_spec, get_community_table_report, update_crisis_status,
+    get_community_post_comments,
 )
 
-BASE_DIR = os.getenv("INSURANCE_DATA_DIR", "./data_snapshot")
+BASE_DIR = os.getenv("INSURANCE_DATA_DIR", "./data")
 
 app = FastAPI(title="Insurance Listening Dashboard")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 app.mount("/static", StaticFiles(directory="frontend"), name="static")
-
-
-@app.get("/health")
-def health():
-    return {"status": "ok", "data_dir": BASE_DIR}
 
 
 class CrisisStatusUpdate(BaseModel):
@@ -174,6 +170,13 @@ def api_community_prudential_table_report(start: str | None = Query(None), end: 
                                           groups: str = Query("all"), sentiments: str = Query("all"),
                                           brand_id: str = Query("prudential"), limit: int = Query(500)):
     return get_community_table_report(BASE_DIR, brand_id=brand_id, start=start, end=end, groups=groups, sentiments=sentiments, limit=limit)
+
+
+@app.get("/api/community/prudential_post_comments")
+def api_community_prudential_post_comments(post_id: str = Query(...),
+                                           start: str | None = Query(None), end: str | None = Query(None),
+                                           groups: str = Query("all"), sentiments: str = Query("all")):
+    return get_community_post_comments(BASE_DIR, post_id=post_id, start=start, end=end, groups=groups, sentiments=sentiments)
 
 
 @app.get("/community-report-table")
