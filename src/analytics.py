@@ -2352,6 +2352,14 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
     ]
 
     raw_comment_counts = comments.groupby("PostID").size().to_dict() if not comments.empty and "PostID" in comments else {}
+    comment_groups = {
+        str(pid).strip(): group
+        for pid, group in comments.groupby("PostID", sort=False)
+    } if not comments.empty and "PostID" in comments else {}
+    labeled_groups = {
+        str(pid).strip(): group
+        for pid, group in labeled.groupby("PostID", sort=False)
+    } if not labeled.empty and "PostID" in labeled else {}
     comment_reactions = {}
     if not comments.empty and "PostID" in comments:
         reaction_cols = ["Reaction_Count", "Like_Count", "Love_Count", "Care_Count", "Haha_Count", "Wow_Count", "Sad_Count", "Angry_Count"]
@@ -2370,8 +2378,8 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
     for idx, pid in enumerate(sorted(pid for pid in post_ids if str(pid).strip()), start=1):
         pid = str(pid).strip()
         post = post_lookup.get(pid, pd.Series(dtype=object))
-        post_comments = comments[comments["PostID"] == pid] if not comments.empty and "PostID" in comments else pd.DataFrame()
-        post_labeled = labeled[labeled["PostID"] == pid] if not labeled.empty and "PostID" in labeled else pd.DataFrame()
+        post_comments = comment_groups.get(pid, pd.DataFrame())
+        post_labeled = labeled_groups.get(pid, pd.DataFrame())
         organic_labeled, spam_mask = _organic_comments(post_labeled)
         sentiments = _clean_text_series(organic_labeled.get("sentiment", pd.Series(dtype=str))) if not organic_labeled.empty else pd.Series(dtype=str)
         intents = _clean_text_series(post_labeled.get("intent", pd.Series(dtype=str))) if not post_labeled.empty else pd.Series(dtype=str)

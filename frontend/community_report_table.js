@@ -114,7 +114,7 @@ async function commentExportRows(posts = currentReportRows) {
 async function fetchReportRowsForExport() {
   const total = Number(currentReportMeta.total_row_count || currentReportMeta.row_count || 0);
   const visibleLimit = Number(document.getElementById("limitRows")?.value || 500);
-  const exportLimit = Math.min(Math.max(total, visibleLimit, 5000), EXPORT_ROW_LIMIT);
+  const exportLimit = Math.min(Math.max(total, visibleLimit, currentReportRows.length), EXPORT_ROW_LIMIT);
   const query = new URLSearchParams(params());
   query.set("limit", String(exportLimit));
   const data = await fetch(`/api/community/prudential_table_report?${query.toString()}`, { cache: "no-store" })
