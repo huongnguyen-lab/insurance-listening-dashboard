@@ -177,6 +177,7 @@ def api_community_prudential_table_report(start: str | None = Query(None), end: 
 
 
 @app.get("/community-report-table")
+@app.get("/community-report-table/dashboard")
 def community_report_table():
     return FileResponse("frontend/community_report_table.html")
 
