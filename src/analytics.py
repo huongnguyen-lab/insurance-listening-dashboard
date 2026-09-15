@@ -2284,7 +2284,7 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
 
     group_values = _report_split_filter(groups)
     sentiment_values = _report_split_filter(sentiments)
-    limit = max(1, min(int(limit or 500), 5000))
+    limit = max(1, min(int(limit or 500), 50000))
 
     if not posts.empty:
         posts = posts.copy()
@@ -2462,7 +2462,9 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
             "risk_score": risk_score,
         })
 
-    rows = sorted(rows, key=lambda r: (r["crisis_comments"], r["sentiment_negative"], r["risk_score"], r["comment"]), reverse=True)[:limit]
+    rows = sorted(rows, key=lambda r: (r["crisis_comments"], r["sentiment_negative"], r["risk_score"], r["comment"]), reverse=True)
+    total_row_count = len(rows)
+    rows = rows[:limit]
     for idx, row in enumerate(rows, start=1):
         row["stt"] = idx
 
@@ -2474,7 +2476,10 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
             "groups": groups,
             "sentiments": sentiments,
             "available_groups": available_groups,
-            "row_count": len(rows),
+            "row_count": total_row_count,
+            "total_row_count": total_row_count,
+            "displayed_row_count": len(rows),
+            "limit": limit,
             "crisis_scope": "prudential_mentions_only",
             "negative_scope": "all_brands",
         },

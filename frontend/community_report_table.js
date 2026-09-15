@@ -11,6 +11,8 @@ function escapeAttr(value) {
 }
 
 let currentReportRows = [];
+let currentReportMeta = {};
+const EXPORT_ROW_LIMIT = 50000;
 
 const POST_EXPORT_FIELDS = [
   ["stt", "STT"], ["post_id", "Post ID"], ["group_id", "Group ID"], ["group_name", "Tên Group"],
@@ -95,9 +97,9 @@ async function ensurePostComments(post) {
   return post.comment_details;
 }
 
-async function commentExportRows() {
+async function commentExportRows(posts = currentReportRows) {
   const all = [];
-  for (const post of currentReportRows) {
+  for (const post of posts) {
     const comments = await ensurePostComments(post);
     all.push(...comments.map(comment => ({
     post_id: post.post_id, group_id: post.group_id, group_name: post.group_name,
@@ -107,6 +109,20 @@ async function commentExportRows() {
     })));
   }
   return all;
+}
+
+async function fetchReportRowsForExport() {
+  const total = Number(currentReportMeta.total_row_count || currentReportMeta.row_count || 0);
+  const visibleLimit = Number(document.getElementById("limitRows")?.value || 500);
+  const exportLimit = Math.min(Math.max(total, visibleLimit, 5000), EXPORT_ROW_LIMIT);
+  const query = new URLSearchParams(params());
+  query.set("limit", String(exportLimit));
+  const data = await fetch(`/api/community/prudential_table_report?${query.toString()}`, { cache: "no-store" })
+    .then(r => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    });
+  return data.rows || [];
 }
 
 function downloadCsv(rows, selected, definitions, filename) {
@@ -125,6 +141,7 @@ function downloadCsv(rows, selected, definitions, filename) {
 
 async function exportSelectedCsv() {
   const status = document.getElementById("exportStatus");
+  const button = document.querySelector(".export-button");
   const selected = [...document.querySelectorAll("#exportFields input:checked")].map(el => el.value);
   if (!selected.length) {
     status.textContent = "Vui lòng chọn ít nhất một trường cần xuất.";
@@ -132,15 +149,25 @@ async function exportSelectedCsv() {
   }
   const mode = document.getElementById("exportMode")?.value || "posts";
   const labels = new Map(exportFieldDefinitions());
-  if (mode === "comments") status.textContent = "Đang tải comment details...";
-  const rows = mode === "comments" ? await commentExportRows() : currentReportRows;
-  if (!rows.length) {
-    status.textContent = "Không có dữ liệu trong bộ lọc hiện tại để xuất.";
-    return;
+  if (button) button.disabled = true;
+  try {
+    status.textContent = "Đang tải toàn bộ post theo bộ lọc hiện tại...";
+    const exportPosts = await fetchReportRowsForExport();
+    if (mode === "comments") status.textContent = "Đang tải comment details cho toàn bộ post trong bộ lọc...";
+    const rows = mode === "comments" ? await commentExportRows(exportPosts) : exportPosts;
+    if (!rows.length) {
+      status.textContent = "Không có dữ liệu trong bộ lọc hiện tại để xuất.";
+      return;
+    }
+    downloadCsv(rows, selected, labels,
+      `prudential_${mode}_${new Date().toISOString().slice(0, 19).replace(/[:T]/g, "-")}.csv`);
+    status.textContent = `Đã xuất ${fmt(rows.length)} dòng với ${fmt(selected.length)} trường.`;
+  } catch (error) {
+    console.error(error);
+    status.textContent = `Xuất CSV thất bại: ${error.message}`;
+  } finally {
+    if (button) button.disabled = false;
   }
-  downloadCsv(rows, selected, labels,
-    `prudential_${mode}_${new Date().toISOString().slice(0, 19).replace(/[:T]/g, "-")}.csv`);
-  status.textContent = `Đã xuất ${fmt(rows.length)} dòng với ${fmt(selected.length)} trường.`;
 }
 
 function params() {
@@ -169,10 +196,14 @@ async function loadTable() {
       return r.json();
     });
     currentReportRows = data.rows || [];
-    renderFilters(data.meta || {});
-    renderSummary(data.rows || []);
+    currentReportMeta = data.meta || {};
+    renderFilters(currentReportMeta);
+    renderSummary(currentReportRows, currentReportMeta);
     renderRows(data.rows || []);
-    if (status) status.textContent = `${fmt((data.rows || []).length)} post rows`;
+    if (status) {
+      const total = currentReportMeta.total_row_count ?? currentReportMeta.row_count ?? currentReportRows.length;
+      status.textContent = `Hiển thị ${fmt(currentReportRows.length)} / ${fmt(total)} post`;
+    }
   } catch (error) {
     console.error(error);
     if (status) status.textContent = `Load failed: ${error.message}`;
@@ -193,13 +224,14 @@ function renderFilters(meta) {
   sel.dataset.loaded = "1";
 }
 
-function renderSummary(rows) {
+function renderSummary(rows, meta = {}) {
   const urgent = rows.filter(r => r.seeding_recommendation === "Urgent").length;
   const following = rows.filter(r => r.seeding_recommendation === "Following").length;
   const negative = rows.reduce((sum, r) => sum + Number(r.sentiment_negative || 0), 0);
   const negativePru = rows.reduce((sum, r) => sum + Number(r.negative_prudential_count || 0), 0);
   const crisis = rows.reduce((sum, r) => sum + Number(r.crisis_comments || 0), 0);
-  document.getElementById("m-rows").textContent = fmt(rows.length);
+  document.getElementById("m-rows").textContent = fmt(meta.total_row_count ?? meta.row_count ?? rows.length);
+  document.getElementById("m-visible").textContent = fmt(meta.displayed_row_count ?? rows.length);
   document.getElementById("m-urgent").textContent = fmt(urgent);
   document.getElementById("m-following").textContent = fmt(following);
   document.getElementById("m-negative").textContent = fmt(negative);
