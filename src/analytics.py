@@ -1,4 +1,6 @@
-﻿import json
+﻿from __future__ import annotations
+
+import json
 import math
 import os
 import unicodedata
@@ -2472,6 +2474,13 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
 
     rows = sorted(rows, key=lambda r: (r["crisis_comments"], r["sentiment_negative"], r["risk_score"], r["comment"]), reverse=True)
     total_row_count = len(rows)
+    summary = {
+        "urgent": sum(1 for r in rows if r.get("seeding_recommendation") == "Urgent"),
+        "following": sum(1 for r in rows if r.get("seeding_recommendation") == "Following"),
+        "negative_comments_all_brands": sum(int(r.get("sentiment_negative") or 0) for r in rows),
+        "negative_comments_prudential": sum(int(r.get("negative_prudential_count") or 0) for r in rows),
+        "crisis_comments_prudential": sum(int(r.get("crisis_comments") or 0) for r in rows),
+    }
     rows = rows[:limit]
     for idx, row in enumerate(rows, start=1):
         row["stt"] = idx
@@ -2487,6 +2496,7 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
             "row_count": total_row_count,
             "total_row_count": total_row_count,
             "displayed_row_count": len(rows),
+            "summary": summary,
             "limit": limit,
             "crisis_scope": "prudential_mentions_only",
             "negative_scope": "all_brands",

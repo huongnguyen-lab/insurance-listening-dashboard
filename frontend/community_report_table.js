@@ -225,11 +225,12 @@ function renderFilters(meta) {
 }
 
 function renderSummary(rows, meta = {}) {
-  const urgent = rows.filter(r => r.seeding_recommendation === "Urgent").length;
-  const following = rows.filter(r => r.seeding_recommendation === "Following").length;
-  const negative = rows.reduce((sum, r) => sum + Number(r.sentiment_negative || 0), 0);
-  const negativePru = rows.reduce((sum, r) => sum + Number(r.negative_prudential_count || 0), 0);
-  const crisis = rows.reduce((sum, r) => sum + Number(r.crisis_comments || 0), 0);
+  const summary = meta.summary || {};
+  const urgent = summary.urgent ?? rows.filter(r => r.seeding_recommendation === "Urgent").length;
+  const following = summary.following ?? rows.filter(r => r.seeding_recommendation === "Following").length;
+  const negative = summary.negative_comments_all_brands ?? rows.reduce((sum, r) => sum + Number(r.sentiment_negative || 0), 0);
+  const negativePru = summary.negative_comments_prudential ?? rows.reduce((sum, r) => sum + Number(r.negative_prudential_count || 0), 0);
+  const crisis = summary.crisis_comments_prudential ?? rows.reduce((sum, r) => sum + Number(r.crisis_comments || 0), 0);
   document.getElementById("m-rows").textContent = fmt(meta.total_row_count ?? meta.row_count ?? rows.length);
   document.getElementById("m-visible").textContent = fmt(meta.displayed_row_count ?? rows.length);
   document.getElementById("m-urgent").textContent = fmt(urgent);
