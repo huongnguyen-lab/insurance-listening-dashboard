@@ -1,1 +1,2 @@
 job_id,job_type,status,started_at,finished_at,input_count,processed_count,error,metadata
+aac74346-7f9b-494b-acc3-2edb768d10ad,insurance_line_classification,completed,2026-09-16T11:01:31.585164,2026-09-16T11:01:34.619309,8501,8501,,"{""limit"": null}"
