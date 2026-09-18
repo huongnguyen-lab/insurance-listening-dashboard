@@ -54,7 +54,7 @@ button, .actions a, .actions select, .actions input {
 main { padding: 16px 20px 36px; }
 .summary {
   display: grid;
-  grid-template-columns: repeat(7, minmax(130px, 1fr));
+  grid-template-columns: repeat(8, minmax(130px, 1fr));
   gap: 10px;
   margin-bottom: 12px;
 }

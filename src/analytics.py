@@ -2171,7 +2171,7 @@ def get_community_report_spec(base_dir: str = "./data", brand_id: str = "prudent
 
 def _contains_prudential(value) -> bool:
     text = _text_slug(value)
-    return any(term in text for term in ["prudential", "pru", "phu hung"])
+    return any(term in text for term in ["prudential", "pru"])
 
 
 def _organic_comments(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
@@ -2394,7 +2394,7 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
         base = positive + neutral
         negative_ratio = round(negative / base, 2) if base else (999.0 if negative else 0.0)
         # Keep all-brand crisis levels for the existing risk score, but expose
-        # only Prudential-related crisis cases in the Crisis Comment metric.
+        # direct Prudential mentions separately from post-level Prudential scope.
         all_crisis_levels = _crisis_level_counts(organic_labeled, crisis)
         post_mentions_prudential = _contains_prudential(post.get("PostContent", ""))
         if not organic_labeled.empty:
@@ -2402,13 +2402,15 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
                 _clean_text_series(organic_labeled["CommentID"]).isin(prudential_comment_ids)
                 | organic_labeled.get("Content", pd.Series("", index=organic_labeled.index)).apply(_contains_prudential)
             )
-            prudential_crisis_scope = organic_labeled[
-                comment_mentions_prudential | bool(post_mentions_prudential)
-            ]
+            prudential_crisis_scope = organic_labeled[comment_mentions_prudential]
         else:
             prudential_crisis_scope = organic_labeled
         crisis_levels = _crisis_level_counts(prudential_crisis_scope, crisis)
         crisis_count = sum(crisis_levels.values())
+        crisis_post_prudential = int(
+            (bool(post_mentions_prudential) or (not organic_labeled.empty and bool(comment_mentions_prudential.any())))
+            and sum(all_crisis_levels.values()) > 0
+        )
 
         negative_mentions = []
         negative_prudential_count = 0
@@ -2468,6 +2470,7 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
             "seeding_recommendation": _recommend_seeding(negative_ratio, bool(negative_mentions)),
             "pillar": "",
             "crisis_comments": crisis_count,
+            "crisis_post_prudential": crisis_post_prudential,
             "crisis_levels": crisis_levels,
             "risk_score": risk_score,
         })
@@ -2480,6 +2483,7 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
         "negative_comments_all_brands": sum(int(r.get("sentiment_negative") or 0) for r in rows),
         "negative_comments_prudential": sum(int(r.get("negative_prudential_count") or 0) for r in rows),
         "crisis_comments_prudential": sum(int(r.get("crisis_comments") or 0) for r in rows),
+        "crisis_posts_prudential": sum(int(r.get("crisis_post_prudential") or 0) for r in rows),
     }
     rows = rows[:limit]
     for idx, row in enumerate(rows, start=1):
@@ -2498,7 +2502,8 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
             "displayed_row_count": len(rows),
             "summary": summary,
             "limit": limit,
-            "crisis_scope": "prudential_mentions_only",
+            "crisis_scope": "comment_mentions_prudential_only",
+            "crisis_post_scope": "post_or_comment_mentions_prudential",
             "negative_scope": "all_brands",
         },
         "rows": rows,

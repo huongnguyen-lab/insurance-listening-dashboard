@@ -231,6 +231,7 @@ function renderSummary(rows, meta = {}) {
   const negative = summary.negative_comments_all_brands ?? rows.reduce((sum, r) => sum + Number(r.sentiment_negative || 0), 0);
   const negativePru = summary.negative_comments_prudential ?? rows.reduce((sum, r) => sum + Number(r.negative_prudential_count || 0), 0);
   const crisis = summary.crisis_comments_prudential ?? rows.reduce((sum, r) => sum + Number(r.crisis_comments || 0), 0);
+  const crisisPosts = summary.crisis_posts_prudential ?? rows.reduce((sum, r) => sum + Number(r.crisis_post_prudential || 0), 0);
   document.getElementById("m-rows").textContent = fmt(meta.total_row_count ?? meta.row_count ?? rows.length);
   document.getElementById("m-visible").textContent = fmt(meta.displayed_row_count ?? rows.length);
   document.getElementById("m-urgent").textContent = fmt(urgent);
@@ -238,6 +239,7 @@ function renderSummary(rows, meta = {}) {
   document.getElementById("m-negative").textContent = fmt(negative);
   document.getElementById("m-negative-pru").textContent = fmt(negativePru);
   document.getElementById("m-crisis").textContent = fmt(crisis);
+  document.getElementById("m-crisis-posts").textContent = fmt(crisisPosts);
 }
 
 function renderRows(rows) {
