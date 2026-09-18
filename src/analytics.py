@@ -2407,10 +2407,9 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
             prudential_crisis_scope = organic_labeled
         crisis_levels = _crisis_level_counts(prudential_crisis_scope, crisis)
         crisis_count = sum(crisis_levels.values())
-        crisis_post_prudential = int(
-            (bool(post_mentions_prudential) or (not organic_labeled.empty and bool(comment_mentions_prudential.any())))
-            and sum(all_crisis_levels.values()) > 0
-        )
+        # Post-level scope counts unique posts that contain at least one direct
+        # Prudential crisis comment.
+        crisis_post_prudential = int(crisis_count > 0)
 
         negative_mentions = []
         negative_prudential_count = 0
@@ -2503,7 +2502,7 @@ def get_community_table_report(base_dir: str = "./data", brand_id: str = "pruden
             "summary": summary,
             "limit": limit,
             "crisis_scope": "comment_mentions_prudential_only",
-            "crisis_post_scope": "post_or_comment_mentions_prudential",
+            "crisis_post_scope": "unique_post_with_comment_mentions_prudential_crisis",
             "negative_scope": "all_brands",
         },
         "rows": rows,
