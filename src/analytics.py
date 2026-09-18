@@ -2213,18 +2213,52 @@ def _recommend_seeding(negative_ratio: float, has_negative_pru_mention: bool) ->
     return "Following"
 
 
-def _comment_detail_rows(post_labeled: pd.DataFrame) -> list[dict]:
+def _prudential_comment_ids(mentions: pd.DataFrame) -> set[str]:
+    if mentions.empty or not {"CommentID", "brand_id"}.issubset(mentions.columns):
+        return set()
+    return set(
+        _clean_text_series(mentions.loc[
+            _clean_text_series(mentions["brand_id"]).str.lower() == "prudential",
+            "CommentID",
+        ])
+    )
+
+
+def _crisis_lookup(crisis: pd.DataFrame) -> dict[str, dict]:
+    if crisis.empty or "CommentID" not in crisis:
+        return {}
+    out = {}
+    for _, row in crisis.iterrows():
+        cid = str(row.get("CommentID", "") or "").strip()
+        if not cid:
+            continue
+        out[cid] = {
+            "level": str(row.get("level", "") or ""),
+            "reason": str(row.get("reason", "") or ""),
+            "status": str(row.get("status", "") or ""),
+            "detected_at": str(row.get("detected_at", "") or ""),
+        }
+    return out
+
+
+def _comment_detail_rows(post_labeled: pd.DataFrame, crisis: pd.DataFrame | None = None,
+                         prudential_comment_ids: set[str] | None = None) -> list[dict]:
     rows = []
     if post_labeled.empty:
         return rows
+    crisis_by_id = _crisis_lookup(crisis if crisis is not None else pd.DataFrame())
+    prudential_comment_ids = prudential_comment_ids or set()
     for _, comment_row in post_labeled.iterrows():
         intent_value = str(comment_row.get("intent", "") or "").strip()
         is_spam = intent_value == "spam"
         sentiment_value = str(comment_row.get("sentiment", "") or "").strip()
         content_value = str(comment_row.get("Content", "") or "").strip()
-        mentions_pru = _contains_prudential(content_value)
+        comment_id = str(comment_row.get("CommentID", "") or "")
+        mentions_pru = _contains_prudential(content_value) or comment_id in prudential_comment_ids
+        crisis_info = crisis_by_id.get(comment_id, {})
+        is_crisis = bool(crisis_info)
         rows.append({
-            "comment_id": str(comment_row.get("CommentID", "") or ""),
+            "comment_id": comment_id,
             "content": content_value,
             "author": str(comment_row.get("Author", "") or ""),
             "date": str(comment_row.get("Date", "") or ""),
@@ -2236,6 +2270,10 @@ def _comment_detail_rows(post_labeled: pd.DataFrame) -> list[dict]:
             "spam": bool(is_spam),
             "mentions_prudential": bool(mentions_pru),
             "negative_prudential_mention": bool(mentions_pru and not is_spam and sentiment_value == "tieu_cuc"),
+            "crisis": is_crisis,
+            "crisis_level": crisis_info.get("level", ""),
+            "crisis_reason": crisis_info.get("reason", ""),
+            "crisis_prudential_comment": bool(is_crisis and mentions_pru and not is_spam),
         })
     return rows
 
@@ -2245,6 +2283,8 @@ def get_community_post_comments(base_dir: str = "./data", post_id: str = "",
                                 groups: str = "all", sentiments: str = "all") -> dict:
     comments = _read_csv_cached(f"{base_dir}/raw_comments.csv")
     labels = _read_csv_cached(f"{base_dir}/ai_labels.csv")
+    crisis = _read_csv_cached(f"{base_dir}/crisis_alerts.csv")
+    mentions = _read_csv_cached(f"{base_dir}/brand_mentions.csv")
     group_values = _report_split_filter(groups)
     sentiment_values = _report_split_filter(sentiments)
 
@@ -2270,7 +2310,125 @@ def get_community_post_comments(base_dir: str = "./data", post_id: str = "",
         comments = comments[_clean_text_series(comments["sentiment"]).isin(sentiment_values)]
     return {
         "meta": {"post_id": post_id, "count": int(len(comments))},
-        "comments": _comment_detail_rows(comments),
+        "comments": _comment_detail_rows(comments, crisis=crisis, prudential_comment_ids=_prudential_comment_ids(mentions)),
+    }
+
+
+def get_community_crisis_evidence(base_dir: str = "./data", brand_id: str = "prudential",
+                                  start: str | None = None, end: str | None = None,
+                                  groups: str = "all", sentiments: str = "all",
+                                  limit: int = 200) -> dict:
+    posts = _read_csv_cached(f"{base_dir}/raw_posts.csv")
+    comments = _read_csv_cached(f"{base_dir}/raw_comments.csv")
+    labels = _read_csv_cached(f"{base_dir}/ai_labels.csv")
+    crisis = _read_csv_cached(f"{base_dir}/crisis_alerts.csv")
+    mentions = _read_csv_cached(f"{base_dir}/brand_mentions.csv")
+    group_values = _report_split_filter(groups)
+    sentiment_values = _report_split_filter(sentiments)
+    limit = max(1, min(int(limit or 200), 1000))
+
+    if comments.empty or labels.empty or crisis.empty:
+        return {"meta": {"brand_id": brand_id, "crisis_comments": 0, "crisis_posts": 0}, "posts": [], "comments": []}
+
+    comments = comments.copy()
+    comments["CommentID"] = _clean_text_series(comments.get("CommentID", pd.Series(dtype=str)))
+    comments["PostID"] = _clean_text_series(comments.get("PostID", pd.Series(dtype=str)))
+    comments["group_id"] = _clean_text_series(comments.get("group_id", pd.Series(dtype=str)))
+    comments = comments[comments["CommentID"] != ""]
+    comments = _filter_report_dates(comments, start, end)
+    if group_values:
+        comments = comments[comments["group_id"].isin(group_values)]
+
+    labels = labels.copy()
+    labels["CommentID"] = _clean_text_series(labels["CommentID"])
+    comments = comments.merge(labels, on="CommentID", how="left", suffixes=("", "_label"))
+    comments = comments[comments.get("sentiment", pd.Series(index=comments.index, dtype=object)).notna()].copy()
+    if sentiment_values and not comments.empty and "sentiment" in comments:
+        comments = comments[_clean_text_series(comments["sentiment"]).isin(sentiment_values)]
+    organic_comments, _ = _organic_comments(comments)
+
+    prudential_ids = _prudential_comment_ids(mentions)
+    crisis_by_id = _crisis_lookup(crisis)
+    crisis_ids = set(crisis_by_id)
+    if organic_comments.empty:
+        direct = organic_comments
+    else:
+        direct_mask = (
+            _clean_text_series(organic_comments["CommentID"]).isin(prudential_ids)
+            | organic_comments.get("Content", pd.Series("", index=organic_comments.index)).apply(_contains_prudential)
+        )
+        direct = organic_comments[direct_mask & _clean_text_series(organic_comments["CommentID"]).isin(crisis_ids)].copy()
+
+    post_lookup = {}
+    if not posts.empty:
+        posts = posts.copy()
+        posts["PostID"] = _clean_text_series(posts.get("PostID", pd.Series(dtype=str)))
+        for _, row in posts.drop_duplicates(subset=["PostID"]).iterrows():
+            post_lookup[str(row.get("PostID", ""))] = row
+
+    comment_rows = []
+    if not direct.empty:
+        direct = direct.sort_values("Date", ascending=False) if "Date" in direct else direct
+        for _, row in direct.head(limit).iterrows():
+            cid = str(row.get("CommentID", "") or "")
+            pid = str(row.get("PostID", "") or "")
+            post = post_lookup.get(pid, pd.Series(dtype=object))
+            crisis_info = crisis_by_id.get(cid, {})
+            comment_rows.append({
+                "comment_id": cid,
+                "post_id": pid,
+                "group_id": str(row.get("group_id", "") or post.get("group_id", "") or ""),
+                "group_name": str(post.get("group_name", "") or row.get("group_id", "") or ""),
+                "link_post": str(post.get("PostURL", "") or row.get("PostURL", "") or ""),
+                "caption": str(post.get("PostContent", "") or "")[:360],
+                "content": str(row.get("Content", "") or ""),
+                "author": str(row.get("Author", "") or ""),
+                "date": str(row.get("Date", "") or ""),
+                "permalink": str(row.get("Permalink", "") or ""),
+                "sentiment": str(row.get("sentiment", "") or ""),
+                "intent": str(row.get("intent", "") or ""),
+                "crisis_level": crisis_info.get("level", ""),
+                "crisis_reason": crisis_info.get("reason", ""),
+                "crisis_status": crisis_info.get("status", ""),
+                "detected_at": crisis_info.get("detected_at", ""),
+            })
+
+    post_rows = []
+    if comment_rows:
+        comments_by_post: dict[str, list[dict]] = {}
+        for row in comment_rows:
+            comments_by_post.setdefault(row["post_id"], []).append(row)
+        for pid, items in comments_by_post.items():
+            post = post_lookup.get(pid, pd.Series(dtype=object))
+            first = items[0]
+            post_rows.append({
+                "post_id": pid,
+                "group_id": first.get("group_id", ""),
+                "group_name": first.get("group_name", ""),
+                "link_post": first.get("link_post", ""),
+                "caption": str(post.get("PostContent", "") or first.get("caption", ""))[:520],
+                "crisis_comment_count": len(items),
+                "crisis_levels": dict(pd.Series([x.get("crisis_level", "") for x in items]).value_counts()),
+                "sample_comments": items[:3],
+            })
+        post_rows = sorted(post_rows, key=lambda row: row["crisis_comment_count"], reverse=True)
+
+    return {
+        "meta": {
+            "brand_id": brand_id,
+            "start": start,
+            "end": end,
+            "groups": groups,
+            "sentiments": sentiments,
+            "crisis_comments": int(len(direct)),
+            "crisis_posts": int(direct["PostID"].nunique()) if not direct.empty and "PostID" in direct else 0,
+            "displayed_comments": len(comment_rows),
+            "displayed_posts": len(post_rows),
+            "limit": limit,
+            "scope": "direct_crisis_comments_that_mention_prudential",
+        },
+        "posts": post_rows,
+        "comments": comment_rows,
     }
 
 

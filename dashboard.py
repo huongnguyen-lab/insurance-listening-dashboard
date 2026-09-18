@@ -14,7 +14,7 @@ from src.analytics import (
     get_campaign_impact,
     get_overview_spec, get_trends_spec, get_brand_intelligence_spec, get_deep_insight_spec,
     get_crisis_management_spec, get_intent_topic_showcase, get_community_report_spec, get_community_table_report, update_crisis_status,
-    get_community_post_comments,
+    get_community_post_comments, get_community_crisis_evidence,
 )
 
 BASE_DIR = os.getenv("INSURANCE_DATA_DIR", "./data")
@@ -182,6 +182,13 @@ def api_community_prudential_post_comments(post_id: str = Query(...),
                                            start: str | None = Query(None), end: str | None = Query(None),
                                            groups: str = Query("all"), sentiments: str = Query("all")):
     return get_community_post_comments(BASE_DIR, post_id=post_id, start=start, end=end, groups=groups, sentiments=sentiments)
+
+
+@app.get("/api/community/prudential_crisis_evidence")
+def api_community_prudential_crisis_evidence(start: str | None = Query(None), end: str | None = Query(None),
+                                             groups: str = Query("all"), sentiments: str = Query("all"),
+                                             brand_id: str = Query("prudential"), limit: int = Query(200)):
+    return get_community_crisis_evidence(BASE_DIR, brand_id=brand_id, start=start, end=end, groups=groups, sentiments=sentiments, limit=limit)
 
 
 @app.get("/community-report-table")

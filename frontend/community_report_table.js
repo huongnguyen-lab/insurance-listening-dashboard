@@ -12,6 +12,8 @@ function escapeAttr(value) {
 
 let currentReportRows = [];
 let currentReportMeta = {};
+let currentCrisisEvidence = { meta: {}, posts: [], comments: [] };
+let currentEvidenceView = "posts";
 const EXPORT_ROW_LIMIT = 50000;
 
 const POST_EXPORT_FIELDS = [
@@ -26,7 +28,7 @@ const POST_EXPORT_FIELDS = [
   ["negative_prudential_mentions", "Comment tiêu cực mention Pru"],
   ["negative_ratio", "Tỷ lệ tiêu cực/(tích cực + trung lập)"], ["negative_ratio_formula", "Công thức tỷ lệ"],
   ["seeding_recommendation", "Đề xuất seeding"], ["pillar", "Trụ cột"],
-  ["crisis_comments", "Crisis comments"], ["risk_score", "Risk score"]
+  ["crisis_comments", "Crisis comments"], ["crisis_post_prudential", "Crisis post Prudential"], ["risk_score", "Risk score"]
 ];
 
 const COMMENT_EXPORT_FIELDS = [
@@ -35,6 +37,7 @@ const COMMENT_EXPORT_FIELDS = [
   ["content", "Comment"], ["author", "Tác giả"], ["date", "Ngày comment"], ["permalink", "Link comment"],
   ["sub_loai", "Sub-loại"], ["positive", "Tích cực"], ["neutral", "Trung lập"],
   ["negative", "Tiêu cực"], ["spam", "Spam"], ["mentions_prudential", "Mention Pru"],
+  ["crisis_prudential_comment", "Crisis comment Pru"], ["crisis_level", "Crisis level"], ["crisis_reason", "Crisis reason"],
   ["post_negative_ratio", "Tỷ lệ tiêu cực level post"],
   ["post_seeding_recommendation", "Đề xuất seeding level post"]
 ];
@@ -44,7 +47,7 @@ const DEFAULT_POST_FIELDS = new Set(["stt", "group_name", "link_post", "caption"
   "prudential_mention_count", "negative_ratio", "seeding_recommendation"]);
 const DEFAULT_COMMENT_FIELDS = new Set(["post_id", "group_name", "link_post", "comment_id", "content", "author",
   "date", "permalink", "sub_loai", "positive", "neutral", "negative", "spam",
-  "mentions_prudential", "post_seeding_recommendation"]);
+  "mentions_prudential", "crisis_prudential_comment", "crisis_level", "post_seeding_recommendation"]);
 
 function exportFieldDefinitions() {
   return document.getElementById("exportMode")?.value === "comments" ? COMMENT_EXPORT_FIELDS : POST_EXPORT_FIELDS;
@@ -139,6 +142,40 @@ function downloadCsv(rows, selected, definitions, filename) {
   URL.revokeObjectURL(url);
 }
 
+function crisisEvidenceRows() {
+  return (currentCrisisEvidence.comments || []).map(row => ({
+    post_id: row.post_id,
+    group_name: row.group_name,
+    link_post: row.link_post,
+    caption: row.caption,
+    comment_id: row.comment_id,
+    content: row.content,
+    author: row.author,
+    date: row.date,
+    permalink: row.permalink,
+    sentiment: row.sentiment,
+    intent: row.intent,
+    crisis_level: row.crisis_level,
+    crisis_reason: row.crisis_reason,
+    crisis_status: row.crisis_status,
+    detected_at: row.detected_at,
+  }));
+}
+
+function exportCrisisEvidenceCsv() {
+  const rows = crisisEvidenceRows();
+  if (!rows.length) return;
+  const fields = [
+    ["post_id", "Post ID"], ["group_name", "Tên Group"], ["link_post", "Link post"],
+    ["caption", "Caption"], ["comment_id", "Comment ID"], ["content", "Comment"],
+    ["author", "Tác giả"], ["date", "Ngày comment"], ["permalink", "Link comment"],
+    ["sentiment", "Sentiment"], ["intent", "Intent"], ["crisis_level", "Crisis level"],
+    ["crisis_reason", "Crisis reason"], ["crisis_status", "Crisis status"], ["detected_at", "Detected at"],
+  ];
+  downloadCsv(rows, fields.map(([key]) => key), new Map(fields),
+    `prudential_crisis_evidence_${new Date().toISOString().slice(0, 19).replace(/[:T]/g, "-")}.csv`);
+}
+
 async function exportSelectedCsv() {
   const status = document.getElementById("exportStatus");
   const button = document.querySelector(".export-button");
@@ -199,6 +236,7 @@ async function loadTable() {
     currentReportMeta = data.meta || {};
     renderFilters(currentReportMeta);
     renderSummary(currentReportRows, currentReportMeta);
+    await loadCrisisEvidence();
     renderRows(data.rows || []);
     if (status) {
       const total = currentReportMeta.total_row_count ?? currentReportMeta.row_count ?? currentReportRows.length;
@@ -210,6 +248,88 @@ async function loadTable() {
   } finally {
     if (refreshButton) refreshButton.disabled = false;
   }
+}
+
+async function loadCrisisEvidence() {
+  const meta = document.getElementById("crisisEvidenceMeta");
+  const body = document.getElementById("crisisEvidenceBody");
+  if (meta) meta.textContent = "Loading...";
+  if (body) body.innerHTML = '<div class="empty">Loading...</div>';
+  const query = new URLSearchParams(params());
+  query.set("limit", "1000");
+  try {
+    currentCrisisEvidence = await fetch(`/api/community/prudential_crisis_evidence?${query.toString()}`, { cache: "no-store" }).then(r => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    });
+    renderCrisisEvidence();
+  } catch (error) {
+    console.error(error);
+    if (meta) meta.textContent = `Load failed: ${error.message}`;
+    if (body) body.innerHTML = '<div class="empty">Không tải được crisis evidence</div>';
+  }
+}
+
+function renderCrisisEvidence() {
+  const meta = currentCrisisEvidence.meta || {};
+  const posts = currentCrisisEvidence.posts || [];
+  const comments = currentCrisisEvidence.comments || [];
+  const metaNode = document.getElementById("crisisEvidenceMeta");
+  const body = document.getElementById("crisisEvidenceBody");
+  if (metaNode) {
+    metaNode.textContent = `${fmt(meta.crisis_posts)} post · ${fmt(meta.crisis_comments)} comment`;
+  }
+  document.querySelectorAll("[data-evidence-view]").forEach(button => {
+    button.classList.toggle("active", button.dataset.evidenceView === currentEvidenceView);
+  });
+  if (!body) return;
+  if (currentEvidenceView === "comments") {
+    body.innerHTML = renderCrisisCommentTable(comments);
+  } else {
+    body.innerHTML = renderCrisisPostTable(posts);
+  }
+}
+
+function renderCrisisPostTable(posts) {
+  if (!posts.length) return '<div class="empty">Không có crisis post Prudential trong bộ lọc hiện tại</div>';
+  return `<table class="evidence-table">
+    <colgroup><col class="e-col-link"><col class="e-col-group"><col><col class="e-col-count"><col class="e-col-copy"></colgroup>
+    <thead><tr><th>Link</th><th>Group</th><th>Caption</th><th>Comments</th><th>Crisis comments</th></tr></thead>
+    <tbody>${posts.map(post => {
+      const link = post.link_post ? `<a href="${escapeAttr(post.link_post)}" target="_blank" rel="noopener noreferrer">Open post</a>` : "-";
+      const samples = (post.sample_comments || []).map(item => {
+        const commentLink = item.permalink ? `<a href="${escapeAttr(item.permalink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.content || "-")}</a>` : escapeHtml(item.content || "-");
+        return `<li>${commentLink}<div class="muted">${escapeHtml(item.crisis_level || "-")} · ${escapeHtml(item.date || "")}</div></li>`;
+      }).join("");
+      return `<tr>
+        <td>${link}</td>
+        <td>${escapeHtml(post.group_name || post.group_id || "-")}</td>
+        <td class="evidence-copy">${escapeHtml(post.caption || "-")}</td>
+        <td class="num neg">${fmt(post.crisis_comment_count)}</td>
+        <td class="evidence-copy"><ul>${samples}</ul></td>
+      </tr>`;
+    }).join("")}</tbody>
+  </table>`;
+}
+
+function renderCrisisCommentTable(comments) {
+  if (!comments.length) return '<div class="empty">Không có crisis comment Prudential trong bộ lọc hiện tại</div>';
+  return `<table class="evidence-table">
+    <colgroup><col class="e-col-link"><col class="e-col-group"><col class="e-col-copy"><col class="e-col-level"><col class="e-col-date"><col class="e-col-copy"></colgroup>
+    <thead><tr><th>Post</th><th>Group</th><th>Comment</th><th>Level</th><th>Date</th><th>Reason</th></tr></thead>
+    <tbody>${comments.map(comment => {
+      const postLink = comment.link_post ? `<a href="${escapeAttr(comment.link_post)}" target="_blank" rel="noopener noreferrer">Open post</a>` : "-";
+      const commentLink = comment.permalink ? `<a href="${escapeAttr(comment.permalink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(comment.content || "-")}</a>` : escapeHtml(comment.content || "-");
+      return `<tr>
+        <td>${postLink}</td>
+        <td>${escapeHtml(comment.group_name || comment.group_id || "-")}</td>
+        <td class="evidence-copy">${commentLink}<div class="muted">${escapeHtml(comment.author || "-")}</div></td>
+        <td><span class="crisis-chip">${escapeHtml(comment.crisis_level || "-")}</span></td>
+        <td>${escapeHtml(comment.date || "-")}</td>
+        <td class="evidence-copy">${escapeHtml(comment.crisis_reason || "-")}</td>
+      </tr>`;
+    }).join("")}</tbody>
+  </table>`;
 }
 
 function renderFilters(meta) {
@@ -288,7 +408,7 @@ async function openCommentView(index) {
   const tbody = document.getElementById("commentRows");
   if (!row || !view || !tbody) return;
 
-  tbody.innerHTML = '<tr><td colspan="8" class="empty">Đang tải comment...</td></tr>';
+  tbody.innerHTML = '<tr><td colspan="9" class="empty">Đang tải comment...</td></tr>';
   document.body.classList.add("comment-mode");
   view.hidden = false;
   const postLink = document.getElementById("commentPostLink");
@@ -299,7 +419,7 @@ async function openCommentView(index) {
     comments = await ensurePostComments(row);
   } catch (error) {
     console.error(error);
-    tbody.innerHTML = `<tr><td colspan="8" class="empty">Không tải được comment: ${escapeHtml(error.message)}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="9" class="empty">Không tải được comment: ${escapeHtml(error.message)}</td></tr>`;
     return;
   }
   tbody.innerHTML = comments.length ? comments.map((comment, commentIndex) => {
@@ -310,13 +430,14 @@ async function openCommentView(index) {
       <td class="num">${fmt(commentIndex + 1)}</td>
       <td class="comment-copy">${commentLink}<div class="muted">${escapeHtml(comment.author || "-")} · ${escapeHtml(comment.date || "")}</div></td>
       <td>${escapeHtml(comment.sub_loai || "-")}</td>
+      <td class="check neg">${comment.crisis_prudential_comment ? `<span class="crisis-chip">${escapeHtml(comment.crisis_level || "yes")}</span>` : ""}</td>
       <td class="check pos">${comment.positive ? "✓" : ""}</td>
       <td class="check neu">${comment.neutral ? "✓" : ""}</td>
       <td class="check neg">${comment.negative ? "✓" : ""}</td>
       <td class="check spam">${comment.spam ? "✓" : ""}</td>
       <td class="check">${comment.mentions_prudential ? "✓" : ""}</td>
     </tr>`;
-  }).join("") : '<tr><td colspan="8" class="empty">Không có comment đã phân loại</td></tr>';
+  }).join("") : '<tr><td colspan="9" class="empty">Không có comment đã phân loại</td></tr>';
 
   document.getElementById("commentViewTitle").textContent = `Comments của post #${row.stt || index + 1}`;
   document.getElementById("commentViewMeta").textContent = `${row.group_name || row.group_id || "-"} · ${fmt(comments.length)} comment đã phân loại`;
@@ -338,6 +459,12 @@ document.getElementById("reportRows")?.addEventListener("click", event => {
 
 document.getElementById("backToPosts")?.addEventListener("click", closeCommentView);
 document.getElementById("exportFields")?.addEventListener("change", updateExportFieldCount);
+document.querySelectorAll("[data-evidence-view]").forEach(button => {
+  button.addEventListener("click", () => {
+    currentEvidenceView = button.dataset.evidenceView || "posts";
+    renderCrisisEvidence();
+  });
+});
 
 renderExportFields();
 loadTable();
